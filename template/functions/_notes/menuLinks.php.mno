@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_$table_name" value="name:fk_PaymentID;datatype:int,name:fk_EmployeeID;datatype:int,name:fk_clientId;datatype:int,name:ReferenceNumber;datatype:int,name:PaymentModeId;datatype:int,name:CategoryID;datatype:int,name:PaymentIDorVoucherNum;datatype:string,name:Status;datatype:string,name:fk_periodRef;datatype:string,name:Amount;datatype:real,name:TransactionDate;datatype:date" />
+</info>

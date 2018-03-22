@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8" ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+<meta name="keywords" content="Edit, Note, Write"/>
+<meta name="description" content="Click here to download Edit, Note, Write icon in  .PNG or .ICO-format. Icon designed by DaPino Colada found in the icon set Web Icons"/>
+<meta name="verify-v1" content="AFntlnQvvQJkT7bU4EQC9XgaA1Ds2WELPIN1yCbKvRE="/>
+<meta name="y_key" content="bdc2886d213b9d4b"/>
+<meta name="msvalidate.01" content="ED38FE8F392C772A917F563E48D2B143"/>
+<meta name="bitly-verification" content="e1e2298fc126">
+<title>Edit, Note, Write icon | Icon Search Engine</title>
+<link type="text/css" rel="stylesheet" href="http://cdn0.iconfinder.com/design/css/merged.css.php?check=1334221811"/>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://cdn0.iconfinder.com/javascript/global_015.js?check=1327518890"></script>
+<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-634584-2']);_gaq.push(['_trackPageview']);_gaq.push(['_trackPageLoadTime']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
+<script type='text/javascript'>function updatesearch(){try{$("#searchresultstd").html("&nbsp;");$("#searchresultstd").addClass("loading");$.get("/ajax/search/",{q:'',page:'54894'},function(data)
+{$("#searchresultstd").removeClass("loading");$("#searchresultstd").html(data);$("body").find(".icon").removeClass("white");$("body").find(".icon").removeClass("gray");$("body").find(".icon").removeClass("black");$("body").find(".icon").addClass($(".colorselected").attr("id"));loadinfo();return false;});}catch(err){}
+return false;}</script>
+<link rel="search" type="application/opensearchdescription+xml" title="Iconfinder" href="http://cdn0.iconfinder.com/iconfinder.xml"/>
+<link rel="shortcut icon" href="http://cdn0.iconfinder.com/design/images/favicon.ico"/>
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+</head>
+<body id="view-icondetails">
+<script type="text/javascript">(function(){var bsa=document.createElement('script');bsa.type='text/javascript';bsa.async=true;bsa.src='//s3.buysellads.com/ac/bsa.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);})();</script>
+<div id='header'><a class='tip' title='Go to homepage' id='logo' href='/'><img height='65' width='160' src='http://cdn0.iconfinder.com/design/images/logo.png' alt='Go to homepage'/></a>
+<div id='searcharea'>
+<form id='searchform' action='/search/'>
+<div>
+<input name='q' id='inputField' value=''/><input id='searchsubmit' type='submit' value='Search'/>
+</div>
+</form>
+</div>
+<script type="text/javascript">var options_xml={script:"/ajax/autocomplete/?",varname:"input"};var as_xml=new AutoSuggest('inputField',options_xml);</script></div>
+<div id='smallmenu'>
+<a href='#' id='dropmenu'>&nbsp;</a>
+<div id='menu-content'>
+<ul><li><a title='Search through all icons on Iconfinder e.g. user, facebook or twitter' href='/'>Search</a></li><li><a title='Browse through icon sets and find great icons without searching.' href='/browse'>Browse</a></li><li><a title='API, plugins, apps and other useful icon related tools.' href='/tools'>Tools</a></li><li><a title='News, interviews, tutorials and freebies.' href='/blog'>Blog</a></li><li><a title='Information about IconFinder, search tips and advertiser information.' href='/about'>About</a></li><li><a title='Please give feedback on new features or other improvements..' href='/feedback'>Give feedback</a></li><li><a title='Submit icons to IconFinder' href='/submit'>Submit icons</a></li>
+</ul>
+</div>
+</div>
+<div id='login'>&nbsp;</div>
+<script>var username=$.cookie('username');var html;if(username!=null)
+{html='<ul><li><a id="logout" href="#">Log out</a></li><li ><a href="/account/dashboard">My account ('+username+')</a></li></ul>';}
+else
+{html='<ul><li><a id="login-link" href="/user/login">Log in</a></li><li><a href="/user/signup">Sign up</a></li></ul>';}
+$("#login").html(html);</script>
+<div id='icondetails-content'>
+<div style='float: right; position: absolute; top: 117px; right: 20px; text-align: right; line-height: 145% !important;'>
+<div class="addthis_toolbox addthis_default_style">
+<a href="http://www.addthis.com/bookmark.php?v=250&amp;username=iconfinder" class="addthis_button_compact">Share</a>
+<span class="addthis_separator">|</span>
+<a class="addthis_button_email"></a>
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_twitter"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=iconfinder"></script>
+</div>
+<table>
+<tr>
+<td class='icondetails-left'>
+<h3>License</h3>
+<p><a rel='license' class='external' href='http://creativecommons.org/licenses/by-nc/3.0/'>Creative Commons (Attribution-Noncommercial 3.0 Unported)</a> | (<a href='/browse/iconset/Web_icons/#readme'>Read me</a>)	</p>
+<h3>Rating</h3>
+<p>
+<span class='stars'><a onclick='javascript:rate(54894,1); return false;' class='star on' href='#'>&nbsp;</a><a onclick='javascript:rate(54894,2); return false;' class='star on' href='#'>&nbsp;</a><a onclick='javascript:rate(54894,3); return false;' class='star off' href='#'>&nbsp;</a><a onclick='javascript:rate(54894,4); return false;' class='star off' href='#'>&nbsp;</a><a onclick='javascript:rate(54894,5); return false;' class='star off' href='#'>&nbsp;</a>&nbsp;<img class='checkmark' id='checkmark-54894' src='http://cdn1.iconfinder.com/data/icons/ledicons/accept.png' alt='Check mark'/></span>
+</p>
+<h3>Downloads</h3>
+<p>
+6,298 downloads
+</p>
+<h3>Icon set</h3>
+<p>
+<a class='tip' title='Click here to see all icons in this set.' href='/search/?q=iconset%3AWeb_icons'>Web Icons</a>
+<p>
+<a class='previewa' href='/search/?q=iconset%3AWeb_icons'><img alt='Click here to see all icons in this icon set' width='200' height='114' src='http://cdn0.iconfinder.com/design/images/_thumbs/Web_icons_small.png'/></a>
+</p>
+<h3>Tags</h3>
+<div id='innertag-54894' class='icondetails-tags'>
+<textarea tabindex='1' rows='6' cols='10' onfocus='javascript: tagfocus(this); return false;' id='n54894' class='stylefield'>edit
+note
+write
+</textarea>
+<input tabindex='1' class='tagsubmit submit submitbutton' onclick='javascript: tagsubmit("54894","128"); return false;' type='submit' value='Save changes'/>&nbsp;&nbsp;&nbsp;&nbsp;
+<div class='hidden ui-state-highlight ui-widget-content ui-state-highlight' id='tagsboxn54894'>&nbsp;</div>
+</div>
+<h3>More from this designer</h3><p><a style='margin-bottom: 20px;' class='previewa tip' title='Medical Icons. Click here to see all icons.' href='/search/?q=iconset%3Amedicalicons'><img alt='Click here to see all icons in this icon set' width='200' height='114' src='http://cdn0.iconfinder.com/design/images/_thumbs/medicalicons_small.png'/></a><a style='margin-bottom: 20px;' class='previewa tip' title='Medical Vista. Click here to see all icons.' href='/search/?q=iconset%3Amedicalvista'><img alt='Click here to see all icons in this icon set' width='200' height='114' src='http://cdn0.iconfinder.com/design/images/_thumbs/medicalvista_small.png'/></a></p>
+<h3>Sponsors</h3><p>
+<div id="bsap_1249568" class="bsarocks bsap_f9ec9cea137be24911157676b565220c"></div>
+</p>
+</td>
+<td style='padding-left: 34px;'>
+<h1><a href='/search/?q=edit'>Edit</a>, <a href='/search/?q=note'>Note</a>, <a href='/search/?q=write'>Write</a> icon</h1>
+<h2>by <a class='external' href='http://www.dapino-colada.nl'>DaPino Colada</a> | <a class='tip' title='Click here to see all icons in this set.' href='/search/?q=iconset%3AWeb_icons'>Web Icons</a> | 128 x 128 px | <a href='#disqus_thread'>0 comments</a></h2>
+<table>
+<tr>
+<td id='detail-icon' style='width: 315px;'>
+<div id='iconitself' style='width: 295px; height: 295px;'>
+<img id='detail-icon-img' style='margin-top: 83.5px;' src='http://cdn1.iconfinder.com/data/icons/Web_icons/PNG/128/note.png' alt='edit, note, write icon'/>
+</div>
+<div id='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-' href='/ajax/download/png/?id=54894&amp;s=128'>
+Download PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-' href='/ajax/download/ico/?id=54894&amp;s=128'>
+Download ICO
+</a>
+</div>
+</td>
+<td class='banner'>
+<div id='bsap_1239320' class='bsarocks bsap_f9ec9cea137be24911157676b565220c'></div>
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+</table><div class='icondetailsblock'><h3>Other sizes of this icon (Hover to view full size)</h3>
+<div class='alticons' style='margin-top: 0px; height: 198px; width: 218px;'>
+<div class='alticon largersize' id='largersize-512'>
+<a href='/icondetails/54894/512/'><img src='http://cdn1.iconfinder.com/data/icons/Web_icons/PNG/128/note.png' alt=''/></a>
+<div class='hovertext'>Hover to preview full size</div>
+<div class='hiddenicon' id='hiddenicon-512' style='margin-top: -512px;'>
+<img height='512' src='http://cdn1.iconfinder.com/data/icons/Web_icons/PNG/512/note.png' alt=''/>
+<p>512 x 512</p>
+</div>
+</div>
+<p>
+<span>512 x 512</span>
+</p>
+<p>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-54894' href='/ajax/download/png/?id=54894&amp;s=512'>PNG</a> <a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-54894' href='/ajax/download/ico/?id=54894&amp;s=512'>ICO</a>
+</p>
+</div>
+<div class='alticons' style='margin-top: 0px; height: 198px; width: 218px;'>
+<div class='alticon largersize' id='largersize-256'>
+<a href='/icondetails/54894/256/'><img src='http://cdn1.iconfinder.com/data/icons/Web_icons/PNG/128/note.png' alt=''/></a>
+<div class='hovertext'>Hover to preview full size</div>
+<div class='hiddenicon' id='hiddenicon-256' style='margin-top: -256px;'>
+<img height='256' src='http://cdn1.iconfinder.com/data/icons/Web_icons/PNG/256/note.png' alt=''/>
+<p>256 x 256</p>
+</div>
+</div>
+<p>
+<span>256 x 256</span>
+</p>
+<p>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-54894' href='/ajax/download/png/?id=54894&amp;s=256'>PNG</a> <a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-54894' href='/ajax/download/ico/?id=54894&amp;s=256'>ICO</a>
+</p>
+</div>
+<div class='alticons' style='margin-top: 64px; height: 134px; width: 154px;'>
+<div class='alticon'>
+<a href='/icondetails/54894/64/'><img src='http://cdn1.iconfinder.com/data/icons/Web_icons/PNG/64/note.png' alt=''/></a>
+</div>
+<p>
+<span>64 x 64</span>
+</p>
+<p>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-54894' href='/ajax/download/png/?id=54894&amp;s=64'>PNG</a> <a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-54894' href='/ajax/download/ico/?id=54894&amp;s=64'>ICO</a>
+</p>
+</div>
+<div class='alticons' style='margin-top: 80px; height: 118px; width: 138px;'>
+<div class='alticon'>
+<a href='/icondetails/54894/48/'><img src='http://cdn1.iconfinder.com/data/icons/Web_icons/PNG/48/note.png' alt=''/></a>
+</div>
+<p>
+<span>48 x 48</span>
+</p>
+<p>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-54894' href='/ajax/download/png/?id=54894&amp;s=48'>PNG</a> <a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-54894' href='/ajax/download/ico/?id=54894&amp;s=48'>ICO</a>
+</p>
+</div>
+<div class='alticons' style='margin-top: 96px; height: 102px; width: 122px;'>
+<div class='alticon'>
+<a href='/icondetails/54894/32/'><img src='http://cdn1.iconfinder.com/data/icons/Web_icons/PNG/32/note.png' alt=''/></a>
+</div>
+<p>
+<span>32 x 32</span>
+</p>
+<p>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-54894' href='/ajax/download/png/?id=54894&amp;s=32'>PNG</a> <a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-54894' href='/ajax/download/ico/?id=54894&amp;s=32'>ICO</a>
+</p>
+</div><div class='clearboth'>&nbsp;</div></div>
+<div id="icondetails-banner">
+<div id="bsap_1239763" class="bsarocks bsap_f9ec9cea137be24911157676b565220c"></div>
+</div>
+<div class='icondetailsblock'>
+<a name='sameset'>&nbsp;</a>
+<h3>More icons from the '<a href='/search/?q=iconset%3AWeb_icons'>Web Icons</a>' icon set</h3>
+<div class='icon white' id='icon-54893' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-54893' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-54893'>Please wait</div>
+<div class='tagmenu' id='tagmenu-54893'><div class='innertag' id='innertag-54893'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-54893' class='hiddensize'/>
+<input type='hidden' value='54893' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-54893' href='/ajax/download/png/?id=54893&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-54893' href='/ajax/download/ico/?id=54893&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-54893'>&nbsp;</a>
+<a title='cd, disc, guitar, headphones, instrument, music icon' class='iconlink' href='/icondetails/54893/128/cd_disc_guitar_headphones_instrument_music_icon'>
+<img alt='cd, disc, guitar, headphones, instrument, music icon' class='icon-image' style='margin-top: -5px;' src='http://cdn4.iconfinder.com/data/icons/Web_icons/PNG/128/music.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-54896' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-54896' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-54896'>Please wait</div>
+<div class='tagmenu' id='tagmenu-54896'><div class='innertag' id='innertag-54896'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-54896' class='hiddensize'/>
+<input type='hidden' value='54896' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-54896' href='/ajax/download/png/?id=54896&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-54896' href='/ajax/download/ico/?id=54896&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-54896'>&nbsp;</a>
+<a title='money, pay, payment, wallet icon' class='iconlink' href='/icondetails/54896/128/money_pay_payment_wallet_icon'>
+<img alt='money, pay, payment, wallet icon' class='icon-image' style='margin-top: -5px;' src='http://cdn4.iconfinder.com/data/icons/Web_icons/PNG/128/wallet.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-54891' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-54891' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-54891'>Please wait</div>
+<div class='tagmenu' id='tagmenu-54891'><div class='innertag' id='innertag-54891'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-54891' class='hiddensize'/>
+<input type='hidden' value='54891' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-54891' href='/ajax/download/png/?id=54891&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-54891' href='/ajax/download/ico/?id=54891&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-54891'>&nbsp;</a>
+<a title='address, email, fax, phone, website icon' class='iconlink' href='/icondetails/54891/128/address_email_fax_phone_website_icon'>
+<img alt='address, email, fax, phone, website icon' class='icon-image' style='margin-top: -5px;' src='http://cdn4.iconfinder.com/data/icons/Web_icons/PNG/128/contact.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-54892' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-54892' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-54892'>Please wait</div>
+<div class='tagmenu' id='tagmenu-54892'><div class='innertag' id='innertag-54892'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-54892' class='hiddensize'/>
+<input type='hidden' value='54892' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-54892' href='/ajax/download/png/?id=54892&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-54892' href='/ajax/download/ico/?id=54892&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-54892'>&nbsp;</a>
+<a title='explorer, find, search icon' class='iconlink' href='/icondetails/54892/128/explorer_find_search_icon'>
+<img alt='explorer, find, search icon' class='icon-image' style='margin-top: -5px;' src='http://cdn4.iconfinder.com/data/icons/Web_icons/PNG/128/explorer.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-54895' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-54895' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-54895'>Please wait</div>
+<div class='tagmenu' id='tagmenu-54895'><div class='innertag' id='innertag-54895'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-54895' class='hiddensize'/>
+<input type='hidden' value='54895' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-54895' href='/ajax/download/png/?id=54895&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-54895' href='/ajax/download/ico/?id=54895&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-54895'>&nbsp;</a>
+<a title='screen, style, styling, wallpaper icon' class='iconlink' href='/icondetails/54895/128/screen_style_styling_wallpaper_icon'>
+<img alt='screen, style, styling, wallpaper icon' class='icon-image' style='margin-top: -5px;' src='http://cdn4.iconfinder.com/data/icons/Web_icons/PNG/128/screen.png'/>
+</a>
+</div><div class='clearboth'>&nbsp;</div><br/><a class='viewall' href='/search/?q=iconset%3AWeb_icons'>More icons from 'Web_icons'</a><div class='clearboth'>&nbsp;</div></div>
+<div class='icondetailsblock'>
+<a name='relatedbytags'>&nbsp;</a>
+<h3>Related icons by tags: <a href='/search/?q=edit'>Edit</a>, <a href='/search/?q=note'>Note</a>, <a href='/search/?q=write'>Write</a></h3>
+<div class='icon white' id='icon-34318' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-34318' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-34318'>Please wait</div>
+<div class='tagmenu' id='tagmenu-34318'><div class='innertag' id='innertag-34318'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-34318' class='hiddensize'/>
+<input type='hidden' value='34318' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-34318' href='/ajax/download/png/?id=34318&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-34318' href='/ajax/download/ico/?id=34318&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-34318'>&nbsp;</a>
+<a title='document, edit, email, text, write icon' class='iconlink' href='/icondetails/34318/128/document_edit_email_text_write_icon'>
+<img alt='document, edit, email, text, write icon' class='icon-image' style='margin-top: -5px;' src='http://cdn3.iconfinder.com/data/icons/flatforlinux/128/27-Edit Text.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-24333' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-24333' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-24333'>Please wait</div>
+<div class='tagmenu' id='tagmenu-24333'><div class='innertag' id='innertag-24333'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-24333' class='hiddensize'/>
+<input type='hidden' value='24333' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-24333' href='/ajax/download/png/?id=24333&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-24333' href='/ajax/download/ico/?id=24333&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-24333'>&nbsp;</a>
+<a title='centang, check, checklist, equiry, list, poll, task, test, todo, write icon' class='iconlink' href='/icondetails/24333/128/centang_check_checklist_equiry_list_poll_task_test_todo_write_icon'>
+<img alt='centang, check, checklist, equiry, list, poll, task, test, todo, write icon' class='icon-image' style='margin-top: -5px;' src='http://cdn3.iconfinder.com/data/icons/humano2/128x128/apps/stock_task.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-32401' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-32401' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-32401'>Please wait</div>
+<div class='tagmenu' id='tagmenu-32401'><div class='innertag' id='innertag-32401'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-32401' class='hiddensize'/>
+<input type='hidden' value='32401' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-32401' href='/ajax/download/png/?id=32401&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-32401' href='/ajax/download/ico/?id=32401&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-32401'>&nbsp;</a>
+<a title='edit, pen, pencil, write icon' class='iconlink' href='/icondetails/32401/128/edit_pen_pencil_write_icon'>
+<img alt='edit, pen, pencil, write icon' class='icon-image' style='margin-top: -5px;' src='http://cdn3.iconfinder.com/data/icons/prettyoffice/128/edit.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-35452' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-35452' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-35452'>Please wait</div>
+<div class='tagmenu' id='tagmenu-35452'><div class='innertag' id='innertag-35452'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-35452' class='hiddensize'/>
+<input type='hidden' value='35452' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-35452' href='/ajax/download/png/?id=35452&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-35452' href='/ajax/download/ico/?id=35452&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-35452'>&nbsp;</a>
+<a title='bookmark, file, note, paper icon' class='iconlink' href='/icondetails/35452/128/bookmark_file_note_paper_icon'>
+<img alt='bookmark, file, note, paper icon' class='icon-image' style='margin-top: -5px;' src='http://cdn3.iconfinder.com/data/icons/pleasant/Default-Icon.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-20500' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-20500' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-20500'>Please wait</div>
+<div class='tagmenu' id='tagmenu-20500'><div class='innertag' id='innertag-20500'>Please wait</div></div>
+<input type='hidden' value='24' name='size' id='size-20500' class='hiddensize'/>
+<input type='hidden' value='20500' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-20500' href='/ajax/download/png/?id=20500&amp;s=24'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-20500' href='/ajax/download/ico/?id=20500&amp;s=24'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-20500'>&nbsp;</a>
+<a title='edit icon' class='iconlink' href='/icondetails/20500/24/edit_icon'>
+<img alt='edit icon' class='icon-image' style='margin-top: 47px;' src='http://cdn2.iconfinder.com/data/icons/gnomeicontheme/24x24/actions/gtk-edit.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-5586' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-5586' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-5586'>Please wait</div>
+<div class='tagmenu' id='tagmenu-5586'><div class='innertag' id='innertag-5586'>Please wait</div></div>
+<input type='hidden' value='16' name='size' id='size-5586' class='hiddensize'/>
+<input type='hidden' value='5586' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-5586' href='/ajax/download/png/?id=5586&amp;s=16'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-5586' href='/ajax/download/ico/?id=5586&amp;s=16'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-5586'>&nbsp;</a>
+<a title='change, edit, page, pencil, review icon' class='iconlink' href='/icondetails/5586/16/change_edit_page_pencil_review_icon'>
+<img alt='change, edit, page, pencil, review icon' class='icon-image' style='margin-top: 51px;' src='http://cdn1.iconfinder.com/data/icons/silk2/page_white_edit.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-7859' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-7859' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-7859'>Please wait</div>
+<div class='tagmenu' id='tagmenu-7859'><div class='innertag' id='innertag-7859'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-7859' class='hiddensize'/>
+<input type='hidden' value='7859' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-7859' href='/ajax/download/png/?id=7859&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-7859' href='/ajax/download/ico/?id=7859&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-7859'>&nbsp;</a>
+<a title='edit, pencil, write icon' class='iconlink' href='/icondetails/7859/128/edit_pencil_write_icon'>
+<img alt='edit, pencil, write icon' class='icon-image' style='margin-top: -5px;' src='http://cdn1.iconfinder.com/data/icons/glaze/128x128/filesystems/desktop.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-34273' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-34273' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-34273'>Please wait</div>
+<div class='tagmenu' id='tagmenu-34273'><div class='innertag' id='innertag-34273'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-34273' class='hiddensize'/>
+<input type='hidden' value='34273' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-34273' href='/ajax/download/png/?id=34273&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-34273' href='/ajax/download/ico/?id=34273&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-34273'>&nbsp;</a>
+<a title='itunes, music, note icon' class='iconlink' href='/icondetails/34273/128/itunes_music_note_icon'>
+<img alt='itunes, music, note icon' class='icon-image' style='margin-top: -5px;' src='http://cdn3.iconfinder.com/data/icons/49handdrawing/128x128/hint.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-35505' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-35505' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-35505'>Please wait</div>
+<div class='tagmenu' id='tagmenu-35505'><div class='innertag' id='innertag-35505'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-35505' class='hiddensize'/>
+<input type='hidden' value='35505' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-35505' href='/ajax/download/png/?id=35505&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-35505' href='/ajax/download/ico/?id=35505&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-35505'>&nbsp;</a>
+<a title='document, text icon' class='iconlink' href='/icondetails/35505/128/document_text_icon'>
+<img alt='document, text icon' class='icon-image' style='margin-top: -5px;' src='http://cdn3.iconfinder.com/data/icons/pleasant/Text-Document.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-9397' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-9397' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-9397'>Please wait</div>
+<div class='tagmenu' id='tagmenu-9397'><div class='innertag' id='innertag-9397'>Please wait</div></div>
+<input type='hidden' value='48' name='size' id='size-9397' class='hiddensize'/>
+<input type='hidden' value='9397' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-9397' href='/ajax/download/png/?id=9397&amp;s=48'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-9397' href='/ajax/download/ico/?id=9397&amp;s=48'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-9397'>&nbsp;</a>
+<a title='document, file, new, paper, pen, pencil, reply, write icon' class='iconlink' href='/icondetails/9397/48/document_file_new_paper_pen_pencil_reply_write_icon'>
+<img alt='document, file, new, paper, pen, pencil, reply, write icon' class='icon-image' style='margin-top: 35px;' src='http://cdn2.iconfinder.com/data/icons/oxygen/48x48/actions/mail-new.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-42214' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-42214' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-42214'>Please wait</div>
+<div class='tagmenu' id='tagmenu-42214'><div class='innertag' id='innertag-42214'>Please wait</div></div>
+<input type='hidden' value='48' name='size' id='size-42214' class='hiddensize'/>
+<input type='hidden' value='42214' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-42214' href='/ajax/download/png/?id=42214&amp;s=48'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-42214' href='/ajax/download/ico/?id=42214&amp;s=48'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-42214'>&nbsp;</a>
+<a title='document, edit, write icon' class='iconlink' href='/icondetails/42214/48/document_edit_write_icon'>
+<img alt='document, edit, write icon' class='icon-image' style='margin-top: 35px;' src='http://cdn4.iconfinder.com/data/icons/cc_mono_icon_set/blacks/48x48/doc_edit.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-35650' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-35650' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-35650'>Please wait</div>
+<div class='tagmenu' id='tagmenu-35650'><div class='innertag' id='innertag-35650'>Please wait</div></div>
+<input type='hidden' value='32' name='size' id='size-35650' class='hiddensize'/>
+<input type='hidden' value='35650' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-35650' href='/ajax/download/png/?id=35650&amp;s=32'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-35650' href='/ajax/download/ico/?id=35650&amp;s=32'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-35650'>&nbsp;</a>
+<a title='application, edit, form icon' class='iconlink' href='/icondetails/35650/32/application_edit_form_icon'>
+<img alt='application, edit, form icon' class='icon-image' style='margin-top: 43px;' src='http://cdn3.iconfinder.com/data/icons/fatcow/32x32_0020/application_form_edit.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-14042' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-14042' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-14042'>Please wait</div>
+<div class='tagmenu' id='tagmenu-14042'><div class='innertag' id='innertag-14042'>Please wait</div></div>
+<input type='hidden' value='16' name='size' id='size-14042' class='hiddensize'/>
+<input type='hidden' value='14042' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-14042' href='/ajax/download/png/?id=14042&amp;s=16'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-14042' href='/ajax/download/ico/?id=14042&amp;s=16'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-14042'>&nbsp;</a>
+<a title='edit, pen, pencil, write icon' class='iconlink' href='/icondetails/14042/16/edit_pen_pencil_write_icon'>
+<img alt='edit, pen, pencil, write icon' class='icon-image' style='margin-top: 51px;' src='http://cdn2.iconfinder.com/data/icons/diagona/icon/16/018.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-19533' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-19533' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-19533'>Please wait</div>
+<div class='tagmenu' id='tagmenu-19533'><div class='innertag' id='innertag-19533'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-19533' class='hiddensize'/>
+<input type='hidden' value='19533' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-19533' href='/ajax/download/png/?id=19533&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-19533' href='/ajax/download/ico/?id=19533&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-19533'>&nbsp;</a>
+<a title='css, edit, folder, red, web design icon' class='iconlink' href='/icondetails/19533/128/css_edit_folder_red_web_design_icon'>
+<img alt='css, edit, folder, red, web design icon' class='icon-image' style='margin-top: -5px;' src='http://cdn2.iconfinder.com/data/icons/isuite/PNG/CSS-Edit.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-34236' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-34236' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-34236'>Please wait</div>
+<div class='tagmenu' id='tagmenu-34236'><div class='innertag' id='innertag-34236'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-34236' class='hiddensize'/>
+<input type='hidden' value='34236' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-34236' href='/ajax/download/png/?id=34236&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-34236' href='/ajax/download/ico/?id=34236&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-34236'>&nbsp;</a>
+<a title='edit, pen, pencil, write icon' class='iconlink' href='/icondetails/34236/128/edit_pen_pencil_write_icon'>
+<img alt='edit, pen, pencil, write icon' class='icon-image' style='margin-top: -5px;' src='http://cdn3.iconfinder.com/data/icons/softwaredemo/PNG/128x128/Pencil3.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-17399' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-17399' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-17399'>Please wait</div>
+<div class='tagmenu' id='tagmenu-17399'><div class='innertag' id='innertag-17399'>Please wait</div></div>
+<input type='hidden' value='80' name='size' id='size-17399' class='hiddensize'/>
+<input type='hidden' value='17399' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-17399' href='/ajax/download/png/?id=17399&amp;s=80'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-17399' href='/ajax/download/ico/?id=17399&amp;s=80'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-17399'>&nbsp;</a>
+<a title='blog, edit, message, pencil, sms, writing icon' class='iconlink' href='/icondetails/17399/80/blog_edit_message_pencil_sms_writing_icon'>
+<img alt='blog, edit, message, pencil, sms, writing icon' class='icon-image' style='margin-top: 19px;' src='http://cdn2.iconfinder.com/data/icons/UII_Icons/80x80/message_edit.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-3218' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-3218' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-3218'>Please wait</div>
+<div class='tagmenu' id='tagmenu-3218'><div class='innertag' id='innertag-3218'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-3218' class='hiddensize'/>
+<input type='hidden' value='3218' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-3218' href='/ajax/download/png/?id=3218&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-3218' href='/ajax/download/ico/?id=3218&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-3218'>&nbsp;</a>
+<a title='add task, edit icon' class='iconlink' href='/icondetails/3218/128/add_task_edit_icon'>
+<img alt='add task, edit icon' class='icon-image' style='margin-top: -5px;' src='http://cdn1.iconfinder.com/data/icons/CrystalClear/128x128/actions/edit.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-33986' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-33986' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-33986'>Please wait</div>
+<div class='tagmenu' id='tagmenu-33986'><div class='innertag' id='innertag-33986'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-33986' class='hiddensize'/>
+<input type='hidden' value='33986' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-33986' href='/ajax/download/png/?id=33986&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-33986' href='/ajax/download/ico/?id=33986&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-33986'>&nbsp;</a>
+<a title='blank, book, catalog, note icon' class='iconlink' href='/icondetails/33986/128/blank_book_catalog_note_icon'>
+<img alt='blank, book, catalog, note icon' class='icon-image' style='margin-top: -5px;' src='http://cdn3.iconfinder.com/data/icons/lovely/PNG/128/Blank-Catalog.png'/>
+</a>
+</div>
+<div class='icon white' id='icon-9632' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-9632' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-9632'>Please wait</div>
+<div class='tagmenu' id='tagmenu-9632'><div class='innertag' id='innertag-9632'>Please wait</div></div>
+<input type='hidden' value='24' name='size' id='size-9632' class='hiddensize'/>
+<input type='hidden' value='9632' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-9632' href='/ajax/download/png/?id=9632&amp;s=24'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-9632' href='/ajax/download/ico/?id=9632&amp;s=24'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-9632'>&nbsp;</a>
+<a title='edit, pen, write icon' class='iconlink' href='/icondetails/9632/24/edit_pen_write_icon'>
+<img alt='edit, pen, write icon' class='icon-image' style='margin-top: 47px;' src='http://cdn2.iconfinder.com/data/icons/icojoy/shadow/standart/gif/24x24/001_45.gif'/>
+</a>
+</div>
+<div class='icon white' id='icon-37065' style='height: 178px; width: 178px;'>
+<div class='iconlinks'>	<div class='info'>
+<a rel='nofollow' title='Click here to see more information about this icon.' id='infolink-37065' class='infolink' href='#'>
+INFO
+</a>
+<div class='infomenu' id='infomenu-37065'>Please wait</div>
+<div class='tagmenu' id='tagmenu-37065'><div class='innertag' id='innertag-37065'>Please wait</div></div>
+<input type='hidden' value='128' name='size' id='size-37065' class='hiddensize'/>
+<input type='hidden' value='37065' name='iconid' class='hiddeniconid'/>
+</div>	<div class='downloadlinks'>
+<a rel='nofollow' title='Download this icon in PNG format for use in Linux, Mac or Photoshop.' onclick='javascript:download("PNG");' class='downloadlink tip' id='pnglink-37065' href='/ajax/download/png/?id=37065&amp;s=128'>
+PNG
+</a>
+<a rel='nofollow' title='Download this icon in ICO format for use in Windows.' onclick='javascript:download("ICO");' class='downloadlink tip' id='icolink-37065' href='/ajax/download/ico/?id=37065&amp;s=128'>
+ICO
+</a>
+</div>	</div>
+<br/>
+<a style='margin-top: 123px' href='#' class='bookmark' id='bookmark-37065'>&nbsp;</a>
+<a title='edit, text, write icon' class='iconlink' href='/icondetails/37065/128/edit_text_write_icon'>
+<img alt='edit, text, write icon' class='icon-image' style='margin-top: -5px;' src='http://cdn3.iconfinder.com/data/icons/macosxstyle/macosxstyle_png/128/TextEdit.png'/>
+</a>
+</div><div class='clearboth'>&nbsp;</div><br/>Find more icons with the same tags: <a href='/search/?q=edit'>Edit</a>, <a href='/search/?q=note'>Note</a>, <a href='/search/?q=write'>Write</a><br/><br/></div>
+<div class='icondetailsblock'>
+<h3>Comments</h3>
+<div id='disqus_thread' style='width: 75%;'></div>
+<script type='text/javascript' src='http://disqus.com/forums/iconfinder/embed.js'></script>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id='footer' style='text-align: center; margin-bottom: 10px;'>
+<a class='tip' title='Search through all icons on Iconfinder e.g. user, facebook or twitter' href='/'>Search</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='tip' title='Browse through icon sets and find great icons without searching.' href='/browse'>Browse</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='tip' title='API, plugins, apps and other useful icon related tools.' href='/tools'>Tools</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='tip' title='News, interviews, tutorials and freebies.' href='/blog'>Blog</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='tip' title='Information about IconFinder, search tips and advertiser information.' href='/about'>About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='tip' title='Buy icon from Shutterstock.' href='/buy'>Buy icons</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='tip' title='Submit icons to IconFinder' href='/submit'>Submit icons</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class='tip' title='Please give feedback on new features or other improvements..' href='/feedback'>Give feedback</a></li></ul>
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy;2011</span><br/><br/><div class="banner">
+<div id="bsap_1238605" class="bsarocks bsap_f9ec9cea137be24911157676b565220c"></div>
+</div></div>
+<script type="text/javascript">//<![CDATA[
+if($.cookie("username")!=null&&$.cookie("bookmarks")!=null)
+{var iconarr=$.cookie("bookmarks").split(",");for(i in iconarr)
+{$("#icon-"+iconarr[i]).addClass("bookmarked");}}
+try{$('select#valueA, select#valueB').selectToUISlider({labels:8}).hide();}catch(err){}
+loadJsResults();$(".tip").tipTip();(function(){var links=document.getElementsByTagName('a');var query='?';for(var i=0;i<links.length;i++){if(links[i].href.indexOf('#disqus_thread')>=0){query+='url'+i+'='+encodeURIComponent(links[i].href)+'&';}}
+document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/iconfinder/get_num_replies.js'+query+'"></'+'script>');})();
+//]]></script>
+</body>
+</html>

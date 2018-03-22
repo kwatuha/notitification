@@ -1,0 +1,59 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="../sview/resources/css/ext-all.css"/>
+<script type="text/javascript" src="../template/js/jquery-1.6.2.min.js"></script>
+</head>
+<body>
+<div id="msg-div" />
+
+<script>
+function showFields(){
+var peron_name = [
+				"preferred"
+				,"prefix"
+				,"given_name"
+				,"middle_name"
+				,"family_name_prefix"
+				,"family_name"
+				,"family_name2"
+				,"family_name_suffix"];
+				
+				peron_name.forEach(function(entry) {
+    console.log(entry);
+	alert(entry);
+	
+	///
+var checkbox = document.createElement('input');
+checkbox.type = "checkbox";
+checkbox.name = "name";
+checkbox.value = "value";
+checkbox.id = "id";
+
+var label = document.createElement('label')
+label.htmlFor = "id";
+label.appendChild(document.createTextNode(entry));
+container.appendChild(checkbox);
+container.appendChild(label);
+	///
+});
+
+}
+
+
+
+
+///
+
+
+
+
+
+</script>
+
+<input type="button" onClick="showFields()" value="Display Fields"/>
+<div id="personname" />
+
+</body>
+</html>
+    

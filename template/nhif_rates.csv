@@ -1,0 +1,17 @@
+lower_limit,Upper_limit,,rate,status,Comment
+"1,000.00 ",1499,,30,Active,Nhif rate
+"1,500.00 ",2499,,40,Active,Nhif rate
+"2,500.00 ",2999,,60,Active,Nhif rate
+"3,000.00 ",3999,,80,Active,Nhif rate
+"4,000.00 ",4999,,100,Active,Nhif rate
+"5,000.00 ",5999,,120,Active,Nhif rate
+"6,000.00 ",6999,,140,Active,Nhif rate
+"7,000.00 ",7999,,160,Active,Nhif rate
+"8,000.00 ",8999,,180,Active,Nhif rate
+"9,000.00 ",9999,,200,Active,Nhif rate
+"10,000.00 ",10999,,220,Active,Nhif rate
+"11,000.00 ",11999,,240,Active,Nhif rate
+"12,000.00 ",12999,,260,Active,Nhif rate
+"13,000.00 ",13999,,280,Active,Nhif rate
+"14,000.00 ",14999,,300,Active,Nhif rate
+"15,000.00 ",,,320,Active,Nhif rate
