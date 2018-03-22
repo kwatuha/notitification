@@ -547,6 +547,9 @@ $searchNotifications=$_SESSION['deliveryRPT'];
    }
 }
 
+if($_GET['refgroupmember']){
+	$searchNotifications=$_SESSION['smsrefSearchSQL'];
+}
 $limit=$_GET['limit']?$_GET['limit']:'';
 $start=$_GET['start']?$_GET['start']:'';
 $searchSQLNoLimits=$searchNotifications;
@@ -603,8 +606,13 @@ $sql=$_SESSION['deliveryRPT_count'];
 			$sql=str_replace('{rptwhere}', ' ',$sql);
 	}
 
-//  echo $sql;
+
 }
+
+if($_GET['refgroupmember']){
+	$sql=$_SESSION['countSMSRefStats'];
+}
+
 $Rcd_tbody_results = mysql_query($sql) or die(mysql_error());
 $rows=mysql_fetch_array($Rcd_tbody_results);
 return $rows[0];

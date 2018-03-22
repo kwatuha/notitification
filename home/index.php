@@ -320,6 +320,7 @@ $patientreview.="{
 <script type="text/javascript" src="../template/functions/accountmger.js"></script>
 <script type="text/javascript" src="js/groupedFormGrid.js"></script>
 <script type="text/javascript" src="js/groupedFormGrid2.js"></script>
+<script type="text/javascript" src="js/groupedFormGridSMSRef.js"></script>
 <script type="text/javascript" src="js/groupedFormGrid3.js"></script>
 <script type="text/javascript" src="js/groupedFormGridDR.js"></script>
 

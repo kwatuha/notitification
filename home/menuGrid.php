@@ -99,6 +99,30 @@ $sectionAdditionalData='';
 				$sections.="{ tbl:'".$_SESSION[$tablename]."||".$_SESSION['tablegroup'.$tablename]."||"
 				.'showAutofillOptions()'."'}".$comma;
 				}
+				// createFormGrid('Save','NOID','sms_invalidgeneraladdress','g')
+				// .'createFormGrid("Save","NOID","'.$tablename.'","g")'."'}".$comma;
+				elseif
+				($tablename=='sms_ref'){
+				$sections.="{ tbl:'".$_SESSION[$tablename]."||".$_SESSION['tablegroup'.$tablename]."||"
+				."gridViewFormSMSRef()"."'}".$comma;   
+				}
+				elseif 
+				($tablename=='sms_msgqueue' 
+				 || $tablename=='sms_msgsent' 
+				 || $tablename=='sms_sentgroupsms' 
+				 || $tablename=='sms_msgdelivery' 
+				 || $tablename=='sms_messagesend' 
+				 || $tablename=='sms_processedgeneralsms' 
+				 || $tablename=='sms_invalidphonenumber' 
+				 || $tablename=='sms_invalidgeneraladdress' 
+				 || $tablename=='sms_msgcenterdefault' 
+				 || $tablename=='sms_groupqueue' 
+				 || $tablename=='sms_generalsmshandle'  
+				 || $tablename=='sms_smsinvalid'){
+				$sections.="{ tbl:'".$_SESSION[$tablename]."||".$_SESSION['tablegroup'.$tablename]."||"
+				
+				.'createFormGrid("Save","NOID","'.$tablename.'","g")'."'}".$comma;
+				}
 				
 				elseif
 				($tablename=='sms_smsgroupmember'){

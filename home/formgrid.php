@@ -698,6 +698,7 @@ var closebtn= Ext.get('close-btn');
 ,
 		tbar:[{
                     text:'Add Record',
+                    xtype:'hidden',
                     tooltip:'".$_SESSION[$activetableBody]."',
                     iconCls:'add',
 					handler:function(){

@@ -2064,4 +2064,13 @@ where message_source like '3001'
 ) t {rptwhere} 
 ";	
 
+$_SESSION["smsrefSearchSQL"]="
+						
+select  sms_msgcenter.msgcenter_name , sms_ref.message_type , sms_ref.date_sent,sum(sms_ref.message_size)  as sent_sms  from sms_ref  inner join sms_msgcenter on sms_msgcenter.msgcenter_id = sms_ref.msgcenter_id
+group by  sms_msgcenter.msgcenter_name , sms_ref.message_type , sms_ref.date_sent
+						";
+$_SESSION['countSMSRefStats']="select count(*) totalCounter from (select sms_msgcenter.msgcenter_name ,
+ sms_ref.message_type , sms_ref.date_sent,sum(sms_ref.message_size) as sent_sms from sms_ref 
+ inner join sms_msgcenter on sms_msgcenter.msgcenter_id = sms_ref.msgcenter_id 
+ group by sms_msgcenter.msgcenter_name , sms_ref.message_type , sms_ref.date_sent ) t";
 ?>

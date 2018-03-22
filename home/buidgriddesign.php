@@ -558,13 +558,16 @@ $stdinfo=" dockedItems: [{
 		 tbar:[{
                     text:'Add Something',
                     tooltip:'Add a new row',
+                    xtype:'hidden',
                     iconCls:'add'
                 }, '-', {
                     text:'Options',
                     tooltip:'Blah blah blah blaht',
+                    xtype:'hidden',
                     iconCls:'option'
                 },'-',{
                     text:'Remove Something',
+                    xtype:'hidden',
                     tooltip:'Remove the selected item',
                     iconCls:'remove'
                 }]
