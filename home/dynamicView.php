@@ -136,8 +136,9 @@ var hospitalnum='',queuid='',labnum='',personname='';
 ///****************************************
 //***************************************************
 var formPanel3 = Ext.create('Ext.form.Panel', {
-        region     : 'center',
-		maxWidth     : 600,
+        region    : 'center',
+        maxWidth  : 650,
+        width     :650,
 		autoScroll:true,
 		maxHeight:650,
 		height: 650,
@@ -160,38 +161,7 @@ var formPanel3 = Ext.create('Ext.form.Panel', {
   
 			]
 		,buttons: [
-		{
-            text: 'View PDF',
-			id:'btnpf',
-			handler:function(){
-			    
-				}
-			
-        },{
-            text: 'Approve',
-			id:'approvebtn', 
-			handler:function(){
-			    var dn=Ext.getCmp('dbnote_id').getValue();
-				
-	showApprovalComments('Approve Insurance Debit Note','insurance_approvedbnote',dn,'insurancedebitnote_id','is_approved','Approved')
-				}
-			
-        },{
-            text: 'Reject',
-			id:'rejectbtn',
-			handler:function(){
-			var dn=Ext.getCmp('dbnote_id').getValue();
-	showApprovalComments('Reject Insurance Debit Note','insurance_approvedbnote',dn,'insurancedebitnote_id','is_approved','Rejected')
-				}
-			
-        },{
-            text: 'Update',
-			id:'updatebtn',  
-			handler:function(){
-				//Ext.getCmp('idestatemgtwin').close();
-				}
-			
-        }]
+		]
     });
 //hide unencessary fields
    /////////////////////////GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
@@ -381,10 +351,10 @@ createFormTabs('Save',dpid,'$primarytable ',record.get('person_id'),'NO','dynami
             }
         ]
 		
-		,width: 600,
+		,width: 500,
 		maxHeight: 650,
-        maxWidth: 600,
-        title: 'Personal Details',
+        maxWidth: 500,
+        title: 'Details',
         region: 'west',
         viewConfig: {
             stripeRows: true,
@@ -421,15 +391,6 @@ createFormTabs('Save',dpid,'$primarytable ',record.get('person_id'),'NO','dynami
 
    //hide unencessary fields
 var approvalvar='".$isapproved."';
-if(approvalvar=='APPROVED'){
-Ext.getCmp('approvebtn').hide();
-Ext.getCmp('updatebtn').hide();
-Ext.getCmp('rejectbtn').hide();
-}else{
-Ext.getCmp('approvebtn').show(); 
-Ext.getCmp('updatebtn').show();  
-Ext.getCmp('rejectbtn').show();  
-}
 
 ////GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   //Simple 'border layout' panel to house both grids

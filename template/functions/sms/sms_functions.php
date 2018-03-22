@@ -1,5 +1,78 @@
 <?php
+function sendToGroup(){
 
+    $sql="select recepient,phone_number,message,sms_smsgroup.smsgroup_id ,groupqueue_id,smsgroup_name from  sms_groupqueue 
+    inner join sms_smsgroup
+    on sms_smsgroup.smsgroup_id=sms_groupqueue.smsgroup_id";
+    $Rcd_tbody_results = mysql_query($sql) or die(mysql_error());
+    $phone_number="";$recepient='';$smsgroup_id ='';$message ='';
+    $messageListTag='';
+     while ($rows=mysql_fetch_array($Rcd_tbody_results)){
+    $phone_number=$rows['phone_number'];
+    $recepient=$rows['recepient'];
+    $message=$rows['message'];
+    $smsgroup_id =$rows['smsgroup_id'];
+    $smsgroup_name =$rows['smsgroup_name'];
+
+    insertSentGroup($recepient,$phone_number,$message,$smsgroup_id);
+    $messageListTag.= createSmsTag($phone_number,$message,$smsgroup_id);
+
+    //remove from queue
+    $groupqueue_id=$rows['groupqueue_id'];
+    $deleteSQl= "Delete from  sms_groupqueue where groupqueue_id=$groupqueue_id";
+    $results=mysql_query($deleteSQl) or die('Could not execute the query delete=='.$deleteSQl);
+    insertSMSMsgByType('sms_msgsent',$message,$phone_number,'group_'. $groupqueue_id,$smsgroup_name);
+
+ 
+    }
+     createSmsContent($messageListTag);
+     $smsData=getSmsContent();    
+		
+         if($smsData){
+          $smsResp=SendSms($smsData);
+		  $oXML = new SimpleXMLElement($smsResp);
+           processSMSResponse($oXML,$commtype);
+         }  
+        //    echo  $smsData;
+ }
+
+ function getGroupName($smsgroupId){
+    
+
+    $sql=" select  smsgroup_name as last_id from sms_smsgroup where smsgroup_id=$smsgroupId ";
+    $last_id = 'Uknown Group';
+    $Rcd_tbody_results = mysql_query($sql) or die(mysql_error());
+     while ($rows=mysql_fetch_array($Rcd_tbody_results)){
+    $last_id=$rows['last_id'];
+    }
+    
+    return trim($last_id);
+ }
+ function insertSentGroup($recepient,$phone_number,$message,$groupId){
+
+    $created_by=$_SESSION['my_useridloggened'];
+    $date_created=date('Y-m-d');
+	$uuid=gen_uuid();
+	$sys_track='';
+	$insertSQl=  "Insert into  sms_sentgroupsms (message,phone_number,recepient,smsgroup_id,date_created,created_by,voided,sys_track,uuid) values
+                        ('$message','$phone_number','$recepient','$groupId','$date_created','$created_by','0','$sys_track','$uuid')";
+   $Result1 = mysql_query($insertSQl) or die(mysql_error());
+
+  
+}
+
+function getSMSScheduleName($schedule){
+    $sql=" select schedule_name as name from sms_schedule where schedule_name like '$schedule' ";
+    $name='Unknown Schedule';
+
+    echo   $sql;
+    $Rcd_tbody_results = mysql_query($sql) or die(mysql_error());
+     while ($rows=mysql_fetch_array($Rcd_tbody_results)){
+    $name=$rows['name'];
+    }
+    
+    return trim($name);
+}
 //Adding group functions
 function uplodeGroupContactsFileData($fileToUploade,$program,$groupId,$scheduleId){
 
@@ -207,6 +280,7 @@ function colDefinition($dataRow){
 }
 
 function insertMsg($table,$message,$phoneNumber,$sysTrack){
+    echo $message.'eeeeeeeeeeeeee ttttttttttttttttt===='.$phoneNumber;
     $message=mysql_real_escape_string($message);
     $phoneNumber=mysql_real_escape_string($phoneNumber);
     $sysTrack=mysql_real_escape_string($sysTrack);
@@ -217,6 +291,28 @@ function insertMsg($table,$message,$phoneNumber,$sysTrack){
 
     $insertSQl= "Insert into $table (phone_number,message,date_created,created_by,voided,sys_track,uuid) values
                         ('$phoneNumber','$message','$date_created','$created_by','$voided','$sysTrack','$uuid')";
+
+                        echo $insertSQl;
+	$Result1 = mysql_query($insertSQl) or die($insertSQl);
+
+}
+
+
+function insertSMSMsgByType($table,$message,$phoneNumber,$sysTrack,$messageType){
+    $message=mysql_real_escape_string($message);
+    $phoneNumber=mysql_real_escape_string($phoneNumber);
+    $sysTrack=mysql_real_escape_string($sysTrack);
+    $created_by= $_SESSION['my_useridloggened'];
+    $date_created=date('Y-m-d');
+    $uuid=gen_uuid();     
+    $voided=0;
+    if($messageType){
+        $messageTypeCol=',message_type';
+        $messageType = ",'$messageType'";
+    }
+
+    $insertSQl= "Insert into $table (phone_number,message,date_created,created_by,voided,sys_track,uuid $messageTypeCol) values
+                        ('$phoneNumber','$message','$date_created','$created_by','$voided','$sysTrack','$uuid' $messageType)";
 
 	$Result1 = mysql_query($insertSQl) or die($insertSQl);
 
@@ -490,6 +586,7 @@ $countrowshdls=0;
 $fileARR=explode('/',$fileToUploade);
 
 updateSMSScheduleFile($schedule,$fileARR[1],$commtype);
+$scheduleName= $schedule ; //getSMSScheduleName($schedule);
 $columDefinition=array();
 $messageId=createMsgTrack(4);
 while (($data = fgetcsv($handle, 1000, ',')) !== FALSE) {
@@ -503,9 +600,13 @@ if($countrowshdls==1){
         $phoneNumber=formatPhoneNumber($phone_number);
         $msgct=customizeMessage($columDefinition,$messageType,$data);
 
+        // echo $phone_number.'ddddddd '. $msgct.'   '.$phoneNumber.'    ttt ddddddddddd';
+
         if($phoneNumber){
           
-           insertMsg('sms_msgqueue',$msgct,$phoneNumber,$messageId.'_'.$commtype);
+        //    insertMsg('sms_msgqueue',$msgct,$phoneNumber,$messageId.'_'.$commtype);
+        insertSMSMsgByType('sms_msgqueue',$msgct,$phoneNumber,$messageId.'_'.$commtype,$scheduleName);
+
         } else{
              insertMsg('sms_msginvalid',$msgct,$phone_number,$messageId.'_'.$commtype);
         }
@@ -779,15 +880,18 @@ if($countrowshdls==1){
 	if($countrowshdls>1){
 
         $phoneNumber=formatPhoneNumber($phone_number);
+  
         $msgct=customizeGeneralMessage($columDefinition,$message,$data);
+        
         $created_by=$_SESSION['my_useridloggened'];
         $date_created=date('Y-m-d');
         $commtype="";
 
 	    if($phoneNumber){
               if($phoneNumber){
-           
-           insertMsg('sms_msgqueue',$msgct,$phoneNumber,$messageId.'_'.$scheduleId);
+                echo $msgct.'eeeeeeeeeeeeee===='.$phoneNumber;
+        //    insertMsg('sms_msgqueue',$msgct,$phoneNumber,$messageId.'_'.$scheduleId);
+           insertSMSMsgByType('sms_msgqueue',$msgct,$phoneNumber,$messageId.'_'.$scheduleId,'General SMS');
         } else{
            insertMsg('sms_msginvalid',$msgct,$phone_number,$messageId.'_'.$scheduleId);
         }

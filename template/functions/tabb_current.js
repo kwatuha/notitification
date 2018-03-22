@@ -1,5 +1,5 @@
 
-function createTabbed1(){
+function createTabbed6(){
 /*var obj=document.getElementById('dynamicviewdetailinfo');
 obj.innerHTML='';*/
    loadtype='Save';
@@ -25,23 +25,42 @@ var admin_roledata = Ext.create('Ext.data.Store', {
 admin_roledata.load();
 
 
-Ext.define('cmbAdmin_dept', {
+Ext.define('cmbAdmin_role', {
     extend: 'Ext.data.Model',
-	fields:['dept_id','dept_name']
+	fields:['role_id','role_name']
 	});
 
-var admin_deptdata = Ext.create('Ext.data.Store', {
-    model: 'cmbAdmin_dept',
+var admin_roledata = Ext.create('Ext.data.Store', {
+    model: 'cmbAdmin_role',
     proxy: {
         type: 'ajax',
-        url : 'cmb.php?tbp=admin_dept',
+        url : 'cmb.php?tbp=admin_role',
         reader: {
             type: 'json'
         }
     }
 });
 
-admin_deptdata.load();
+admin_roledata.load();
+
+
+Ext.define('cmbAdmin_role', {
+    extend: 'Ext.data.Model',
+	fields:['role_id','role_name']
+	});
+
+var admin_roledata = Ext.create('Ext.data.Store', {
+    model: 'cmbAdmin_role',
+    proxy: {
+        type: 'ajax',
+        url : 'cmb.php?tbp=admin_role',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+admin_roledata.load();
 
   //*************************************************************************************
    
@@ -67,30 +86,49 @@ var admin_roledata = Ext.create('Ext.data.Store', {
 admin_roledata.load();
 
 
-Ext.define('cmbAdmin_dept', {
+Ext.define('cmbAdmin_role', {
     extend: 'Ext.data.Model',
-	fields:['dept_id','dept_name']
+	fields:['role_id','role_name']
 	});
 
-var admin_deptdata = Ext.create('Ext.data.Store', {
-    model: 'cmbAdmin_dept',
+var admin_roledata = Ext.create('Ext.data.Store', {
+    model: 'cmbAdmin_role',
     proxy: {
         type: 'ajax',
-        url : 'cmb.php?tbp=admin_dept',
+        url : 'cmb.php?tbp=admin_role',
         reader: {
             type: 'json'
         }
     }
 });
 
-admin_deptdata.load();
+admin_roledata.load();
+
+
+Ext.define('cmbAdmin_role', {
+    extend: 'Ext.data.Model',
+	fields:['role_id','role_name']
+	});
+
+var admin_roledata = Ext.create('Ext.data.Store', {
+    model: 'cmbAdmin_role',
+    proxy: {
+        type: 'ajax',
+        url : 'cmb.php?tbp=admin_role',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+admin_roledata.load();
 
    Ext.create('Ext.panel.Panel', {
     renderTo: 'dynamicviewdetailinfo',
 	closable:true,
     width: 700,
 	bodyPadding:10,
-    title: 'Person Registration',
+    title: 'Role Definition',
     items: [
 			     {
 	layout:'column',
@@ -101,10 +139,10 @@ admin_deptdata.load();
 		border:false,
 		items:[{
 						xtype: 'fieldset',
-						title: 'Personal Details',
+						title: 'Role Details',
 						width:380,
 						collapsible:true,
-						
+						hidden:true,
 						
 						iconCls:'usergroup',
 						items: [{xtype:'hidden',
@@ -200,7 +238,7 @@ admin_deptdata.load();
     },{
         title:false,
 		margin: '5 5 5 5',
-		
+		hidden:true,
         columnWidth: 0.27,
 		border:false,
 		bodyPadding: 10,
@@ -216,9 +254,9 @@ admin_deptdata.load();
 +'<div id="cngphotodiv"></div>'
     +'<center>'
         +'<a href="#" onClick="'
-		+'showPhotoMenu(\'admin_person \',14,\'14192\',1);">'
+		+'showPhotoMenu(\'admin_person \',14,\'1486508\',6);">'
 		 +' <img visibility="visible" alt="Employee Photo" '
-		 +' src="../sysdocs/adminperson /1489276_dance_fever.jpg" id="empPic"'
+		 +' src="../sysdocs/adminperson /1416210_ward.png" id="empPic"'
 		 +' style="width:100%;" border="0"'
 		 +'height="150" width="150">'
        +' </a><span class="smallHelpText"><strong>'
@@ -267,6 +305,205 @@ admin_deptdata.load();
                     tooltip:'View table Grid',
                     iconCls:'grid',
 					handler:function(buttonObj, eventObj) { 
+									createFormGrid('Save','NOID','admin_roleprivilege','g')
+									}
+                },'-',],
+		resizable:true,
+        frame: true,
+		url:'bodysave.php',
+        width: 550,
+        bodyPadding: 10,
+        bodyBorder: true,
+		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
+        wallpaperStretch: false,
+        title: 'Privileges',
+
+        defaults: {
+            anchor: '100%'
+        },
+        fieldDefaults: {
+            labelAlign: 'left',
+            msgTarget: 'none',
+            /*invalidCls: '' 
+			unset the invalidCls so individual fields do not get styled as invalid*/
+        },
+
+        /*
+         * Listen for validity change on the entire form and update the combined error icon
+         */
+        listeners: {
+            fieldvaliditychange: function() {
+                this.updateErrorState();
+            },
+            fielderrorchange: function() {
+                this.updateErrorState();
+            }
+        },
+
+        updateErrorState: function() {
+            var me = this,
+                errorCmp, fields, errors;
+
+            if (me.hasBeenDirty || me.getForm().isDirty()) { 
+                errorCmp = me.down('#formErrorState');
+                fields = me.getForm().getFields();
+                errors = [];
+                fields.each(function(field) {
+                    Ext.Array.forEach(field.getErrors(), function(error) {
+                        errors.push({name: field.getFieldLabel(), error: error});
+                    });
+                });
+                errorCmp.setErrors(errors);
+                me.hasBeenDirty = true;
+            }
+        },
+
+        items: [
+		
+		{xtype:'hidden',
+             name:'t',
+			 value:'admin_roleprivilege'
+			 },
+			 {xtype:'hidden',
+             name:'tttact',
+			 value:loadtype
+			 },
+   {
+    xtype: 'combobox',
+	name:'role_id',
+	forceSelection:true,
+	
+    fieldLabel: 'Role Id ',
+    store: admin_roledata,
+	
+    queryMode: 'remote',
+    displayField: 'role_name',
+    valueField: 'role_id'
+	},{
+            xtype: 'textfield',
+			
+			
+            name: 'privilegeid',
+            fieldLabel: 'Privilegeid ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
+			
+			
+            name: 'activity',
+            fieldLabel: 'Activity ',
+            allowBlank: false,
+            minLength: 1
+        
+		}],dockedItems: [{
+            xtype: 'container',
+            dock: 'bottom',
+            layout: {
+                type: 'hbox',
+                align: 'middle'
+            },
+            padding: '10 10 5',
+
+            items: [{
+                xtype: 'component',
+                id: 'formErrorState',
+                baseCls: 'form-error-state',
+                flex: 1,
+                validText: 'Form is valid',
+                invalidText: 'Form has errors',
+                tipTpl: Ext.create('Ext.XTemplate', '<ul><tpl for=><li><span class="field-name">{name}</span>: '
+				+ '<span class="error">{error}</span></li></tpl></ul>'),
+
+                getTip: function() {
+                    var tip = this.tip;
+                    if (!tip) {
+                        tip = this.tip = Ext.widget('tooltip', {
+                            target: this.el,
+                            title: 'Error Details:',
+                            autoHide: false,
+                            anchor: 'top',
+                            mouseOffset: [-11, -2],
+                            closable: true,
+                            constrainPosition: false,
+                            cls: 'errors-tip'
+                        });
+                        tip.show();
+                    }
+                    return tip;
+                },
+
+                setErrors: function(errors) {
+                    var me = this,
+                        baseCls = me.baseCls,
+                        tip = me.getTip();
+
+                    errors = Ext.Array.from(errors);
+
+                    
+                    if (errors.length) {
+                        me.addCls(baseCls + '-invalid');
+                        me.removeCls(baseCls + '-valid');
+                        me.update(me.invalidText);
+                        tip.setDisabled(false);
+                        tip.update(me.tipTpl.apply(errors));
+                    } else {
+                        me.addCls(baseCls + '-valid');
+                        me.removeCls(baseCls + '-invalid');
+                        me.update(me.validText);
+                        tip.setDisabled(true);
+                        tip.hide();
+                    }
+                }
+            }, 
+			
+			
+	/*now submit*/
+	{
+		xtype: 'button',
+        text: 'Submit Data',
+        handler: function() {
+            var form = this.up('form').getForm();
+            if(form.isValid()){
+                form.submit({
+                    url: 'bodysave.php',
+                    waitMsg: 'saving changes...',
+                    success: function(fp, o) {
+                       // Ext.Msg.alert('Success', '' + o.result.savemsg + '"');
+					   eval(o.result.savemsg);
+                    }
+                });
+            }
+        }
+    }
+	
+		]
+        }]
+   
+						
+						}
+		
+	,
+        {
+        xtype: 'form',
+		tbar:[{
+                    text:'Add new',
+                    tooltip:'Add a new row',
+                    iconCls:'add'
+                }, '-', {
+                    text:'Options',
+                    tooltip:'Configure options',
+                    iconCls:'option'
+                },'-',{
+                    text:'Search',
+                    tooltip:'Delete selected item',
+                    iconCls:'search'
+                },'-',{
+                    text:'View',
+                    tooltip:'View table Grid',
+                    iconCls:'grid',
+					handler:function(buttonObj, eventObj) { 
 									createFormGrid('Save','NOID','admin_roleperson','g')
 									}
                 },'-',],
@@ -278,7 +515,7 @@ admin_deptdata.load();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Role',
+        title: 'Assign role',
 
         defaults: {
             anchor: '100%'
@@ -457,7 +694,7 @@ admin_deptdata.load();
                     tooltip:'View table Grid',
                     iconCls:'grid',
 					handler:function(buttonObj, eventObj) { 
-									createFormGrid('Save','NOID','admin_adminuser','g')
+									createFormGrid('Save','NOID','admin_rolerole','g')
 									}
                 },'-',],
 		resizable:true,
@@ -468,7 +705,7 @@ admin_deptdata.load();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Users',
+        title: 'Child roles',
 
         defaults: {
             anchor: '100%'
@@ -514,214 +751,7 @@ admin_deptdata.load();
 		
 		{xtype:'hidden',
              name:'t',
-			 value:'admin_adminuser'
-			 },
-			 {xtype:'hidden',
-             name:'tttact',
-			 value:loadtype
-			 },{
-            xtype: 'hidden',
-			
-			 value:'14',
-            name: 'person_id',
-            fieldLabel: 'Person Id ',
-            allowBlank: false,
-            minLength: 1
-        
-		},{
-            xtype: 'textfield',
-			
-			
-            name: 'username',
-            fieldLabel: 'Username ',
-            allowBlank: false,
-            minLength: 1
-        
-		},{
-            xtype: 'textfield',
-            name: 'password',
-			
-			
-            fieldLabel: 'Password ',
-			 inputType: 'password',
-            allowBlank: false,
-            minLength: 1
-        
-		},{
-            xtype: 'checkbox',
-			
-			
-            name: 'status',
-			inputValue:'Active',
-            fieldLabel: 'Activate',
-            allowBlank: false,
-            minLength: 1
-        
-		}],dockedItems: [{
-            xtype: 'container',
-            dock: 'bottom',
-            layout: {
-                type: 'hbox',
-                align: 'middle'
-            },
-            padding: '10 10 5',
-
-            items: [{
-                xtype: 'component',
-                id: 'formErrorState',
-                baseCls: 'form-error-state',
-                flex: 1,
-                validText: 'Form is valid',
-                invalidText: 'Form has errors',
-                tipTpl: Ext.create('Ext.XTemplate', '<ul><tpl for=><li><span class="field-name">{name}</span>: '
-				+ '<span class="error">{error}</span></li></tpl></ul>'),
-
-                getTip: function() {
-                    var tip = this.tip;
-                    if (!tip) {
-                        tip = this.tip = Ext.widget('tooltip', {
-                            target: this.el,
-                            title: 'Error Details:',
-                            autoHide: false,
-                            anchor: 'top',
-                            mouseOffset: [-11, -2],
-                            closable: true,
-                            constrainPosition: false,
-                            cls: 'errors-tip'
-                        });
-                        tip.show();
-                    }
-                    return tip;
-                },
-
-                setErrors: function(errors) {
-                    var me = this,
-                        baseCls = me.baseCls,
-                        tip = me.getTip();
-
-                    errors = Ext.Array.from(errors);
-
-                    
-                    if (errors.length) {
-                        me.addCls(baseCls + '-invalid');
-                        me.removeCls(baseCls + '-valid');
-                        me.update(me.invalidText);
-                        tip.setDisabled(false);
-                        tip.update(me.tipTpl.apply(errors));
-                    } else {
-                        me.addCls(baseCls + '-valid');
-                        me.removeCls(baseCls + '-invalid');
-                        me.update(me.validText);
-                        tip.setDisabled(true);
-                        tip.hide();
-                    }
-                }
-            }, 
-			
-			
-	/*now submit*/
-	{
-		xtype: 'button',
-        text: 'Submit Data',
-        handler: function() {
-            var form = this.up('form').getForm();
-            if(form.isValid()){
-                form.submit({
-                    url: 'bodysave.php',
-                    waitMsg: 'saving changes...',
-                    success: function(fp, o) {
-                       // Ext.Msg.alert('Success', '' + o.result.savemsg + '"');
-					   eval(o.result.savemsg);
-                    }
-                });
-            }
-        }
-    }
-	
-		]
-        }]
-   
-						
-						}
-		
-	,
-        {
-        xtype: 'form',
-		tbar:[{
-                    text:'Add new',
-                    tooltip:'Add a new row',
-                    iconCls:'add'
-                }, '-', {
-                    text:'Options',
-                    tooltip:'Configure options',
-                    iconCls:'option'
-                },'-',{
-                    text:'Search',
-                    tooltip:'Delete selected item',
-                    iconCls:'search'
-                },'-',{
-                    text:'View',
-                    tooltip:'View table Grid',
-                    iconCls:'grid',
-					handler:function(buttonObj, eventObj) { 
-									createFormGrid('Save','NOID','admin_persondept','g')
-									}
-                },'-',],
-		resizable:true,
-        frame: true,
-		url:'bodysave.php',
-        width: 550,
-        bodyPadding: 10,
-        bodyBorder: true,
-		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
-        wallpaperStretch: false,
-        title: 'Department',
-
-        defaults: {
-            anchor: '100%'
-        },
-        fieldDefaults: {
-            labelAlign: 'left',
-            msgTarget: 'none',
-            /*invalidCls: '' 
-			unset the invalidCls so individual fields do not get styled as invalid*/
-        },
-
-        /*
-         * Listen for validity change on the entire form and update the combined error icon
-         */
-        listeners: {
-            fieldvaliditychange: function() {
-                this.updateErrorState();
-            },
-            fielderrorchange: function() {
-                this.updateErrorState();
-            }
-        },
-
-        updateErrorState: function() {
-            var me = this,
-                errorCmp, fields, errors;
-
-            if (me.hasBeenDirty || me.getForm().isDirty()) { 
-                errorCmp = me.down('#formErrorState');
-                fields = me.getForm().getFields();
-                errors = [];
-                fields.each(function(field) {
-                    Ext.Array.forEach(field.getErrors(), function(error) {
-                        errors.push({name: field.getFieldLabel(), error: error});
-                    });
-                });
-                errorCmp.setErrors(errors);
-                me.hasBeenDirty = true;
-            }
-        },
-
-        items: [
-		
-		{xtype:'hidden',
-             name:'t',
-			 value:'admin_persondept'
+			 value:'admin_rolerole'
 			 },
 			 {xtype:'hidden',
              name:'tttact',
@@ -729,57 +759,21 @@ admin_deptdata.load();
 			 },
    {
     xtype: 'combobox',
-	name:'dept_id',
+	name:'role_id',
 	forceSelection:true,
 	
-    fieldLabel: 'Dept Id ',
-    store: admin_deptdata,
+    fieldLabel: 'Role Id ',
+    store: admin_roledata,
 	
     queryMode: 'remote',
-    displayField: 'dept_name',
-    valueField: 'dept_id'
+    displayField: 'role_name',
+    valueField: 'role_id'
 	},{
-            xtype: 'hidden',
-			
-			 value:'14',
-            name: 'person_id',
-            fieldLabel: 'Person Id ',
-            allowBlank: false,
-            minLength: 1
-        
-		},{
-            xtype: 'datefield',
+            xtype: 'numberfield',
 			
 			
-            name: 'start_dt',
-            fieldLabel: 'Start Dt ',
-            allowBlank: false,
-            minLength: 1
-        
-		},{
-            xtype: 'datefield',
-			
-			
-            name: 'end_dt',
-            fieldLabel: 'End Dt ',
-            allowBlank: false,
-            minLength: 1
-        
-		},{
-            xtype: 'textfield',
-			
-			
-            name: 'is_active',
-            fieldLabel: 'Is Active ',
-            allowBlank: false,
-            minLength: 1
-        
-		},{
-            xtype: 'textareafield',
-			
-			
-            name: 'comments',
-            fieldLabel: 'Comments ',
+            name: 'parent_role',
+            fieldLabel: 'Parent Role ',
             allowBlank: false,
             minLength: 1
         
@@ -875,4 +869,4 @@ admin_deptdata.load();
 
  
  }
- createTabbed1();
+ createTabbed6();

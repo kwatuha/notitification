@@ -2798,6 +2798,62 @@ Ext.ModelMgr.getModel('lmodelsms_billhandle').load(rid, {
 
 
 
+}function loadsms_billmonthinfo(activeform,rid){
+Ext.define('lmodelsms_billmonth', {
+    extend: 'Ext.data.Model',
+	fields:['billmonth_id','billmonth_name','bill_month','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
+	proxy: {
+        type: 'ajax',
+		api:{
+		      read : 'buidgrid.php?t=sms_billmonth&acn=rd',
+		      update : 'bodysave.php?t=sms_billmonth&q=rid&act=Update'
+		},
+        
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+//Load data
+Ext.ModelMgr.getModel('lmodelsms_billmonth').load(rid, { 
+    success: function(user) {
+        activeform.loadRecord(user);
+
+    }
+});
+
+
+
+
+}function loadsms_billyearinfo(activeform,rid){
+Ext.define('lmodelsms_billyear', {
+    extend: 'Ext.data.Model',
+	fields:['billyear_id','billyear_name','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
+	proxy: {
+        type: 'ajax',
+		api:{
+		      read : 'buidgrid.php?t=sms_billyear&acn=rd',
+		      update : 'bodysave.php?t=sms_billyear&q=rid&act=Update'
+		},
+        
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+//Load data
+Ext.ModelMgr.getModel('lmodelsms_billyear').load(rid, { 
+    success: function(user) {
+        activeform.loadRecord(user);
+
+    }
+});
+
+
+
+
 }function loadsms_creditbalanceinfo(activeform,rid){
 Ext.define('lmodelsms_creditbalance', {
     extend: 'Ext.data.Model',
@@ -2885,7 +2941,7 @@ Ext.ModelMgr.getModel('lmodelsms_disconnschedule').load(rid, {
 }function loadsms_emailhandleinfo(activeform,rid){
 Ext.define('lmodelsms_emailhandle', {
     extend: 'Ext.data.Model',
-	fields:['emailhandle_id','connection_number','amount','email_address','pay_before','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
+	fields:['emailhandle_id','connection_number','amount','email_address','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track','zone','billmonth_id','billyear_id'],
 	proxy: {
         type: 'ajax',
 		api:{
@@ -2913,7 +2969,7 @@ Ext.ModelMgr.getModel('lmodelsms_emailhandle').load(rid, {
 }function loadsms_emailscheduleinfo(activeform,rid){
 Ext.define('lmodelsms_emailschedule', {
     extend: 'Ext.data.Model',
-	fields:['emailschedule_id','emailschedule_name','schedule_description','bill_date','due_after','file_brouwse','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
+	fields:['emailschedule_id','emailschedule_name','schedule_description','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track','connection_number','zone','billmonth_id','billyear_id'],
 	proxy: {
         type: 'ajax',
 		api:{
@@ -3025,7 +3081,7 @@ Ext.ModelMgr.getModel('lmodelsms_indsms').load(rid, {
 }function loadsms_invalidemailaddressinfo(activeform,rid){
 Ext.define('lmodelsms_invalidemailaddress', {
     extend: 'Ext.data.Model',
-	fields:['invalidemailaddress_id','connection_number','amount','email_address','pay_before','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
+	fields:['invalidemailaddress_id','connection_number','amount','email_address','pay_before','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track','zone','billmonth_id','billyear_id'],
 	proxy: {
         type: 'ajax',
 		api:{
@@ -3221,7 +3277,7 @@ Ext.ModelMgr.getModel('lmodelsms_msgcenter').load(rid, {
 }function loadsms_msgcenterdefaultinfo(activeform,rid){
 Ext.define('lmodelsms_msgcenterdefault', {
     extend: 'Ext.data.Model',
-	fields:['center','msgcenterdefault_id','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
+	fields:['msgcenterdefault_id','msgcenter_id','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
 	proxy: {
         type: 'ajax',
 		api:{
@@ -3305,7 +3361,7 @@ Ext.ModelMgr.getModel('lmodelsms_msginvalid').load(rid, {
 }function loadsms_msgqueueinfo(activeform,rid){
 Ext.define('lmodelsms_msgqueue', {
     extend: 'Ext.data.Model',
-	fields:['msgqueue_id','phone_number','message','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
+	fields:['msgqueue_id','phone_number','message','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track','message_type'],
 	proxy: {
         type: 'ajax',
 		api:{
@@ -3333,7 +3389,7 @@ Ext.ModelMgr.getModel('lmodelsms_msgqueue').load(rid, {
 }function loadsms_msgsentinfo(activeform,rid){
 Ext.define('lmodelsms_msgsent', {
     extend: 'Ext.data.Model',
-	fields:['msgsent_id','phone_number','message','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
+	fields:['msgsent_id','phone_number','message','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track','message_type'],
 	proxy: {
         type: 'ajax',
 		api:{
@@ -3361,7 +3417,7 @@ Ext.ModelMgr.getModel('lmodelsms_msgsent').load(rid, {
 }function loadsms_msgsourceinfo(activeform,rid){
 Ext.define('lmodelsms_msgsource', {
     extend: 'Ext.data.Model',
-	fields:['msgsource_id','message_source','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track','msgsource_name'],
+	fields:['msgsource_id','msgsource_name','message_source','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
 	proxy: {
         type: 'ajax',
 		api:{
@@ -3417,7 +3473,7 @@ Ext.ModelMgr.getModel('lmodelsms_processed2014').load(rid, {
 }function loadsms_processedemailinfo(activeform,rid){
 Ext.define('lmodelsms_processedemail', {
     extend: 'Ext.data.Model',
-	fields:['processedemail_id','email_address','connection_number','message','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
+	fields:['processedemail_id','email_address','connection_number','message','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track','billmonth_id','billyear_id','zone'],
 	proxy: {
         type: 'ajax',
 		api:{
@@ -3445,7 +3501,7 @@ Ext.ModelMgr.getModel('lmodelsms_processedemail').load(rid, {
 }function loadsms_processedfailedemailinfo(activeform,rid){
 Ext.define('lmodelsms_processedfailedemail', {
     extend: 'Ext.data.Model',
-	fields:['reason_failed','processedfailedemail_id','email_address','connection_number','message','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
+	fields:['reason_failed','processedfailedemail_id','email_address','connection_number','message','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track','billyear_id','billmonth_id','zone'],
 	proxy: {
         type: 'ajax',
 		api:{
@@ -3557,7 +3613,7 @@ Ext.ModelMgr.getModel('lmodelsms_receivedrqts').load(rid, {
 }function loadsms_recurrenttaskscheduleinfo(activeform,rid){
 Ext.define('lmodelsms_recurrenttaskschedule', {
     extend: 'Ext.data.Model',
-	fields:['recurrenttaskschedule_name','recurrenttaskschedule_id','taskperiod_id','config','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
+	fields:['recurrenttaskschedule_id','recurrenttaskschedule_name','taskperiod_id','config','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
 	proxy: {
         type: 'ajax',
 		api:{
@@ -3573,6 +3629,34 @@ Ext.define('lmodelsms_recurrenttaskschedule', {
 
 //Load data
 Ext.ModelMgr.getModel('lmodelsms_recurrenttaskschedule').load(rid, { 
+    success: function(user) {
+        activeform.loadRecord(user);
+
+    }
+});
+
+
+
+
+}function loadsms_refinfo(activeform,rid){
+Ext.define('lmodelsms_ref', {
+    extend: 'Ext.data.Model',
+	fields:['ref_id','date_sent','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track','msgcenter_id','message_type','remote_ref','message_size'],
+	proxy: {
+        type: 'ajax',
+		api:{
+		      read : 'buidgrid.php?t=sms_ref&acn=rd',
+		      update : 'bodysave.php?t=sms_ref&q=rid&act=Update'
+		},
+        
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+//Load data
+Ext.ModelMgr.getModel('lmodelsms_ref').load(rid, { 
     success: function(user) {
         activeform.loadRecord(user);
 
@@ -3669,7 +3753,7 @@ Ext.ModelMgr.getModel('lmodelsms_school').load(rid, {
 }function loadsms_sendsmstogrpinfo(activeform,rid){
 Ext.define('lmodelsms_sendsmstogrp', {
     extend: 'Ext.data.Model',
-	fields:['sys_track','date_voided','uuid','voided_by','voided','date_changed','changed_by','date_created','created_by','smsgroup_id','sms_message','sendsmstogrp_name','sendsmstogrp_id'],
+	fields:['sendsmstogrp_id','smsgroup_id','sms_message','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
 	proxy: {
         type: 'ajax',
 		api:{
@@ -3781,7 +3865,7 @@ Ext.ModelMgr.getModel('lmodelsms_smsgroup').load(rid, {
 }function loadsms_smsgroupmemberinfo(activeform,rid){
 Ext.define('lmodelsms_smsgroupmember', {
     extend: 'Ext.data.Model',
-	fields:['smsgroupmember_id','smsgroup_id','syowner','syownerid','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track','member_description','phone_number','other_details'],
+	fields:['smsgroupmember_id','smsgroup_id','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track','member_description','phone_number','other_details'],
 	proxy: {
         type: 'ajax',
 		api:{
@@ -3893,7 +3977,7 @@ Ext.ModelMgr.getModel('lmodelsms_smsmsgcust').load(rid, {
 }function loadsms_smsremotesourceinfo(activeform,rid){
 Ext.define('lmodelsms_smsremotesource', {
     extend: 'Ext.data.Model',
-	fields:['smsremotesource_id','datasourcetemp_id','parameters','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track','smsremotesource_name'],
+	fields:['smsremotesource_id','smsremotesource_name','datasourcetemp_id','parameters','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
 	proxy: {
         type: 'ajax',
 		api:{

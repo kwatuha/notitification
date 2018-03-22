@@ -868,7 +868,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Company Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'company_id'
@@ -1082,19 +1082,19 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Companycontact Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'companycontact_id'
 		 },
 		 {
-		text     : ' Company Id ' , 
+		text     : ' Company ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'company_name'
 		 },
 		 {
-		text     : ' Person Id ' , 
+		text     : ' Person ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'person_name'
@@ -1224,25 +1224,25 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Companydept Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'companydept_id'
 		 },
 		 {
-		text     : ' Company Id ' , 
+		text     : ' Company ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'company_name'
 		 },
 		 {
-		text     : ' Dept Id ' , 
+		text     : ' Dept ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'dept_name'
 		 },
 		 {
-		text     : ' Location Id ' , 
+		text     : ' Location ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'location_name'
@@ -1532,7 +1532,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Controller Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'controller_id'
@@ -2184,19 +2184,19 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Dept Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'dept_id'
 		 },
 		 {
-		text     : ' Dept Name ' , 
+		text     : ' Dept ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'dept_name'
 		 },
 		 {
-		text     : ' Location Id ' , 
+		text     : ' Location ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'location_name'
@@ -2580,13 +2580,13 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Groupcategory Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'groupcategory_id'
 		 },
 		 {
-		text     : ' Groupcategory Name ' , 
+		text     : ' Group Category ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'groupcategory_name'
@@ -3594,7 +3594,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Person Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'person_id'
@@ -3624,13 +3624,13 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'last_name'
 		 },
 		 {
-		text     : ' Idorpassport Number ' , 
+		text     : ' ID  Number ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'idorpassport_number'
 		 },
 		 {
-		text     : ' Dob ' , 
+		text     : ' DOB ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'dob'
@@ -4440,13 +4440,13 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Photo Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'photo_id'
 		 },
 		 {
-		text     : ' Photo Name ' , 
+		text     : ' Photo Ref ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'photo_name'
@@ -4712,13 +4712,13 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Rangetype Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'rangetype_id'
 		 },
 		 {
-		text     : ' Rangetype Name ' , 
+		text     : ' Range Type ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'rangetype_name'
@@ -4942,13 +4942,13 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Role Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'role_id'
 		 },
 		 {
-		text     : ' Role Name ' , 
+		text     : ' Role ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'role_name'
@@ -5072,7 +5072,7 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'rolenotification_id'
 		 },
 		 {
-		text     : ' Role Id ' , 
+		text     : ' Role ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'role_name'
@@ -5238,7 +5238,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Rolenotificationevent Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'rolenotificationevent_id'
@@ -5404,7 +5404,7 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'primary_tablelist'
 		 },
 		 {
-		text     : ' Table Id ' , 
+		text     : ' Table ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'table_name'
@@ -5540,13 +5540,13 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'roleperson_id'
 		 },
 		 {
-		text     : ' Person Id ' , 
+		text     : ' Person ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'person_name'
 		 },
 		 {
-		text     : ' Role Id ' , 
+		text     : ' Role ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'role_name'
@@ -5664,13 +5664,13 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Roleprivilege Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'roleprivilege_id'
 		 },
 		 {
-		text     : ' Role Id ' , 
+		text     : ' Role ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'role_name'
@@ -5800,7 +5800,7 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'rolerole_id'
 		 },
 		 {
-		text     : ' Role Id ' , 
+		text     : ' Role ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'role_name'
@@ -20616,13 +20616,13 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Month Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'month_id'
 		 },
 		 {
-		text     : ' Month Name ' , 
+		text     : ' Month ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'month_name'
@@ -26938,7 +26938,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Autoresponse Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'autoresponse_id'
@@ -27068,7 +27068,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Indsms Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'indsms_id'
@@ -27298,13 +27298,13 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Messagesend Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'messagesend_id'
 		 },
 		 {
-		text     : ' Messagesend Name ' , 
+		text     : ' Message Ref ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'messagesend_name'
@@ -27784,7 +27784,7 @@ sms_receptrespForm('detailinfo','updateload',rec.get('receptresp_id'));
 }//end of gridViewsms_receptresp function
 
 
-//Schedule List
+//Template SMS Lists
 
 function gridViewsms_schedule(){
 var viewdiv=document.getElementById('detailinfo');
@@ -27824,13 +27824,13 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Schedule Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'schedule_id'
 		 },
 		 {
-		text     : ' Schedule Name ' , 
+		text     : ' Schedule Ref ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'schedule_name'
@@ -27848,7 +27848,7 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'smsmsgcust_name'
 		 },
 		 {
-		text     : ' Upload File ' , 
+		text     : ' File Brouwse ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'file_brouwse'
@@ -27888,7 +27888,7 @@ sms_scheduleForm('detailinfo','updateload',rec.get('schedule_id'));
 		maxHeight: 600,
         width: 600,
 		resizable:true,
-        title: 'Schedule List',
+        title: 'Template SMS Lists',
         renderTo: 'detailinfo',
         viewConfig: {
             stripeRows: true,
@@ -27920,7 +27920,7 @@ sms_scheduleForm('detailinfo','updateload',rec.get('schedule_id'));
 }//end of gridViewsms_schedule function
 
 
-// Sms to group
+//Group Messages
 
 function gridViewsms_sendsmstogrp(){
 var viewdiv=document.getElementById('detailinfo');
@@ -27931,7 +27931,7 @@ var closebtn= Ext.get('close-btn');
 
 	Ext.define('Sms_sendsmstogrp', {
     extend: 'Ext.data.Model',
-	fields:['sendsmstogrp_id','sendsmstogrp_name','smsgroup_name','sms_message']
+	fields:['sendsmstogrp_id','smsgroup_name','sms_message']
 	});
 	var store = Ext.create('Ext.data.Store', {
     model: 'Sms_sendsmstogrp',
@@ -27960,25 +27960,19 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Sendsmstogrp Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'sendsmstogrp_id'
 		 },
 		 {
-		text     : ' Sendsmstogrp Name ' , 
+		text     : ' Group ' , 
 		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'sendsmstogrp_name'
-		 },
-		 {
-		text     : ' Smsgroup Id ' , 
-		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'smsgroup_name'
 		 },
 		 {
-		text     : ' Sms Message ' , 
+		text     : ' Message ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'sms_message'
@@ -28018,7 +28012,7 @@ sms_sendsmstogrpForm('detailinfo','updateload',rec.get('sendsmstogrp_id'));
 		maxHeight: 600,
         width: 600,
 		resizable:true,
-        title: ' Sms To Group',
+        title: 'Group Messages',
         renderTo: 'detailinfo',
         viewConfig: {
             stripeRows: true,
@@ -28090,7 +28084,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Smscaptions Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'smscaptions_id'
@@ -28174,7 +28168,7 @@ sms_smscaptionsForm('detailinfo','updateload',rec.get('smscaptions_id'));
 }//end of gridViewsms_smscaptions function
 
 
-//Create group
+//Create Group
 
 function gridViewsms_smsgroup(){
 var viewdiv=document.getElementById('detailinfo');
@@ -28214,13 +28208,13 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Smsgroup Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'smsgroup_id'
 		 },
 		 {
-		text     : ' Smsgroup Name ' , 
+		text     : ' Group Name ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'smsgroup_name'
@@ -28298,7 +28292,7 @@ sms_smsgroupForm('detailinfo','updateload',rec.get('smsgroup_id'));
 }//end of gridViewsms_smsgroup function
 
 
-//Group member
+//Group Membership
 
 function gridViewsms_smsgroupmember(){
 var viewdiv=document.getElementById('detailinfo');
@@ -28309,7 +28303,7 @@ var closebtn= Ext.get('close-btn');
 
 	Ext.define('Sms_smsgroupmember', {
     extend: 'Ext.data.Model',
-	fields:['smsgroupmember_id','smsgroup_name','member_description','syowner','phone_number','syownerid','other_details']
+	fields:['smsgroupmember_id','smsgroup_name','member_description','phone_number','other_details']
 	});
 	var store = Ext.create('Ext.data.Store', {
     model: 'Sms_smsgroupmember',
@@ -28338,40 +28332,28 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Smsgroupmember Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'smsgroupmember_id'
 		 },
 		 {
-		text     : ' Smsgroup Id ' , 
+		text     : ' Group ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'smsgroup_name'
 		 },
 		 {
-		text     : ' Member Description ' , 
+		text     : ' Description ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'member_description'
-		 },
-		 {
-		text     : ' Syowner ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'syowner'
 		 },
 		 {
 		text     : ' Phone Number ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'phone_number'
-		 },
-		 {
-		text     : ' Syownerid ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'syownerid'
 		 },
 		 {
 		text     : ' Other Details ' , 
@@ -28414,7 +28396,7 @@ sms_smsgroupmemberForm('detailinfo','updateload',rec.get('smsgroupmember_id'));
 		maxHeight: 600,
         width: 600,
 		resizable:true,
-        title: 'Group Member',
+        title: 'Group Membership',
         renderTo: 'detailinfo',
         viewConfig: {
             stripeRows: true,
@@ -28446,7 +28428,7 @@ sms_smsgroupmemberForm('detailinfo','updateload',rec.get('smsgroupmember_id'));
 }//end of gridViewsms_smsgroupmember function
 
 
-//Queued SMS
+//Queued SMS Bill Handler
 
 function gridViewsms_smshandle(){
 var viewdiv=document.getElementById('detailinfo');
@@ -28544,7 +28526,7 @@ sms_smshandleForm('detailinfo','updateload',rec.get('smshandle_id'));
 		maxHeight: 600,
         width: 600,
 		resizable:true,
-        title: 'Queued SMS',
+        title: 'Queued SMS Bill Handler',
         renderTo: 'detailinfo',
         viewConfig: {
             stripeRows: true,
@@ -28616,7 +28598,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Smshandleoaf Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'smshandleoaf_id'
@@ -30668,13 +30650,13 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'benefitdescr_name'
 		 },
 		 {
-		text     : ' Company Id ' , 
+		text     : ' Company ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'company_name'
 		 },
 		 {
-		text     : ' Dept Id ' , 
+		text     : ' Dept ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'dept_name'
@@ -30816,7 +30798,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Companydeptrlnphp Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'companydeptrlnphp_id'
@@ -30828,7 +30810,7 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'parent'
 		 },
 		 {
-		text     : ' Dept Id ' , 
+		text     : ' Dept ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'dept_name'
@@ -30952,25 +30934,25 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Compstructtree Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'compstructtree_id'
 		 },
 		 {
-		text     : ' Company Id ' , 
+		text     : ' Company ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'company_name'
 		 },
 		 {
-		text     : ' Dept Id ' , 
+		text     : ' Dept ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'dept_name'
 		 },
 		 {
-		text     : ' Location Id ' , 
+		text     : ' Location ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'location_name'
@@ -31094,13 +31076,13 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Contact Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'contact_id'
 		 },
 		 {
-		text     : ' Contact Name ' , 
+		text     : ' Contact Ref ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'contact_name'
@@ -31414,7 +31396,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Plevel Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'plevel_id'
@@ -31426,7 +31408,7 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'paygradedecr_name'
 		 },
 		 {
-		text     : ' Plevel Name ' , 
+		text     : ' Previlege Level ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'plevel_name'
@@ -34855,7 +34837,7 @@ var closebtn= Ext.get('close-btn');
 
 	Ext.define('Sms_emailschedule', {
     extend: 'Ext.data.Model',
-	fields:['emailschedule_id','emailschedule_name','schedule_description','bill_date','due_after','file_brouwse']
+	fields:['emailschedule_id','emailschedule_name','schedule_description','connection_number','zone','billmonth_name','billyear_name']
 	});
 	var store = Ext.create('Ext.data.Store', {
     model: 'Sms_emailschedule',
@@ -34884,13 +34866,13 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Emailschedule Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'emailschedule_id'
 		 },
 		 {
-		text     : ' Emailschedule Name ' , 
+		text     : ' Schedule Ref ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'emailschedule_name'
@@ -34902,22 +34884,28 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'schedule_description'
 		 },
 		 {
-		text     : ' Bill Date ' , 
+		text     : ' Connection Number ' , 
 		 width : 80 , 
 		 sortable : true , 
-		 dataIndex : 'bill_date'
+		 dataIndex : 'connection_number'
 		 },
 		 {
-		text     : ' Due After ' , 
+		text     : ' Zone ' , 
 		 width : 80 , 
 		 sortable : true , 
-		 dataIndex : 'due_after'
+		 dataIndex : 'zone'
 		 },
 		 {
-		text     : ' Upload File ' , 
+		text     : ' Month ' , 
 		 width : 80 , 
 		 sortable : true , 
-		 dataIndex : 'file_brouwse'
+		 dataIndex : 'billmonth_name'
+		 },
+		 {
+		text     : ' Year ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'billyear_name'
 		 },
 		 {
                 menuDisabled: true,
@@ -34986,7 +34974,7 @@ sms_emailscheduleForm('detailinfo','updateload',rec.get('emailschedule_id'));
 }//end of gridViewsms_emailschedule function
 
 
-//Invalid Email Addresses
+//Invalid Email Addressses
 
 function gridViewsms_invalidemailaddress(){
 var viewdiv=document.getElementById('detailinfo');
@@ -34997,7 +34985,7 @@ var closebtn= Ext.get('close-btn');
 
 	Ext.define('Sms_invalidemailaddress', {
     extend: 'Ext.data.Model',
-	fields:['invalidemailaddress_id','connection_number','amount','email_address','pay_before']
+	fields:['invalidemailaddress_id','connection_number','amount','zone','email_address','billmonth_name','pay_before','billyear_name']
 	});
 	var store = Ext.create('Ext.data.Store', {
     model: 'Sms_invalidemailaddress',
@@ -35026,7 +35014,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Invalidemailaddress Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'invalidemailaddress_id'
@@ -35044,16 +35032,34 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'amount'
 		 },
 		 {
+		text     : ' Zone ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'zone'
+		 },
+		 {
 		text     : ' Email Address ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'email_address'
 		 },
 		 {
+		text     : ' Month ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'billmonth_name'
+		 },
+		 {
 		text     : ' Pay Before ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'pay_before'
+		 },
+		 {
+		text     : ' Year ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'billyear_name'
 		 },
 		 {
                 menuDisabled: true,
@@ -35090,7 +35096,7 @@ sms_invalidemailaddressForm('detailinfo','updateload',rec.get('invalidemailaddre
 		maxHeight: 600,
         width: 600,
 		resizable:true,
-        title: 'Invalid Email Addresses',
+        title: 'Invalid Email Addressses',
         renderTo: 'detailinfo',
         viewConfig: {
             stripeRows: true,
@@ -35133,7 +35139,7 @@ var closebtn= Ext.get('close-btn');
 
 	Ext.define('Sms_processedemail', {
     extend: 'Ext.data.Model',
-	fields:['processedemail_id','email_address','connection_number','message']
+	fields:['processedemail_id','email_address','connection_number','billmonth_name','message','billyear_name','zone']
 	});
 	var store = Ext.create('Ext.data.Store', {
     model: 'Sms_processedemail',
@@ -35180,10 +35186,28 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'connection_number'
 		 },
 		 {
+		text     : ' Month ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'billmonth_name'
+		 },
+		 {
 		text     : ' Message ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'message'
+		 },
+		 {
+		text     : ' Year ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'billyear_name'
+		 },
+		 {
+		text     : ' Zone ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'zone'
 		 },
 		 {
                 menuDisabled: true,
@@ -35263,7 +35287,7 @@ var closebtn= Ext.get('close-btn');
 
 	Ext.define('Sms_emailhandle', {
     extend: 'Ext.data.Model',
-	fields:['emailhandle_id','connection_number','amount','email_address','pay_before']
+	fields:['emailhandle_id','connection_number','amount','zone','email_address','billmonth_name','billyear_name']
 	});
 	var store = Ext.create('Ext.data.Store', {
     model: 'Sms_emailhandle',
@@ -35292,7 +35316,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Emailhandle Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'emailhandle_id'
@@ -35310,16 +35334,28 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'amount'
 		 },
 		 {
+		text     : ' Zone ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'zone'
+		 },
+		 {
 		text     : ' Email Address ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'email_address'
 		 },
 		 {
-		text     : ' Pay Before ' , 
+		text     : ' Month ' , 
 		 width : 80 , 
 		 sortable : true , 
-		 dataIndex : 'pay_before'
+		 dataIndex : 'billmonth_name'
+		 },
+		 {
+		text     : ' Year ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'billyear_name'
 		 },
 		 {
                 menuDisabled: true,
@@ -35428,7 +35464,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Creditbalance Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'creditbalance_id'
@@ -35546,7 +35582,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Disconnmsgcust Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'disconnmsgcust_id'
@@ -35670,13 +35706,13 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Disconnschedule Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'disconnschedule_id'
 		 },
 		 {
-		text     : ' Disconnschedule Name ' , 
+		text     : ' Schedule Ref ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'disconnschedule_name'
@@ -35706,7 +35742,7 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'due_after'
 		 },
 		 {
-		text     : ' Upload File ' , 
+		text     : ' File Brouwse ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'file_brouwse'
@@ -35789,7 +35825,7 @@ var closebtn= Ext.get('close-btn');
 
 	Ext.define('Sms_processedfailedemail', {
     extend: 'Ext.data.Model',
-	fields:['processedfailedemail_id','email_address','connection_number','message','reason_failed']
+	fields:['processedfailedemail_id','email_address','connection_number','billyear_name','message','billmonth_name','reason_failed','zone']
 	});
 	var store = Ext.create('Ext.data.Store', {
     model: 'Sms_processedfailedemail',
@@ -35836,16 +35872,34 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'connection_number'
 		 },
 		 {
+		text     : ' Year ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'billyear_name'
+		 },
+		 {
 		text     : ' Message ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'message'
 		 },
 		 {
+		text     : ' Month ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'billmonth_name'
+		 },
+		 {
 		text     : ' Reason Failed ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'reason_failed'
+		 },
+		 {
+		text     : ' Zone ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'zone'
 		 },
 		 {
                 menuDisabled: true,
@@ -36084,7 +36138,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Invalidgeneraladdress Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'invalidgeneraladdress_id'
@@ -36434,7 +36488,7 @@ sms_processedgeneralsmsForm('detailinfo','updateload',rec.get('processedgenerals
 }//end of gridViewsms_processedgeneralsms function
 
 
-//General SMS Schedule
+//General SMS Contacts Upload
 
 function gridViewsms_schedulegeneralsms(){
 var viewdiv=document.getElementById('detailinfo');
@@ -36492,7 +36546,7 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'message'
 		 },
 		 {
-		text     : ' Upload File ' , 
+		text     : ' File Brouwse ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'file_brouwse'
@@ -36532,7 +36586,7 @@ sms_schedulegeneralsmsForm('detailinfo','updateload',rec.get('schedulegeneralsms
 		maxHeight: 600,
         width: 600,
 		resizable:true,
-        title: 'General SMS Schedule',
+        title: 'General SMS Contacts Upload',
         renderTo: 'detailinfo',
         viewConfig: {
             stripeRows: true,
@@ -36730,24 +36784,24 @@ sms_billhandleForm('detailinfo','updateload',rec.get('billhandle_id'));
 }//end of gridViewsms_billhandle function
 
 
-//SMS Queue
+// sms billmonth
 
-function gridViewsms_msgqueue(){
+function gridViewsms_billmonth(){
 var viewdiv=document.getElementById('detailinfo');
 viewdiv.innerHTML='';
 Ext.QuickTips.init();
 var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_msgqueue = Ext.get('gridViewsms_msgqueue');	
+	var  viewgrbtnsms_billmonth = Ext.get('gridViewsms_billmonth');	
 
-	Ext.define('Sms_msgqueue', {
+	Ext.define('Sms_billmonth', {
     extend: 'Ext.data.Model',
-	fields:['msgqueue_id','phone_number','message']
+	fields:['billmonth_id','billmonth_name','bill_month']
 	});
 	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_msgqueue',
+    model: 'Sms_billmonth',
     proxy: {
         type: 'ajax',
-        url : 'buidgrid.php?t=sms_msgqueue',
+        url : 'buidgrid.php?t=sms_billmonth',
         reader: {
             type: 'json'
         }
@@ -36770,16 +36824,406 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Msgqueue Id ' , 
+		text     : ' Month ' , 
 		 width : 80 , 
 		 sortable : true , 
-		 dataIndex : 'msgqueue_id'
+		 dataIndex : 'billmonth_id'
+		 },
+		 {
+		text     : ' Billmonth Name ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'billmonth_name'
+		 },
+		 {
+		text     : ' Bill Month ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'bill_month'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_billmonthForm('detailinfo','updateload',rec.get('billmonth_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' Sms Billmonth',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_billmonth function
+
+
+// sms billyear
+
+function gridViewsms_billyear(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_billyear = Ext.get('gridViewsms_billyear');	
+
+	Ext.define('Sms_billyear', {
+    extend: 'Ext.data.Model',
+	fields:['billyear_id','billyear_name']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_billyear',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_billyear',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' Year ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'billyear_id'
+		 },
+		 {
+		text     : ' Billyear Name ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'billyear_name'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_billyearForm('detailinfo','updateload',rec.get('billyear_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' Sms Billyear',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_billyear function
+
+
+// sms datasourcetemp
+
+function gridViewsms_datasourcetemp(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_datasourcetemp = Ext.get('gridViewsms_datasourcetemp');	
+
+	Ext.define('Sms_datasourcetemp', {
+    extend: 'Ext.data.Model',
+	fields:['datasourcetemp_id','datasourcetemp_name','smsmsgcust_name','query','parameters']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_datasourcetemp',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_datasourcetemp',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' # ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'datasourcetemp_id'
+		 },
+		 {
+		text     : ' Datasource Template ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'datasourcetemp_name'
+		 },
+		 {
+		text     : ' Message Type ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'smsmsgcust_name'
+		 },
+		 {
+		text     : ' Query ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'query'
+		 },
+		 {
+		text     : ' Parameters ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'parameters'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_datasourcetempForm('detailinfo','updateload',rec.get('datasourcetemp_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' Sms Datasourcetemp',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_datasourcetemp function
+
+
+// Group SMS Queue
+
+function gridViewsms_groupqueue(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_groupqueue = Ext.get('gridViewsms_groupqueue');	
+
+	Ext.define('Sms_groupqueue', {
+    extend: 'Ext.data.Model',
+	fields:['groupqueue_id','smsgroup_name','phone_number','recepient','message']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_groupqueue',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_groupqueue',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' # ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'groupqueue_id'
+		 },
+		 {
+		text     : ' Group ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'smsgroup_name'
 		 },
 		 {
 		text     : ' Phone Number ' , 
-		 flex : 1 , 
+		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'phone_number'
+		 },
+		 {
+		text     : ' Recepient ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'recepient'
 		 },
 		 {
 		text     : ' Message ' , 
@@ -36812,7 +37256,7 @@ var closebtn= Ext.get('close-btn');
                     handler: function(grid, rowIndex, colIndex) {
                         var rec = store.getAt(rowIndex);
 
-sms_msgqueueForm('detailinfo','updateload',rec.get('msgqueue_id'));
+sms_groupqueueForm('detailinfo','updateload',rec.get('groupqueue_id'));
                     }
                 }]
             }
@@ -36822,7 +37266,7 @@ sms_msgqueueForm('detailinfo','updateload',rec.get('msgqueue_id'));
 		maxHeight: 600,
         width: 600,
 		resizable:true,
-        title: 'SMS Queue',
+        title: ' Group SMS Queue',
         renderTo: 'detailinfo',
         viewConfig: {
             stripeRows: true,
@@ -36851,27 +37295,27 @@ sms_msgqueueForm('detailinfo','updateload',rec.get('msgqueue_id'));
 		items: grid
     }).show();*/
 	
-}//end of gridViewsms_msgqueue function
+}//end of gridViewsms_groupqueue function
 
 
-// Sent Messages
+// sms invalidphonenumber
 
-function gridViewsms_msgsent(){
+function gridViewsms_invalidphonenumber(){
 var viewdiv=document.getElementById('detailinfo');
 viewdiv.innerHTML='';
 Ext.QuickTips.init();
 var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_msgsent = Ext.get('gridViewsms_msgsent');	
+	var  viewgrbtnsms_invalidphonenumber = Ext.get('gridViewsms_invalidphonenumber');	
 
-	Ext.define('Sms_msgsent', {
+	Ext.define('Sms_invalidphonenumber', {
     extend: 'Ext.data.Model',
-	fields:['msgsent_id','phone_number','message']
+	fields:['invalidphonenumber_id','recepient','phone_number']
 	});
 	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_msgsent',
+    model: 'Sms_invalidphonenumber',
     proxy: {
         type: 'ajax',
-        url : 'buidgrid.php?t=sms_msgsent',
+        url : 'buidgrid.php?t=sms_invalidphonenumber',
         reader: {
             type: 'json'
         }
@@ -36894,22 +37338,22 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Msgsent Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
-		 dataIndex : 'msgsent_id'
+		 dataIndex : 'invalidphonenumber_id'
+		 },
+		 {
+		text     : ' Recepient ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'recepient'
 		 },
 		 {
 		text     : ' Phone Number ' , 
-		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'phone_number'
-		 },
-		 {
-		text     : ' Message ' , 
 		 width : 80 , 
 		 sortable : true , 
-		 dataIndex : 'message'
+		 dataIndex : 'phone_number'
 		 },
 		 {
                 menuDisabled: true,
@@ -36936,7 +37380,7 @@ var closebtn= Ext.get('close-btn');
                     handler: function(grid, rowIndex, colIndex) {
                         var rec = store.getAt(rowIndex);
 
-sms_msgsentForm('detailinfo','updateload',rec.get('msgsent_id'));
+sms_invalidphonenumberForm('detailinfo','updateload',rec.get('invalidphonenumber_id'));
                     }
                 }]
             }
@@ -36946,7 +37390,7 @@ sms_msgsentForm('detailinfo','updateload',rec.get('msgsent_id'));
 		maxHeight: 600,
         width: 600,
 		resizable:true,
-        title: ' Sent Messages',
+        title: ' Sms Invalidphonenumber',
         renderTo: 'detailinfo',
         viewConfig: {
             stripeRows: true,
@@ -36975,10 +37419,548 @@ sms_msgsentForm('detailinfo','updateload',rec.get('msgsent_id'));
 		items: grid
     }).show();*/
 	
-}//end of gridViewsms_msgsent function
+}//end of gridViewsms_invalidphonenumber function
 
 
-//Invalid Contacts
+// sms monthfilter
+
+function gridViewsms_monthfilter(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_monthfilter = Ext.get('gridViewsms_monthfilter');	
+
+	Ext.define('Sms_monthfilter', {
+    extend: 'Ext.data.Model',
+	fields:['monthfilter_id','monthfilter_name']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_monthfilter',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_monthfilter',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' # ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'monthfilter_id'
+		 },
+		 {
+		text     : ' Month ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'monthfilter_name'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_monthfilterForm('detailinfo','updateload',rec.get('monthfilter_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' Sms Monthfilter',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_monthfilter function
+
+
+//SMS Regions
+
+function gridViewsms_msgcenter(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_msgcenter = Ext.get('gridViewsms_msgcenter');	
+
+	Ext.define('Sms_msgcenter', {
+    extend: 'Ext.data.Model',
+	fields:['msgcenter_id','msgcenter_name','description']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_msgcenter',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_msgcenter',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' # ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'msgcenter_id'
+		 },
+		 {
+		text     : ' Region ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'msgcenter_name'
+		 },
+		 {
+		text     : ' Description ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'description'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_msgcenterForm('detailinfo','updateload',rec.get('msgcenter_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: 'SMS Regions',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_msgcenter function
+
+
+//Region
+
+function gridViewsms_msgcenterdefault(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_msgcenterdefault = Ext.get('gridViewsms_msgcenterdefault');	
+
+	Ext.define('Sms_msgcenterdefault', {
+    extend: 'Ext.data.Model',
+	fields:['msgcenterdefault_id','msgcenter_name']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_msgcenterdefault',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_msgcenterdefault',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' # ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'msgcenterdefault_id'
+		 },
+		 {
+		text     : ' Region ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'msgcenter_name'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_msgcenterdefaultForm('detailinfo','updateload',rec.get('msgcenterdefault_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: 'Region',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_msgcenterdefault function
+
+
+// sms msgdelivery
+
+function gridViewsms_msgdelivery(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_msgdelivery = Ext.get('gridViewsms_msgdelivery');	
+
+	Ext.define('Sms_msgdelivery', {
+    extend: 'Ext.data.Model',
+	fields:['msgdelivery_id','messageid','externalid','senderid','mobileno','message','submittime','senttime','deliverytime','status','undeliveredreason','details']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_msgdelivery',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_msgdelivery',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' # ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'msgdelivery_id'
+		 },
+		 {
+		text     : ' Message ID ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'messageid'
+		 },
+		 {
+		text     : ' External ID ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'externalid'
+		 },
+		 {
+		text     : ' Sender ID ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'senderid'
+		 },
+		 {
+		text     : ' Mobilen No. ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'mobileno'
+		 },
+		 {
+		text     : ' Message ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'message'
+		 },
+		 {
+		text     : ' Submit Time ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'submittime'
+		 },
+		 {
+		text     : ' Sent Time ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'senttime'
+		 },
+		 {
+		text     : ' Delivery Time ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'deliverytime'
+		 },
+		 {
+		text     : ' Status ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'status'
+		 },
+		 {
+		text     : ' Reason ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'undeliveredreason'
+		 },
+		 {
+		text     : ' Details ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'details'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_msgdeliveryForm('detailinfo','updateload',rec.get('msgdelivery_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' Sms Msgdelivery',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_msgdelivery function
+
+
+// Invalid Contacts
 
 function gridViewsms_msginvalid(){
 var viewdiv=document.getElementById('detailinfo');
@@ -37018,7 +38000,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Msginvalid Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'msginvalid_id'
@@ -37070,7 +38052,7 @@ sms_msginvalidForm('detailinfo','updateload',rec.get('msginvalid_id'));
 		maxHeight: 600,
         width: 600,
 		resizable:true,
-        title: 'Invalid Contacts',
+        title: ' Invalid Contacts',
         renderTo: 'detailinfo',
         viewConfig: {
             stripeRows: true,
@@ -37100,6 +38082,390 @@ sms_msginvalidForm('detailinfo','updateload',rec.get('msginvalid_id'));
     }).show();*/
 	
 }//end of gridViewsms_msginvalid function
+
+
+// SMS Queue
+
+function gridViewsms_msgqueue(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_msgqueue = Ext.get('gridViewsms_msgqueue');	
+
+	Ext.define('Sms_msgqueue', {
+    extend: 'Ext.data.Model',
+	fields:['msgqueue_id','phone_number','message','message_type']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_msgqueue',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_msgqueue',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' # ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'msgqueue_id'
+		 },
+		 {
+		text     : ' Phone Number ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'phone_number'
+		 },
+		 {
+		text     : ' Message ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'message'
+		 },
+		 {
+		text     : ' Message Type ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'message_type'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_msgqueueForm('detailinfo','updateload',rec.get('msgqueue_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' SMS Queue',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_msgqueue function
+
+
+// SMS Outbox
+
+function gridViewsms_msgsent(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_msgsent = Ext.get('gridViewsms_msgsent');	
+
+	Ext.define('Sms_msgsent', {
+    extend: 'Ext.data.Model',
+	fields:['msgsent_id','phone_number','message','message_type']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_msgsent',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_msgsent',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' # ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'msgsent_id'
+		 },
+		 {
+		text     : ' Phone Number ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'phone_number'
+		 },
+		 {
+		text     : ' Message ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'message'
+		 },
+		 {
+		text     : ' Message Type ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'message_type'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_msgsentForm('detailinfo','updateload',rec.get('msgsent_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' SMS Outbox',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_msgsent function
+
+
+// sms msgsource
+
+function gridViewsms_msgsource(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_msgsource = Ext.get('gridViewsms_msgsource');	
+
+	Ext.define('Sms_msgsource', {
+    extend: 'Ext.data.Model',
+	fields:['msgsource_id','msgsource_name','message_source']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_msgsource',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_msgsource',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' # ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'msgsource_id'
+		 },
+		 {
+		text     : ' Name ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'msgsource_name'
+		 },
+		 {
+		text     : ' Message Source ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'message_source'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_msgsourceForm('detailinfo','updateload',rec.get('msgsource_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' Sms Msgsource',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_msgsource function
 
 
 // sms recurrenttaskschedule
@@ -37232,6 +38598,686 @@ sms_recurrenttaskscheduleForm('detailinfo','updateload',rec.get('recurrenttasksc
 }//end of gridViewsms_recurrenttaskschedule function
 
 
+// Regional Statistics
+
+function gridViewsms_ref(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_ref = Ext.get('gridViewsms_ref');	
+
+	Ext.define('Sms_ref', {
+    extend: 'Ext.data.Model',
+	fields:['ref_id','msgcenter_name','message_type','date_sent','remote_ref','message_size']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_ref',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_ref',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' # ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'ref_id'
+		 },
+		 {
+		text     : ' Region ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'msgcenter_name'
+		 },
+		 {
+		text     : ' Message Type ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'message_type'
+		 },
+		 {
+		text     : ' Date ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'date_sent'
+		 },
+		 {
+		text     : ' Remote Ref ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'remote_ref'
+		 },
+		 {
+		text     : ' SMS Units ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'message_size'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_refForm('detailinfo','updateload',rec.get('ref_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' Regional Statistics',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_ref function
+
+
+// sms school
+
+function gridViewsms_school(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_school = Ext.get('gridViewsms_school');	
+
+	Ext.define('Sms_school', {
+    extend: 'Ext.data.Model',
+	fields:['school_id','school_name','code','date_registered','admission','admission desc']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_school',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_school',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' School Id ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'school_id'
+		 },
+		 {
+		text     : ' School Name ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'school_name'
+		 },
+		 {
+		text     : ' Code ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'code'
+		 },
+		 {
+		text     : ' Date Registered ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'date_registered'
+		 },
+		 {
+		text     : ' Admission ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'admission'
+		 },
+		 {
+		text     : ' Admission Desc ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'admission desc'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_schoolForm('detailinfo','updateload',rec.get('school_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' Sms School',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_school function
+
+
+// Group SMS Outbox
+
+function gridViewsms_sentgroupsms(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_sentgroupsms = Ext.get('gridViewsms_sentgroupsms');	
+
+	Ext.define('Sms_sentgroupsms', {
+    extend: 'Ext.data.Model',
+	fields:['sentgroupsms_id','smsgroup_name','phone_number','recepient','message']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_sentgroupsms',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_sentgroupsms',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' # ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'sentgroupsms_id'
+		 },
+		 {
+		text     : ' Group ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'smsgroup_name'
+		 },
+		 {
+		text     : ' Phone Number ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'phone_number'
+		 },
+		 {
+		text     : ' Recepient ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'recepient'
+		 },
+		 {
+		text     : ' Message ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'message'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_sentgroupsmsForm('detailinfo','updateload',rec.get('sentgroupsms_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' Group SMS Outbox',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_sentgroupsms function
+
+
+// sms smsgrouptemp
+
+function gridViewsms_smsgrouptemp(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_smsgrouptemp = Ext.get('gridViewsms_smsgrouptemp');	
+
+	Ext.define('Sms_smsgrouptemp', {
+    extend: 'Ext.data.Model',
+	fields:['smsgrouptemp_id','smsgroup_name','smsmsgcust_name','description']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_smsgrouptemp',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_smsgrouptemp',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' # ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'smsgrouptemp_id'
+		 },
+		 {
+		text     : ' Group ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'smsgroup_name'
+		 },
+		 {
+		text     : ' Message Type ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'smsmsgcust_name'
+		 },
+		 {
+		text     : ' Description ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'description'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_smsgrouptempForm('detailinfo','updateload',rec.get('smsgrouptemp_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' Sms Smsgrouptemp',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_smsgrouptemp function
+
+
+// sms smsremotesource
+
+function gridViewsms_smsremotesource(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_smsremotesource = Ext.get('gridViewsms_smsremotesource');	
+
+	Ext.define('Sms_smsremotesource', {
+    extend: 'Ext.data.Model',
+	fields:['smsremotesource_id','smsremotesource_name','datasourcetemp_name','parameters']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_smsremotesource',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_smsremotesource',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' Smsremotesource Id ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'smsremotesource_id'
+		 },
+		 {
+		text     : ' Smsremotesource Name ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'smsremotesource_name'
+		 },
+		 {
+		text     : ' Datasourcetemp Id ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'datasourcetemp_name'
+		 },
+		 {
+		text     : ' Parameters ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'parameters'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_smsremotesourceForm('detailinfo','updateload',rec.get('smsremotesource_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' Sms Smsremotesource',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_smsremotesource function
+
+
 // sms taskperiod
 
 function gridViewsms_taskperiod(){
@@ -37278,7 +39324,7 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'taskperiod_id'
 		 },
 		 {
-		text     : ' Taskperiod Name ' , 
+		text     : ' Task Period ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'taskperiod_name'
@@ -37598,711 +39644,7 @@ sms_taskstatusForm('detailinfo','updateload',rec.get('taskstatus_id'));
 }//end of gridViewsms_taskstatus function
 
 
-//Delivery Reports
-
-function gridViewsms_msgdelivery(){
-var viewdiv=document.getElementById('detailinfo');
-viewdiv.innerHTML='';
-Ext.QuickTips.init();
-var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_msgdelivery = Ext.get('gridViewsms_msgdelivery');	
-
-	Ext.define('Sms_msgdelivery', {
-    extend: 'Ext.data.Model',
-	fields:['msgdelivery_id','messageid','externalid','senderid','mobileno','message','submittime','senttime','deliverytime','status','undeliveredreason','details']
-	});
-	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_msgdelivery',
-    proxy: {
-        type: 'ajax',
-        url : 'buidgrid.php?t=sms_msgdelivery',
-        reader: {
-            type: 'json'
-        }
-    }
-});
-  store.load();
-    var grid = Ext.create('Ext.grid.Panel', {
-						  
-        store: store,
-        stateful: true,
-        //collapsible: true,
-        multiSelect: true,
-		iconCls: 'icon-grid',
-        stateId: 'stateGrid',
-		animCollapse:false,
-        constrainHeader:true,
-        layout: 'fit',
-		columnLines: true,
-		//headerPosition :'left',
-		bbar:{height: 20},
-		columns:[
-		new Ext.grid.RowNumberer(),{
-		text     : ' Msgdelivery Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'msgdelivery_id'
-		 },
-		 {
-		text     : ' Messageid ' , 
-		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'messageid'
-		 },
-		 {
-		text     : ' Externalid ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'externalid'
-		 },
-		 {
-		text     : ' Senderid ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'senderid'
-		 },
-		 {
-		text     : ' Mobileno ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'mobileno'
-		 },
-		 {
-		text     : ' Message ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'message'
-		 },
-		 {
-		text     : ' Submittime ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'submittime'
-		 },
-		 {
-		text     : ' Senttime ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'senttime'
-		 },
-		 {
-		text     : ' Deliverytime ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'deliverytime'
-		 },
-		 {
-		text     : ' Status ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'status'
-		 },
-		 {
-		text     : ' Undeliveredreason ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'undeliveredreason'
-		 },
-		 {
-		text     : ' Details ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'details'
-		 },
-		 {
-                menuDisabled: true,
-                sortable: false,
-                xtype: 'actioncolumn',
-                width: 50,
-                items: [{
-                    icon   : '../shared/icons/fam/delete.gif',
-                    tooltip: 'Sell stock',
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-                        alert('Sell ' + rec.get('alert_name'));
-                    }
-                }, {
-                    getClass: function(v, meta, rec) { 
-                        if (rec.get('alert_name') < 0) {
-                            this.items[1].tooltip = 'Hold stock';
-                            return 'alert-col';
-                        } else {
-                            this.items[1].tooltip = 'Buy stock';
-                            return 'buy-col';
-                        }
-                    },
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-
-sms_msgdeliveryForm('detailinfo','updateload',rec.get('msgdelivery_id'));
-                    }
-                }]
-            }
-        ]
-		
-		,
-		maxHeight: 600,
-        width: 600,
-		resizable:true,
-        title: 'Delivery Reports',
-        renderTo: 'detailinfo',
-        viewConfig: {
-            stripeRows: true,
-            enableTextSelection: true
-		},
-		tbar:[{
-                    text:'Add Record',
-                    tooltip:'Add a new row',
-                    iconCls:'add',
-					handler:function(){
-						 
-					}
-                }, '-', {
-                    text:'Options',                  
-                    iconCls:'option'
-                }]
-		
-    });
-	
-	/*var win = Ext.create('Ext.Window', {
-		extend: 'Ext.ux.desktop.Module',				  
-        title: 'Grid Filters Example',
-		collapsable:true,
-		autoScroll :true,
-        layout: 'fit',
-		items: grid
-    }).show();*/
-	
-}//end of gridViewsms_msgdelivery function
-
-
-// Group member
-
-function gridViewsms_groupmember(){
-var viewdiv=document.getElementById('detailinfo');
-viewdiv.innerHTML='';
-Ext.QuickTips.init();
-var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_groupmember = Ext.get('gridViewsms_groupmember');	
-
-	Ext.define('Sms_groupmember', {
-    extend: 'Ext.data.Model',
-	fields:['groupmember_id','smsgroup_name','syowner','syownerid']
-	});
-	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_groupmember',
-    proxy: {
-        type: 'ajax',
-        url : 'buidgrid.php?t=sms_groupmember',
-        reader: {
-            type: 'json'
-        }
-    }
-});
-  store.load();
-    var grid = Ext.create('Ext.grid.Panel', {
-						  
-        store: store,
-        stateful: true,
-        //collapsible: true,
-        multiSelect: true,
-		iconCls: 'icon-grid',
-        stateId: 'stateGrid',
-		animCollapse:false,
-        constrainHeader:true,
-        layout: 'fit',
-		columnLines: true,
-		//headerPosition :'left',
-		bbar:{height: 20},
-		columns:[
-		new Ext.grid.RowNumberer(),{
-		text     : ' Groupmember Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'groupmember_id'
-		 },
-		 {
-		text     : ' Smsgroup Id ' , 
-		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'smsgroup_name'
-		 },
-		 {
-		text     : ' Syowner ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'syowner'
-		 },
-		 {
-		text     : ' Syownerid ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'syownerid'
-		 },
-		 {
-                menuDisabled: true,
-                sortable: false,
-                xtype: 'actioncolumn',
-                width: 50,
-                items: [{
-                    icon   : '../shared/icons/fam/delete.gif',
-                    tooltip: 'Sell stock',
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-                        alert('Sell ' + rec.get('alert_name'));
-                    }
-                }, {
-                    getClass: function(v, meta, rec) { 
-                        if (rec.get('alert_name') < 0) {
-                            this.items[1].tooltip = 'Hold stock';
-                            return 'alert-col';
-                        } else {
-                            this.items[1].tooltip = 'Buy stock';
-                            return 'buy-col';
-                        }
-                    },
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-
-sms_groupmemberForm('detailinfo','updateload',rec.get('groupmember_id'));
-                    }
-                }]
-            }
-        ]
-		
-		,
-		maxHeight: 600,
-        width: 600,
-		resizable:true,
-        title: ' Group Member',
-        renderTo: 'detailinfo',
-        viewConfig: {
-            stripeRows: true,
-            enableTextSelection: true
-		},
-		tbar:[{
-                    text:'Add Record',
-                    tooltip:'Add a new row',
-                    iconCls:'add',
-					handler:function(){
-						 
-					}
-                }, '-', {
-                    text:'Options',                  
-                    iconCls:'option'
-                }]
-		
-    });
-	
-	/*var win = Ext.create('Ext.Window', {
-		extend: 'Ext.ux.desktop.Module',				  
-        title: 'Grid Filters Example',
-		collapsable:true,
-		autoScroll :true,
-        layout: 'fit',
-		items: grid
-    }).show();*/
-	
-}//end of gridViewsms_groupmember function
-
-
-//Group Queue
-
-function gridViewsms_groupqueue(){
-var viewdiv=document.getElementById('detailinfo');
-viewdiv.innerHTML='';
-Ext.QuickTips.init();
-var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_groupqueue = Ext.get('gridViewsms_groupqueue');	
-
-	Ext.define('Sms_groupqueue', {
-    extend: 'Ext.data.Model',
-	fields:['groupqueue_id','smsgroup_name','phone_number','recepient','message']
-	});
-	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_groupqueue',
-    proxy: {
-        type: 'ajax',
-        url : 'buidgrid.php?t=sms_groupqueue',
-        reader: {
-            type: 'json'
-        }
-    }
-});
-  store.load();
-    var grid = Ext.create('Ext.grid.Panel', {
-						  
-        store: store,
-        stateful: true,
-        //collapsible: true,
-        multiSelect: true,
-		iconCls: 'icon-grid',
-        stateId: 'stateGrid',
-		animCollapse:false,
-        constrainHeader:true,
-        layout: 'fit',
-		columnLines: true,
-		//headerPosition :'left',
-		bbar:{height: 20},
-		columns:[
-		new Ext.grid.RowNumberer(),{
-		text     : ' Groupqueue Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'groupqueue_id'
-		 },
-		 {
-		text     : ' Smsgroup Id ' , 
-		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'smsgroup_name'
-		 },
-		 {
-		text     : ' Phone Number ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'phone_number'
-		 },
-		 {
-		text     : ' Recepient ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'recepient'
-		 },
-		 {
-		text     : ' Message ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'message'
-		 },
-		 {
-                menuDisabled: true,
-                sortable: false,
-                xtype: 'actioncolumn',
-                width: 50,
-                items: [{
-                    icon   : '../shared/icons/fam/delete.gif',
-                    tooltip: 'Sell stock',
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-                        alert('Sell ' + rec.get('alert_name'));
-                    }
-                }, {
-                    getClass: function(v, meta, rec) { 
-                        if (rec.get('alert_name') < 0) {
-                            this.items[1].tooltip = 'Hold stock';
-                            return 'alert-col';
-                        } else {
-                            this.items[1].tooltip = 'Buy stock';
-                            return 'buy-col';
-                        }
-                    },
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-
-sms_groupqueueForm('detailinfo','updateload',rec.get('groupqueue_id'));
-                    }
-                }]
-            }
-        ]
-		
-		,
-		maxHeight: 600,
-        width: 600,
-		resizable:true,
-        title: 'Group Queue',
-        renderTo: 'detailinfo',
-        viewConfig: {
-            stripeRows: true,
-            enableTextSelection: true
-		},
-		tbar:[{
-                    text:'Add Record',
-                    tooltip:'Add a new row',
-                    iconCls:'add',
-					handler:function(){
-						 
-					}
-                }, '-', {
-                    text:'Options',                  
-                    iconCls:'option'
-                }]
-		
-    });
-	
-	/*var win = Ext.create('Ext.Window', {
-		extend: 'Ext.ux.desktop.Module',				  
-        title: 'Grid Filters Example',
-		collapsable:true,
-		autoScroll :true,
-        layout: 'fit',
-		items: grid
-    }).show();*/
-	
-}//end of gridViewsms_groupqueue function
-
-
-//SMS Source Location
-
-function gridViewsms_msgsource(){
-var viewdiv=document.getElementById('detailinfo');
-viewdiv.innerHTML='';
-Ext.QuickTips.init();
-var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_msgsource = Ext.get('gridViewsms_msgsource');	
-
-	Ext.define('Sms_msgsource', {
-    extend: 'Ext.data.Model',
-	fields:['msgsource_id','message_source','msgsource_name']
-	});
-	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_msgsource',
-    proxy: {
-        type: 'ajax',
-        url : 'buidgrid.php?t=sms_msgsource',
-        reader: {
-            type: 'json'
-        }
-    }
-});
-  store.load();
-    var grid = Ext.create('Ext.grid.Panel', {
-						  
-        store: store,
-        stateful: true,
-        //collapsible: true,
-        multiSelect: true,
-		iconCls: 'icon-grid',
-        stateId: 'stateGrid',
-		animCollapse:false,
-        constrainHeader:true,
-        layout: 'fit',
-		columnLines: true,
-		//headerPosition :'left',
-		bbar:{height: 20},
-		columns:[
-		new Ext.grid.RowNumberer(),{
-		text     : ' Msgsource Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'msgsource_id'
-		 },
-		 {
-		text     : ' Message Source ' , 
-		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'message_source'
-		 },
-		 {
-		text     : ' Msgsource Name ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'msgsource_name'
-		 },
-		 {
-                menuDisabled: true,
-                sortable: false,
-                xtype: 'actioncolumn',
-                width: 50,
-                items: [{
-                    icon   : '../shared/icons/fam/delete.gif',
-                    tooltip: 'Sell stock',
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-                        alert('Sell ' + rec.get('alert_name'));
-                    }
-                }, {
-                    getClass: function(v, meta, rec) { 
-                        if (rec.get('alert_name') < 0) {
-                            this.items[1].tooltip = 'Hold stock';
-                            return 'alert-col';
-                        } else {
-                            this.items[1].tooltip = 'Buy stock';
-                            return 'buy-col';
-                        }
-                    },
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-
-sms_msgsourceForm('detailinfo','updateload',rec.get('msgsource_id'));
-                    }
-                }]
-            }
-        ]
-		
-		,
-		maxHeight: 600,
-        width: 600,
-		resizable:true,
-        title: 'SMS Source Location',
-        renderTo: 'detailinfo',
-        viewConfig: {
-            stripeRows: true,
-            enableTextSelection: true
-		},
-		tbar:[{
-                    text:'Add Record',
-                    tooltip:'Add a new row',
-                    iconCls:'add',
-					handler:function(){
-						 
-					}
-                }, '-', {
-                    text:'Options',                  
-                    iconCls:'option'
-                }]
-		
-    });
-	
-	/*var win = Ext.create('Ext.Window', {
-		extend: 'Ext.ux.desktop.Module',				  
-        title: 'Grid Filters Example',
-		collapsable:true,
-		autoScroll :true,
-        layout: 'fit',
-		items: grid
-    }).show();*/
-	
-}//end of gridViewsms_msgsource function
-
-
-//Sent Groups
-
-function gridViewsms_sentgroupsms(){
-var viewdiv=document.getElementById('detailinfo');
-viewdiv.innerHTML='';
-Ext.QuickTips.init();
-var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_sentgroupsms = Ext.get('gridViewsms_sentgroupsms');	
-
-	Ext.define('Sms_sentgroupsms', {
-    extend: 'Ext.data.Model',
-	fields:['sentgroupsms_id','smsgroup_name','phone_number','recepient','message']
-	});
-	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_sentgroupsms',
-    proxy: {
-        type: 'ajax',
-        url : 'buidgrid.php?t=sms_sentgroupsms',
-        reader: {
-            type: 'json'
-        }
-    }
-});
-  store.load();
-    var grid = Ext.create('Ext.grid.Panel', {
-						  
-        store: store,
-        stateful: true,
-        //collapsible: true,
-        multiSelect: true,
-		iconCls: 'icon-grid',
-        stateId: 'stateGrid',
-		animCollapse:false,
-        constrainHeader:true,
-        layout: 'fit',
-		columnLines: true,
-		//headerPosition :'left',
-		bbar:{height: 20},
-		columns:[
-		new Ext.grid.RowNumberer(),{
-		text     : ' Sentgroupsms Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'sentgroupsms_id'
-		 },
-		 {
-		text     : ' Smsgroup Id ' , 
-		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'smsgroup_name'
-		 },
-		 {
-		text     : ' Phone Number ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'phone_number'
-		 },
-		 {
-		text     : ' Recepient ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'recepient'
-		 },
-		 {
-		text     : ' Message ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'message'
-		 },
-		 {
-                menuDisabled: true,
-                sortable: false,
-                xtype: 'actioncolumn',
-                width: 50,
-                items: [{
-                    icon   : '../shared/icons/fam/delete.gif',
-                    tooltip: 'Sell stock',
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-                        alert('Sell ' + rec.get('alert_name'));
-                    }
-                }, {
-                    getClass: function(v, meta, rec) { 
-                        if (rec.get('alert_name') < 0) {
-                            this.items[1].tooltip = 'Hold stock';
-                            return 'alert-col';
-                        } else {
-                            this.items[1].tooltip = 'Buy stock';
-                            return 'buy-col';
-                        }
-                    },
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-
-sms_sentgroupsmsForm('detailinfo','updateload',rec.get('sentgroupsms_id'));
-                    }
-                }]
-            }
-        ]
-		
-		,
-		maxHeight: 600,
-        width: 600,
-		resizable:true,
-        title: 'Sent Groups',
-        renderTo: 'detailinfo',
-        viewConfig: {
-            stripeRows: true,
-            enableTextSelection: true
-		},
-		tbar:[{
-                    text:'Add Record',
-                    tooltip:'Add a new row',
-                    iconCls:'add',
-					handler:function(){
-						 
-					}
-                }, '-', {
-                    text:'Options',                  
-                    iconCls:'option'
-                }]
-		
-    });
-	
-	/*var win = Ext.create('Ext.Window', {
-		extend: 'Ext.ux.desktop.Module',				  
-        title: 'Grid Filters Example',
-		collapsable:true,
-		autoScroll :true,
-        layout: 'fit',
-		items: grid
-    }).show();*/
-	
-}//end of gridViewsms_sentgroupsms function
-
-
-//Group Contacts
+//Group Contact Uploads
 
 function gridViewsms_uploadtogroup(){
 var viewdiv=document.getElementById('detailinfo');
@@ -38400,7 +39742,7 @@ sms_uploadtogroupForm('detailinfo','updateload',rec.get('uploadtogroup_id'));
 		maxHeight: 600,
         width: 600,
 		resizable:true,
-        title: 'Group Contacts',
+        title: 'Group Contact Uploads',
         renderTo: 'detailinfo',
         viewConfig: {
             stripeRows: true,
@@ -38432,769 +39774,7 @@ sms_uploadtogroupForm('detailinfo','updateload',rec.get('uploadtogroup_id'));
 }//end of gridViewsms_uploadtogroup function
 
 
-// sms msgcenter
-
-function gridViewsms_msgcenter(){
-var viewdiv=document.getElementById('detailinfo');
-viewdiv.innerHTML='';
-Ext.QuickTips.init();
-var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_msgcenter = Ext.get('gridViewsms_msgcenter');	
-
-	Ext.define('Sms_msgcenter', {
-    extend: 'Ext.data.Model',
-	fields:['msgcenter_id','msgcenter_name','description']
-	});
-	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_msgcenter',
-    proxy: {
-        type: 'ajax',
-        url : 'buidgrid.php?t=sms_msgcenter',
-        reader: {
-            type: 'json'
-        }
-    }
-});
-  store.load();
-    var grid = Ext.create('Ext.grid.Panel', {
-						  
-        store: store,
-        stateful: true,
-        //collapsible: true,
-        multiSelect: true,
-		iconCls: 'icon-grid',
-        stateId: 'stateGrid',
-		animCollapse:false,
-        constrainHeader:true,
-        layout: 'fit',
-		columnLines: true,
-		//headerPosition :'left',
-		bbar:{height: 20},
-		columns:[
-		new Ext.grid.RowNumberer(),{
-		text     : ' Msgcenter Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'msgcenter_id'
-		 },
-		 {
-		text     : ' Msgcenter Name ' , 
-		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'msgcenter_name'
-		 },
-		 {
-		text     : ' Description ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'description'
-		 },
-		 {
-                menuDisabled: true,
-                sortable: false,
-                xtype: 'actioncolumn',
-                width: 50,
-                items: [{
-                    icon   : '../shared/icons/fam/delete.gif',
-                    tooltip: 'Sell stock',
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-                        alert('Sell ' + rec.get('alert_name'));
-                    }
-                }, {
-                    getClass: function(v, meta, rec) { 
-                        if (rec.get('alert_name') < 0) {
-                            this.items[1].tooltip = 'Hold stock';
-                            return 'alert-col';
-                        } else {
-                            this.items[1].tooltip = 'Buy stock';
-                            return 'buy-col';
-                        }
-                    },
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-
-sms_msgcenterForm('detailinfo','updateload',rec.get('msgcenter_id'));
-                    }
-                }]
-            }
-        ]
-		
-		,
-		maxHeight: 600,
-        width: 600,
-		resizable:true,
-        title: ' Sms Msgcenter',
-        renderTo: 'detailinfo',
-        viewConfig: {
-            stripeRows: true,
-            enableTextSelection: true
-		},
-		tbar:[{
-                    text:'Add Record',
-                    tooltip:'Add a new row',
-                    iconCls:'add',
-					handler:function(){
-						 
-					}
-                }, '-', {
-                    text:'Options',                  
-                    iconCls:'option'
-                }]
-		
-    });
-	
-	/*var win = Ext.create('Ext.Window', {
-		extend: 'Ext.ux.desktop.Module',				  
-        title: 'Grid Filters Example',
-		collapsable:true,
-		autoScroll :true,
-        layout: 'fit',
-		items: grid
-    }).show();*/
-	
-}//end of gridViewsms_msgcenter function
-
-
-// sms invalidphonenumber
-
-function gridViewsms_invalidphonenumber(){
-var viewdiv=document.getElementById('detailinfo');
-viewdiv.innerHTML='';
-Ext.QuickTips.init();
-var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_invalidphonenumber = Ext.get('gridViewsms_invalidphonenumber');	
-
-	Ext.define('Sms_invalidphonenumber', {
-    extend: 'Ext.data.Model',
-	fields:['invalidphonenumber_id','recepient','phone_number']
-	});
-	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_invalidphonenumber',
-    proxy: {
-        type: 'ajax',
-        url : 'buidgrid.php?t=sms_invalidphonenumber',
-        reader: {
-            type: 'json'
-        }
-    }
-});
-  store.load();
-    var grid = Ext.create('Ext.grid.Panel', {
-						  
-        store: store,
-        stateful: true,
-        //collapsible: true,
-        multiSelect: true,
-		iconCls: 'icon-grid',
-        stateId: 'stateGrid',
-		animCollapse:false,
-        constrainHeader:true,
-        layout: 'fit',
-		columnLines: true,
-		//headerPosition :'left',
-		bbar:{height: 20},
-		columns:[
-		new Ext.grid.RowNumberer(),{
-		text     : ' Invalidphonenumber Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'invalidphonenumber_id'
-		 },
-		 {
-		text     : ' Recepient ' , 
-		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'recepient'
-		 },
-		 {
-		text     : ' Phone Number ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'phone_number'
-		 },
-		 {
-                menuDisabled: true,
-                sortable: false,
-                xtype: 'actioncolumn',
-                width: 50,
-                items: [{
-                    icon   : '../shared/icons/fam/delete.gif',
-                    tooltip: 'Sell stock',
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-                        alert('Sell ' + rec.get('alert_name'));
-                    }
-                }, {
-                    getClass: function(v, meta, rec) { 
-                        if (rec.get('alert_name') < 0) {
-                            this.items[1].tooltip = 'Hold stock';
-                            return 'alert-col';
-                        } else {
-                            this.items[1].tooltip = 'Buy stock';
-                            return 'buy-col';
-                        }
-                    },
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-
-sms_invalidphonenumberForm('detailinfo','updateload',rec.get('invalidphonenumber_id'));
-                    }
-                }]
-            }
-        ]
-		
-		,
-		maxHeight: 600,
-        width: 600,
-		resizable:true,
-        title: ' Sms Invalidphonenumber',
-        renderTo: 'detailinfo',
-        viewConfig: {
-            stripeRows: true,
-            enableTextSelection: true
-		},
-		tbar:[{
-                    text:'Add Record',
-                    tooltip:'Add a new row',
-                    iconCls:'add',
-					handler:function(){
-						 
-					}
-                }, '-', {
-                    text:'Options',                  
-                    iconCls:'option'
-                }]
-		
-    });
-	
-	/*var win = Ext.create('Ext.Window', {
-		extend: 'Ext.ux.desktop.Module',				  
-        title: 'Grid Filters Example',
-		collapsable:true,
-		autoScroll :true,
-        layout: 'fit',
-		items: grid
-    }).show();*/
-	
-}//end of gridViewsms_invalidphonenumber function
-
-
-//Datasource Template
-
-function gridViewsms_datasourcetemp(){
-var viewdiv=document.getElementById('detailinfo');
-viewdiv.innerHTML='';
-Ext.QuickTips.init();
-var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_datasourcetemp = Ext.get('gridViewsms_datasourcetemp');	
-
-	Ext.define('Sms_datasourcetemp', {
-    extend: 'Ext.data.Model',
-	fields:['datasourcetemp_id','datasourcetemp_name','smsmsgcust_name','query','parameters']
-	});
-	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_datasourcetemp',
-    proxy: {
-        type: 'ajax',
-        url : 'buidgrid.php?t=sms_datasourcetemp',
-        reader: {
-            type: 'json'
-        }
-    }
-});
-  store.load();
-    var grid = Ext.create('Ext.grid.Panel', {
-						  
-        store: store,
-        stateful: true,
-        //collapsible: true,
-        multiSelect: true,
-		iconCls: 'icon-grid',
-        stateId: 'stateGrid',
-		animCollapse:false,
-        constrainHeader:true,
-        layout: 'fit',
-		columnLines: true,
-		//headerPosition :'left',
-		bbar:{height: 20},
-		columns:[
-		new Ext.grid.RowNumberer(),{
-		text     : ' Datasourcetemp Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'datasourcetemp_id'
-		 },
-		 {
-		text     : ' Datasourcetemp Name ' , 
-		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'datasourcetemp_name'
-		 },
-		 {
-		text     : ' Smsmsgcust Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'smsmsgcust_name'
-		 },
-		 {
-		text     : ' Query ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'query'
-		 },
-		 {
-		text     : ' Parameters ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'parameters'
-		 },
-		 {
-                menuDisabled: true,
-                sortable: false,
-                xtype: 'actioncolumn',
-                width: 50,
-                items: [{
-                    icon   : '../shared/icons/fam/delete.gif',
-                    tooltip: 'Sell stock',
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-                        alert('Sell ' + rec.get('alert_name'));
-                    }
-                }, {
-                    getClass: function(v, meta, rec) { 
-                        if (rec.get('alert_name') < 0) {
-                            this.items[1].tooltip = 'Hold stock';
-                            return 'alert-col';
-                        } else {
-                            this.items[1].tooltip = 'Buy stock';
-                            return 'buy-col';
-                        }
-                    },
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-
-sms_datasourcetempForm('detailinfo','updateload',rec.get('datasourcetemp_id'));
-                    }
-                }]
-            }
-        ]
-		
-		,
-		maxHeight: 600,
-        width: 600,
-		resizable:true,
-        title: 'Datasource Template',
-        renderTo: 'detailinfo',
-        viewConfig: {
-            stripeRows: true,
-            enableTextSelection: true
-		},
-		tbar:[{
-                    text:'Add Record',
-                    tooltip:'Add a new row',
-                    iconCls:'add',
-					handler:function(){
-						 
-					}
-                }, '-', {
-                    text:'Options',                  
-                    iconCls:'option'
-                }]
-		
-    });
-	
-	/*var win = Ext.create('Ext.Window', {
-		extend: 'Ext.ux.desktop.Module',				  
-        title: 'Grid Filters Example',
-		collapsable:true,
-		autoScroll :true,
-        layout: 'fit',
-		items: grid
-    }).show();*/
-	
-}//end of gridViewsms_datasourcetemp function
-
-
-//Group Template
-
-function gridViewsms_smsgrouptemp(){
-var viewdiv=document.getElementById('detailinfo');
-viewdiv.innerHTML='';
-Ext.QuickTips.init();
-var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_smsgrouptemp = Ext.get('gridViewsms_smsgrouptemp');	
-
-	Ext.define('Sms_smsgrouptemp', {
-    extend: 'Ext.data.Model',
-	fields:['smsgrouptemp_id','smsgroup_name','smsmsgcust_name','description']
-	});
-	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_smsgrouptemp',
-    proxy: {
-        type: 'ajax',
-        url : 'buidgrid.php?t=sms_smsgrouptemp',
-        reader: {
-            type: 'json'
-        }
-    }
-});
-  store.load();
-    var grid = Ext.create('Ext.grid.Panel', {
-						  
-        store: store,
-        stateful: true,
-        //collapsible: true,
-        multiSelect: true,
-		iconCls: 'icon-grid',
-        stateId: 'stateGrid',
-		animCollapse:false,
-        constrainHeader:true,
-        layout: 'fit',
-		columnLines: true,
-		//headerPosition :'left',
-		bbar:{height: 20},
-		columns:[
-		new Ext.grid.RowNumberer(),{
-		text     : ' Smsgrouptemp Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'smsgrouptemp_id'
-		 },
-		 {
-		text     : ' Smsgroup Id ' , 
-		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'smsgroup_name'
-		 },
-		 {
-		text     : ' Smsmsgcust Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'smsmsgcust_name'
-		 },
-		 {
-		text     : ' Description ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'description'
-		 },
-		 {
-                menuDisabled: true,
-                sortable: false,
-                xtype: 'actioncolumn',
-                width: 50,
-                items: [{
-                    icon   : '../shared/icons/fam/delete.gif',
-                    tooltip: 'Sell stock',
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-                        alert('Sell ' + rec.get('alert_name'));
-                    }
-                }, {
-                    getClass: function(v, meta, rec) { 
-                        if (rec.get('alert_name') < 0) {
-                            this.items[1].tooltip = 'Hold stock';
-                            return 'alert-col';
-                        } else {
-                            this.items[1].tooltip = 'Buy stock';
-                            return 'buy-col';
-                        }
-                    },
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-
-sms_smsgrouptempForm('detailinfo','updateload',rec.get('smsgrouptemp_id'));
-                    }
-                }]
-            }
-        ]
-		
-		,
-		maxHeight: 600,
-        width: 600,
-		resizable:true,
-        title: 'Group Template',
-        renderTo: 'detailinfo',
-        viewConfig: {
-            stripeRows: true,
-            enableTextSelection: true
-		},
-		tbar:[{
-                    text:'Add Record',
-                    tooltip:'Add a new row',
-                    iconCls:'add',
-					handler:function(){
-						 
-					}
-                }, '-', {
-                    text:'Options',                  
-                    iconCls:'option'
-                }]
-		
-    });
-	
-	/*var win = Ext.create('Ext.Window', {
-		extend: 'Ext.ux.desktop.Module',				  
-        title: 'Grid Filters Example',
-		collapsable:true,
-		autoScroll :true,
-        layout: 'fit',
-		items: grid
-    }).show();*/
-	
-}//end of gridViewsms_smsgrouptemp function
-
-
-//External Data Source
-
-function gridViewsms_smsremotesource(){
-var viewdiv=document.getElementById('detailinfo');
-viewdiv.innerHTML='';
-Ext.QuickTips.init();
-var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_smsremotesource = Ext.get('gridViewsms_smsremotesource');	
-
-	Ext.define('Sms_smsremotesource', {
-    extend: 'Ext.data.Model',
-	fields:['smsremotesource_id','datasourcetemp_name','smsremotesource_name','parameters']
-	});
-	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_smsremotesource',
-    proxy: {
-        type: 'ajax',
-        url : 'buidgrid.php?t=sms_smsremotesource',
-        reader: {
-            type: 'json'
-        }
-    }
-});
-  store.load();
-    var grid = Ext.create('Ext.grid.Panel', {
-						  
-        store: store,
-        stateful: true,
-        //collapsible: true,
-        multiSelect: true,
-		iconCls: 'icon-grid',
-        stateId: 'stateGrid',
-		animCollapse:false,
-        constrainHeader:true,
-        layout: 'fit',
-		columnLines: true,
-		//headerPosition :'left',
-		bbar:{height: 20},
-		columns:[
-		new Ext.grid.RowNumberer(),{
-		text     : ' Smsremotesource Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'smsremotesource_id'
-		 },
-		 {
-		text     : ' Datasourcetemp Id ' , 
-		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'datasourcetemp_name'
-		 },
-		 {
-		text     : ' Smsremotesource Name ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'smsremotesource_name'
-		 },
-		 {
-		text     : ' Parameters ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'parameters'
-		 },
-		 {
-                menuDisabled: true,
-                sortable: false,
-                xtype: 'actioncolumn',
-                width: 50,
-                items: [{
-                    icon   : '../shared/icons/fam/delete.gif',
-                    tooltip: 'Sell stock',
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-                        alert('Sell ' + rec.get('alert_name'));
-                    }
-                }, {
-                    getClass: function(v, meta, rec) { 
-                        if (rec.get('alert_name') < 0) {
-                            this.items[1].tooltip = 'Hold stock';
-                            return 'alert-col';
-                        } else {
-                            this.items[1].tooltip = 'Buy stock';
-                            return 'buy-col';
-                        }
-                    },
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-
-sms_smsremotesourceForm('detailinfo','updateload',rec.get('smsremotesource_id'));
-                    }
-                }]
-            }
-        ]
-		
-		,
-		maxHeight: 600,
-        width: 600,
-		resizable:true,
-        title: 'External Data Source',
-        renderTo: 'detailinfo',
-        viewConfig: {
-            stripeRows: true,
-            enableTextSelection: true
-		},
-		tbar:[{
-                    text:'Add Record',
-                    tooltip:'Add a new row',
-                    iconCls:'add',
-					handler:function(){
-						 
-					}
-                }, '-', {
-                    text:'Options',                  
-                    iconCls:'option'
-                }]
-		
-    });
-	
-	/*var win = Ext.create('Ext.Window', {
-		extend: 'Ext.ux.desktop.Module',				  
-        title: 'Grid Filters Example',
-		collapsable:true,
-		autoScroll :true,
-        layout: 'fit',
-		items: grid
-    }).show();*/
-	
-}//end of gridViewsms_smsremotesource function
-
-
-// Month
-
-function gridViewsms_monthfilter(){
-var viewdiv=document.getElementById('detailinfo');
-viewdiv.innerHTML='';
-Ext.QuickTips.init();
-var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_monthfilter = Ext.get('gridViewsms_monthfilter');	
-
-	Ext.define('Sms_monthfilter', {
-    extend: 'Ext.data.Model',
-	fields:['monthfilter_id','monthfilter_name']
-	});
-	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_monthfilter',
-    proxy: {
-        type: 'ajax',
-        url : 'buidgrid.php?t=sms_monthfilter',
-        reader: {
-            type: 'json'
-        }
-    }
-});
-  store.load();
-    var grid = Ext.create('Ext.grid.Panel', {
-						  
-        store: store,
-        stateful: true,
-        //collapsible: true,
-        multiSelect: true,
-		iconCls: 'icon-grid',
-        stateId: 'stateGrid',
-		animCollapse:false,
-        constrainHeader:true,
-        layout: 'fit',
-		columnLines: true,
-		//headerPosition :'left',
-		bbar:{height: 20},
-		columns:[
-		new Ext.grid.RowNumberer(),{
-		text     : ' Monthfilter Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'monthfilter_id'
-		 },
-		 {
-		text     : ' Monthfilter Name ' , 
-		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'monthfilter_name'
-		 },
-		 {
-                menuDisabled: true,
-                sortable: false,
-                xtype: 'actioncolumn',
-                width: 50,
-                items: [{
-                    icon   : '../shared/icons/fam/delete.gif',
-                    tooltip: 'Sell stock',
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-                        alert('Sell ' + rec.get('alert_name'));
-                    }
-                }, {
-                    getClass: function(v, meta, rec) { 
-                        if (rec.get('alert_name') < 0) {
-                            this.items[1].tooltip = 'Hold stock';
-                            return 'alert-col';
-                        } else {
-                            this.items[1].tooltip = 'Buy stock';
-                            return 'buy-col';
-                        }
-                    },
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-
-sms_monthfilterForm('detailinfo','updateload',rec.get('monthfilter_id'));
-                    }
-                }]
-            }
-        ]
-		
-		,
-		maxHeight: 600,
-        width: 600,
-		resizable:true,
-        title: ' Month',
-        renderTo: 'detailinfo',
-        viewConfig: {
-            stripeRows: true,
-            enableTextSelection: true
-		},
-		tbar:[{
-                    text:'Add Record',
-                    tooltip:'Add a new row',
-                    iconCls:'add',
-					handler:function(){
-						 
-					}
-                }, '-', {
-                    text:'Options',                  
-                    iconCls:'option'
-                }]
-		
-    });
-	
-	/*var win = Ext.create('Ext.Window', {
-		extend: 'Ext.ux.desktop.Module',				  
-        title: 'Grid Filters Example',
-		collapsable:true,
-		autoScroll :true,
-        layout: 'fit',
-		items: grid
-    }).show();*/
-	
-}//end of gridViewsms_monthfilter function
-
-
-// Year
+// sms yearfilter
 
 function gridViewsms_yearfilter(){
 var viewdiv=document.getElementById('detailinfo');
@@ -39280,7 +39860,7 @@ sms_yearfilterForm('detailinfo','updateload',rec.get('yearfilter_id'));
 		maxHeight: 600,
         width: 600,
 		resizable:true,
-        title: ' Year',
+        title: ' Sms Yearfilter',
         renderTo: 'detailinfo',
         viewConfig: {
             stripeRows: true,
@@ -39310,263 +39890,3 @@ sms_yearfilterForm('detailinfo','updateload',rec.get('yearfilter_id'));
     }).show();*/
 	
 }//end of gridViewsms_yearfilter function
-
-
-// sms msgcenterdefault
-
-function gridViewsms_msgcenterdefault(){
-var viewdiv=document.getElementById('detailinfo');
-viewdiv.innerHTML='';
-Ext.QuickTips.init();
-var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_msgcenterdefault = Ext.get('gridViewsms_msgcenterdefault');	
-
-	Ext.define('Sms_msgcenterdefault', {
-    extend: 'Ext.data.Model',
-	fields:['msgcenterdefault_id','center']
-	});
-	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_msgcenterdefault',
-    proxy: {
-        type: 'ajax',
-        url : 'buidgrid.php?t=sms_msgcenterdefault',
-        reader: {
-            type: 'json'
-        }
-    }
-});
-  store.load();
-    var grid = Ext.create('Ext.grid.Panel', {
-						  
-        store: store,
-        stateful: true,
-        //collapsible: true,
-        multiSelect: true,
-		iconCls: 'icon-grid',
-        stateId: 'stateGrid',
-		animCollapse:false,
-        constrainHeader:true,
-        layout: 'fit',
-		columnLines: true,
-		//headerPosition :'left',
-		bbar:{height: 20},
-		columns:[
-		new Ext.grid.RowNumberer(),{
-		text     : ' Msgcenterdefault Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'msgcenterdefault_id'
-		 },
-		 {
-		text     : ' Center ' , 
-		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'center'
-		 },
-		 {
-                menuDisabled: true,
-                sortable: false,
-                xtype: 'actioncolumn',
-                width: 50,
-                items: [{
-                    icon   : '../shared/icons/fam/delete.gif',
-                    tooltip: 'Sell stock',
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-                        alert('Sell ' + rec.get('alert_name'));
-                    }
-                }, {
-                    getClass: function(v, meta, rec) { 
-                        if (rec.get('alert_name') < 0) {
-                            this.items[1].tooltip = 'Hold stock';
-                            return 'alert-col';
-                        } else {
-                            this.items[1].tooltip = 'Buy stock';
-                            return 'buy-col';
-                        }
-                    },
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-
-sms_msgcenterdefaultForm('detailinfo','updateload',rec.get('msgcenterdefault_id'));
-                    }
-                }]
-            }
-        ]
-		
-		,
-		maxHeight: 600,
-        width: 600,
-		resizable:true,
-        title: ' Sms Msgcenterdefault',
-        renderTo: 'detailinfo',
-        viewConfig: {
-            stripeRows: true,
-            enableTextSelection: true
-		},
-		tbar:[{
-                    text:'Add Record',
-                    tooltip:'Add a new row',
-                    iconCls:'add',
-					handler:function(){
-						 
-					}
-                }, '-', {
-                    text:'Options',                  
-                    iconCls:'option'
-                }]
-		
-    });
-	
-	/*var win = Ext.create('Ext.Window', {
-		extend: 'Ext.ux.desktop.Module',				  
-        title: 'Grid Filters Example',
-		collapsable:true,
-		autoScroll :true,
-        layout: 'fit',
-		items: grid
-    }).show();*/
-	
-}//end of gridViewsms_msgcenterdefault function
-
-
-// sms school
-
-function gridViewsms_school(){
-var viewdiv=document.getElementById('detailinfo');
-viewdiv.innerHTML='';
-Ext.QuickTips.init();
-var closebtn= Ext.get('close-btn');
-	var  viewgrbtnsms_school = Ext.get('gridViewsms_school');	
-
-	Ext.define('Sms_school', {
-    extend: 'Ext.data.Model',
-	fields:['school_id','school_name','code','date_registered','admission','admission desc']
-	});
-	var store = Ext.create('Ext.data.Store', {
-    model: 'Sms_school',
-    proxy: {
-        type: 'ajax',
-        url : 'buidgrid.php?t=sms_school',
-        reader: {
-            type: 'json'
-        }
-    }
-});
-  store.load();
-    var grid = Ext.create('Ext.grid.Panel', {
-						  
-        store: store,
-        stateful: true,
-        //collapsible: true,
-        multiSelect: true,
-		iconCls: 'icon-grid',
-        stateId: 'stateGrid',
-		animCollapse:false,
-        constrainHeader:true,
-        layout: 'fit',
-		columnLines: true,
-		//headerPosition :'left',
-		bbar:{height: 20},
-		columns:[
-		new Ext.grid.RowNumberer(),{
-		text     : ' School Id ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'school_id'
-		 },
-		 {
-		text     : ' School Name ' , 
-		 flex : 1 , 
-		 sortable : true , 
-		 dataIndex : 'school_name'
-		 },
-		 {
-		text     : ' Code ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'code'
-		 },
-		 {
-		text     : ' Date Registered ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'date_registered'
-		 },
-		 {
-		text     : ' Admission ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'admission'
-		 },
-		 {
-		text     : ' Admission Desc ' , 
-		 width : 80 , 
-		 sortable : true , 
-		 dataIndex : 'admission desc'
-		 },
-		 {
-                menuDisabled: true,
-                sortable: false,
-                xtype: 'actioncolumn',
-                width: 50,
-                items: [{
-                    icon   : '../shared/icons/fam/delete.gif',
-                    tooltip: 'Sell stock',
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-                        alert('Sell ' + rec.get('alert_name'));
-                    }
-                }, {
-                    getClass: function(v, meta, rec) { 
-                        if (rec.get('alert_name') < 0) {
-                            this.items[1].tooltip = 'Hold stock';
-                            return 'alert-col';
-                        } else {
-                            this.items[1].tooltip = 'Buy stock';
-                            return 'buy-col';
-                        }
-                    },
-                    handler: function(grid, rowIndex, colIndex) {
-                        var rec = store.getAt(rowIndex);
-
-sms_schoolForm('detailinfo','updateload',rec.get('school_id'));
-                    }
-                }]
-            }
-        ]
-		
-		,
-		maxHeight: 600,
-        width: 600,
-		resizable:true,
-        title: ' Sms School',
-        renderTo: 'detailinfo',
-        viewConfig: {
-            stripeRows: true,
-            enableTextSelection: true
-		},
-		tbar:[{
-                    text:'Add Record',
-                    tooltip:'Add a new row',
-                    iconCls:'add',
-					handler:function(){
-						 
-					}
-                }, '-', {
-                    text:'Options',                  
-                    iconCls:'option'
-                }]
-		
-    });
-	
-	/*var win = Ext.create('Ext.Window', {
-		extend: 'Ext.ux.desktop.Module',				  
-        title: 'Grid Filters Example',
-		collapsable:true,
-		autoScroll :true,
-        layout: 'fit',
-		items: grid
-    }).show();*/
-	
-}//end of gridViewsms_school function

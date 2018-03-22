@@ -1784,7 +1784,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'company_id',
 	forceSelection:true,
-    fieldLabel: 'Company Id ',
+    fieldLabel: 'Company',
     store: admin_companydata,
     queryMode: 'local',
     displayField: 'company_name',
@@ -1794,7 +1794,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'person_id',
 	forceSelection:true,
-    fieldLabel: 'Person Id ',
+    fieldLabel: 'Person',
     store: admin_persondata,
     queryMode: 'local',
     displayField: 'person_name',
@@ -2095,7 +2095,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'company_id',
 	forceSelection:true,
-    fieldLabel: 'Company Id ',
+    fieldLabel: 'Company',
     store: admin_companydata,
     queryMode: 'local',
     displayField: 'company_name',
@@ -2105,7 +2105,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'dept_id',
 	forceSelection:true,
-    fieldLabel: 'Dept Id ',
+    fieldLabel: 'Dept',
     store: admin_deptdata,
     queryMode: 'local',
     displayField: 'dept_name',
@@ -2115,7 +2115,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'location_id',
 	forceSelection:true,
-    fieldLabel: 'Location Id ',
+    fieldLabel: 'Location',
     store: data,
     queryMode: 'local',
     displayField: '_name',
@@ -2385,7 +2385,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'dept_id',
 	forceSelection:true,
-    fieldLabel: 'Dept Id ',
+    fieldLabel: 'Dept',
     store: admin_deptdata,
     queryMode: 'local',
     displayField: 'dept_name',
@@ -2667,7 +2667,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'company_id',
 	forceSelection:true,
-    fieldLabel: 'Company Id ',
+    fieldLabel: 'Company',
     store: admin_companydata,
     queryMode: 'local',
     displayField: 'company_name',
@@ -2675,7 +2675,7 @@ Ext.tip.QuickTipManager.init();
 	},{
             xtype: 'textfield',
             name: 'dept_id',
-            fieldLabel: 'Dept Id ',
+            fieldLabel: 'Dept',
             allowBlank: false,
             minLength: 1
         
@@ -2684,7 +2684,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'location_id',
 	forceSelection:true,
-    fieldLabel: 'Location Id ',
+    fieldLabel: 'Location',
     store: data,
     queryMode: 'local',
     displayField: '_name',
@@ -2926,7 +2926,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'contact_name',
-            fieldLabel: 'Contact Name ',
+            fieldLabel: 'Contact Ref',
             allowBlank: false,
             minLength: 1
         
@@ -4238,7 +4238,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'dept_name',
-            fieldLabel: 'Dept Name ',
+            fieldLabel: 'Dept',
             allowBlank: false,
             minLength: 1
         
@@ -4247,7 +4247,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'location_id',
 	forceSelection:true,
-    fieldLabel: 'Location Id ',
+    fieldLabel: 'Location',
     store: data,
     queryMode: 'local',
     displayField: '_name',
@@ -5271,7 +5271,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'groupcategory_name',
-            fieldLabel: 'Groupcategory Name ',
+            fieldLabel: 'Group Category',
             allowBlank: false,
             minLength: 1
         
@@ -5767,7 +5767,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'month_name',
-            fieldLabel: 'Month Name ',
+            fieldLabel: 'Month',
             allowBlank: false,
             minLength: 1
         
@@ -6256,14 +6256,14 @@ Ext.tip.QuickTipManager.init();
 		},{
             xtype: 'textfield',
             name: 'idorpassport_number',
-            fieldLabel: 'Idorpassport Number ',
+            fieldLabel: 'ID  Number ',
             allowBlank: false,
             minLength: 1
         
 		},{
             xtype: 'datefield',
             name: 'dob',
-            fieldLabel: 'Dob ',
+            fieldLabel: 'DOB',
             allowBlank: false,
             minLength: 1
         
@@ -8425,7 +8425,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'photo_name',
-            fieldLabel: 'Photo Name ',
+            fieldLabel: 'Photo Ref',
             allowBlank: false,
             minLength: 1
         
@@ -8702,7 +8702,7 @@ Ext.tip.QuickTipManager.init();
 	},{
             xtype: 'textfield',
             name: 'plevel_name',
-            fieldLabel: 'Plevel Name ',
+            fieldLabel: 'Previlege Level ',
             allowBlank: false,
             minLength: 1
         
@@ -9213,7 +9213,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'rangetype_name',
-            fieldLabel: 'Rangetype Name ',
+            fieldLabel: 'Range Type',
             allowBlank: false,
             minLength: 1
         
@@ -9447,7 +9447,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'role_name',
-            fieldLabel: 'Role Name ',
+            fieldLabel: 'Role',
             allowBlank: false,
             minLength: 1
         
@@ -9740,7 +9740,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'role_id',
 	forceSelection:true,
-    fieldLabel: 'Role Id ',
+    fieldLabel: 'Role',
     store: admin_roledata,
     queryMode: 'local',
     displayField: 'role_name',
@@ -10356,7 +10356,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'table_id',
 	forceSelection:true,
-    fieldLabel: 'Table Id ',
+    fieldLabel: 'Table',
     store: admin_tabledata,
     queryMode: 'local',
     displayField: 'table_name',
@@ -10645,7 +10645,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'person_id',
 	forceSelection:true,
-    fieldLabel: 'Person Id ',
+    fieldLabel: 'Person',
     store: admin_persondata,
     queryMode: 'local',
     displayField: 'person_name',
@@ -10655,7 +10655,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'role_id',
 	forceSelection:true,
-    fieldLabel: 'Role Id ',
+    fieldLabel: 'Role',
     store: admin_roledata,
     queryMode: 'local',
     displayField: 'role_name',
@@ -10904,7 +10904,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'role_id',
 	forceSelection:true,
-    fieldLabel: 'Role Id ',
+    fieldLabel: 'Role',
     store: admin_roledata,
     queryMode: 'local',
     displayField: 'role_name',
@@ -11167,7 +11167,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'role_id',
 	forceSelection:true,
-    fieldLabel: 'Role Id ',
+    fieldLabel: 'Role',
     store: admin_roledata,
     queryMode: 'local',
     displayField: 'role_name',
@@ -26561,6 +26561,467 @@ loadsms_billhandleinfo(formPanel,rid);
 }//launchForm()
 
 
+function sms_billmonthForm(displayhere,loadtype,rid){
+
+var obj=document.getElementById(displayhere);
+
+obj.innerHTML='';
+
+
+
+Ext.onReady(function() {
+Ext.tip.QuickTipManager.init();
+        var formPanel = Ext.widget('form', {
+        renderTo: displayhere,
+		tbar:[{
+                    text:'Add Something',
+                    tooltip:'Add a new row',
+                    iconCls:'add'
+                }, '-', {
+                    text:'Options',
+                    tooltip:'Blah blah blah blaht',
+                    iconCls:'option'
+                },'-',{
+                    text:'Remove Something',
+                    tooltip:'Remove the selected item',
+                    iconCls:'remove'
+                },'-',{
+                    text:'View',
+                    tooltip:'View Information Grid',
+                    iconCls:'grid',
+					handler:function(buttonObj, eventObj) { 
+									///eventObj.click(eval(tablevalgrpArr[2]));
+									gridViewsms_billmonth();
+											}
+                }],
+		resizable:true,
+		closable:true,
+        frame: true,
+		url:'bodysave.php',
+        width: 550,
+        bodyPadding: 10,
+        bodyBorder: true,
+		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
+        wallpaperStretch: false,
+        title: 'Update  sms billmonth ',
+
+        defaults: {
+            anchor: '100%'
+        },
+        fieldDefaults: {
+            labelAlign: 'left',
+            msgTarget: 'none',
+            /*invalidCls: '' 
+			unset the invalidCls so individual fields do not get styled as invalid*/
+        },
+
+        /*
+         * Listen for validity change on the entire form and update the combined error icon
+         */
+        listeners: {
+            fieldvaliditychange: function() {
+                this.updateErrorState();
+            },
+            fielderrorchange: function() {
+                this.updateErrorState();
+            }
+        },
+
+        updateErrorState: function() {
+            var me = this,
+                errorCmp, fields, errors;
+
+            if (me.hasBeenDirty || me.getForm().isDirty()) { //prevents showing global error when form first loads
+                errorCmp = me.down('#formErrorState');
+                fields = me.getForm().getFields();
+                errors = [];
+                fields.each(function(field) {
+                    Ext.Array.forEach(field.getErrors(), function(error) {
+                        errors.push({name: field.getFieldLabel(), error: error});
+                    });
+                });
+                errorCmp.setErrors(errors);
+                me.hasBeenDirty = true;
+            }
+        },
+
+        items: [
+		
+		{xtype:'hidden',
+             name:'t',
+			 value:'sms_billmonth'
+			 },
+			 {xtype:'hidden',
+             name:'billmonth_id',
+			 value:''
+			 },{
+            xtype: 'textfield',
+            name: 'billmonth_name',
+            fieldLabel: 'Billmonth Name ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'numberfield',
+            name: 'bill_month',
+            fieldLabel: 'Bill Month ',
+            allowBlank: false,
+            minLength: 1
+        
+		}], dockedItems: [{
+            xtype: 'container',
+            dock: 'bottom',
+            layout: {
+                type: 'hbox',
+                align: 'middle'
+            },
+            padding: '10 10 5',
+
+            items: [{
+                xtype: 'component',
+                id: 'formErrorState',
+                baseCls: 'form-error-state',
+                flex: 1,
+                validText: 'Form is valid',
+                invalidText: 'Form has errors',
+                tipTpl: Ext.create('Ext.XTemplate', '<ul><tpl for=><li><span class="field-name">{name}</span>: <span class="error">{error}</span></li></tpl></ul>'),
+
+                getTip: function() {
+                    var tip = this.tip;
+                    if (!tip) {
+                        tip = this.tip = Ext.widget('tooltip', {
+                            target: this.el,
+                            title: 'Error Details:',
+                            autoHide: false,
+                            anchor: 'top',
+                            mouseOffset: [-11, -2],
+                            closable: true,
+                            constrainPosition: false,
+                            cls: 'errors-tip'
+                        });
+                        tip.show();
+                    }
+                    return tip;
+                },
+
+                setErrors: function(errors) {
+                    var me = this,
+                        baseCls = me.baseCls,
+                        tip = me.getTip();
+
+                    errors = Ext.Array.from(errors);
+
+                    // Update CSS class and tooltip content
+                    if (errors.length) {
+                        me.addCls(baseCls + '-invalid');
+                        me.removeCls(baseCls + '-valid');
+                        me.update(me.invalidText);
+                        tip.setDisabled(false);
+                        tip.update(me.tipTpl.apply(errors));
+                    } else {
+                        me.addCls(baseCls + '-valid');
+                        me.removeCls(baseCls + '-invalid');
+                        me.update(me.validText);
+                        tip.setDisabled(true);
+                        tip.hide();
+                    }
+                }
+            }, 
+			
+			
+	//now submit
+	{
+		xtype: 'button',
+        text: 'Submit Data',
+        handler: function() {
+            var form = this.up('form').getForm();
+            if(form.isValid()){
+                form.submit({
+                    url: 'bodysave.php',
+                    waitMsg: 'saving changes...',
+                    success: function(fp, o) {
+                        Ext.Msg.alert('Success', '' + o.result.savemsg + '"');
+                    }
+                });
+            }
+        }
+    }
+	///end of cols
+		]
+        }]
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+					 
+        title: 'User Registration',
+       // height: 700,
+       //width: 800,
+        layout: 'fit',
+		autoScroll :true,
+		items: formPanel,
+		 tbar:[{
+                    text:'Add Something muse',
+                    tooltip:'Add a new row',
+                    iconCls:'add'
+                }, '-', {
+                    text:'Options',
+                    tooltip:'Blah blah blah blaht',
+                    iconCls:'option'
+                },'-',{
+                    text:'Remove Something',
+                    tooltip:'Remove the selected item',
+                    iconCls:'remove'
+                },'-',{
+                    text:'View',
+                    tooltip:'View Information Grid',
+                    iconCls:'grid',
+					handler:function(buttonObj, eventObj) { 
+									///eventObj.click(eval(tablevalgrpArr[2]));
+									gridViewsms_billmonth();
+											}
+                }
+				]
+    }).show();
+	*/
+	
+if(loadtype=='updateload'){
+loadsms_billmonthinfo(formPanel,rid);
+}
+
+});
+
+
+
+}//launchForm()
+
+
+function sms_billyearForm(displayhere,loadtype,rid){
+
+var obj=document.getElementById(displayhere);
+
+obj.innerHTML='';
+
+
+
+Ext.onReady(function() {
+Ext.tip.QuickTipManager.init();
+        var formPanel = Ext.widget('form', {
+        renderTo: displayhere,
+		tbar:[{
+                    text:'Add Something',
+                    tooltip:'Add a new row',
+                    iconCls:'add'
+                }, '-', {
+                    text:'Options',
+                    tooltip:'Blah blah blah blaht',
+                    iconCls:'option'
+                },'-',{
+                    text:'Remove Something',
+                    tooltip:'Remove the selected item',
+                    iconCls:'remove'
+                },'-',{
+                    text:'View',
+                    tooltip:'View Information Grid',
+                    iconCls:'grid',
+					handler:function(buttonObj, eventObj) { 
+									///eventObj.click(eval(tablevalgrpArr[2]));
+									gridViewsms_billyear();
+											}
+                }],
+		resizable:true,
+		closable:true,
+        frame: true,
+		url:'bodysave.php',
+        width: 550,
+        bodyPadding: 10,
+        bodyBorder: true,
+		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
+        wallpaperStretch: false,
+        title: 'Update  sms billyear ',
+
+        defaults: {
+            anchor: '100%'
+        },
+        fieldDefaults: {
+            labelAlign: 'left',
+            msgTarget: 'none',
+            /*invalidCls: '' 
+			unset the invalidCls so individual fields do not get styled as invalid*/
+        },
+
+        /*
+         * Listen for validity change on the entire form and update the combined error icon
+         */
+        listeners: {
+            fieldvaliditychange: function() {
+                this.updateErrorState();
+            },
+            fielderrorchange: function() {
+                this.updateErrorState();
+            }
+        },
+
+        updateErrorState: function() {
+            var me = this,
+                errorCmp, fields, errors;
+
+            if (me.hasBeenDirty || me.getForm().isDirty()) { //prevents showing global error when form first loads
+                errorCmp = me.down('#formErrorState');
+                fields = me.getForm().getFields();
+                errors = [];
+                fields.each(function(field) {
+                    Ext.Array.forEach(field.getErrors(), function(error) {
+                        errors.push({name: field.getFieldLabel(), error: error});
+                    });
+                });
+                errorCmp.setErrors(errors);
+                me.hasBeenDirty = true;
+            }
+        },
+
+        items: [
+		
+		{xtype:'hidden',
+             name:'t',
+			 value:'sms_billyear'
+			 },
+			 {xtype:'hidden',
+             name:'billyear_id',
+			 value:''
+			 },{
+            xtype: 'textfield',
+            name: 'billyear_name',
+            fieldLabel: 'Billyear Name ',
+            allowBlank: false,
+            minLength: 1
+        
+		}], dockedItems: [{
+            xtype: 'container',
+            dock: 'bottom',
+            layout: {
+                type: 'hbox',
+                align: 'middle'
+            },
+            padding: '10 10 5',
+
+            items: [{
+                xtype: 'component',
+                id: 'formErrorState',
+                baseCls: 'form-error-state',
+                flex: 1,
+                validText: 'Form is valid',
+                invalidText: 'Form has errors',
+                tipTpl: Ext.create('Ext.XTemplate', '<ul><tpl for=><li><span class="field-name">{name}</span>: <span class="error">{error}</span></li></tpl></ul>'),
+
+                getTip: function() {
+                    var tip = this.tip;
+                    if (!tip) {
+                        tip = this.tip = Ext.widget('tooltip', {
+                            target: this.el,
+                            title: 'Error Details:',
+                            autoHide: false,
+                            anchor: 'top',
+                            mouseOffset: [-11, -2],
+                            closable: true,
+                            constrainPosition: false,
+                            cls: 'errors-tip'
+                        });
+                        tip.show();
+                    }
+                    return tip;
+                },
+
+                setErrors: function(errors) {
+                    var me = this,
+                        baseCls = me.baseCls,
+                        tip = me.getTip();
+
+                    errors = Ext.Array.from(errors);
+
+                    // Update CSS class and tooltip content
+                    if (errors.length) {
+                        me.addCls(baseCls + '-invalid');
+                        me.removeCls(baseCls + '-valid');
+                        me.update(me.invalidText);
+                        tip.setDisabled(false);
+                        tip.update(me.tipTpl.apply(errors));
+                    } else {
+                        me.addCls(baseCls + '-valid');
+                        me.removeCls(baseCls + '-invalid');
+                        me.update(me.validText);
+                        tip.setDisabled(true);
+                        tip.hide();
+                    }
+                }
+            }, 
+			
+			
+	//now submit
+	{
+		xtype: 'button',
+        text: 'Submit Data',
+        handler: function() {
+            var form = this.up('form').getForm();
+            if(form.isValid()){
+                form.submit({
+                    url: 'bodysave.php',
+                    waitMsg: 'saving changes...',
+                    success: function(fp, o) {
+                        Ext.Msg.alert('Success', '' + o.result.savemsg + '"');
+                    }
+                });
+            }
+        }
+    }
+	///end of cols
+		]
+        }]
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+					 
+        title: 'User Registration',
+       // height: 700,
+       //width: 800,
+        layout: 'fit',
+		autoScroll :true,
+		items: formPanel,
+		 tbar:[{
+                    text:'Add Something muse',
+                    tooltip:'Add a new row',
+                    iconCls:'add'
+                }, '-', {
+                    text:'Options',
+                    tooltip:'Blah blah blah blaht',
+                    iconCls:'option'
+                },'-',{
+                    text:'Remove Something',
+                    tooltip:'Remove the selected item',
+                    iconCls:'remove'
+                },'-',{
+                    text:'View',
+                    tooltip:'View Information Grid',
+                    iconCls:'grid',
+					handler:function(buttonObj, eventObj) { 
+									///eventObj.click(eval(tablevalgrpArr[2]));
+									gridViewsms_billyear();
+											}
+                }
+				]
+    }).show();
+	*/
+	
+if(loadtype=='updateload'){
+loadsms_billyearinfo(formPanel,rid);
+}
+
+});
+
+
+
+}//launchForm()
+
+
 function sms_creditbalanceForm(displayhere,loadtype,rid){
 
 var obj=document.getElementById(displayhere);
@@ -26849,7 +27310,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update Datasource Template ',
+        title: 'Update  sms datasourcetemp ',
 
         defaults: {
             anchor: '100%'
@@ -26903,7 +27364,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'datasourcetemp_name',
-            fieldLabel: 'Datasourcetemp Name ',
+            fieldLabel: 'Datasource Template',
             allowBlank: false,
             minLength: 1
         
@@ -26912,7 +27373,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'smsmsgcust_id',
 	forceSelection:true,
-    fieldLabel: 'Smsmsgcust Id ',
+    fieldLabel: 'Message Type',
     store: sms_smsmsgcustdata,
     queryMode: 'local',
     displayField: 'smsmsgcust_name',
@@ -27173,7 +27634,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'disconnschedule_name',
-            fieldLabel: 'Disconnschedule Name ',
+            fieldLabel: 'Schedule Ref',
             allowBlank: false,
             minLength: 1
         
@@ -27211,7 +27672,7 @@ Ext.tip.QuickTipManager.init();
 		},{
             xtype: 'textfield',
             name: 'file_brouwse',
-            fieldLabel: 'Upload File',
+            fieldLabel: 'File Brouwse ',
             allowBlank: false,
             minLength: 1
         
@@ -27350,6 +27811,44 @@ obj.innerHTML='';
 
 
 
+Ext.define('cmbSms_billmonth', {
+    extend: 'Ext.data.Model',
+	fields:['billmonth_id','billmonth_name']
+	});
+
+var sms_billmonthdata = Ext.create('Ext.data.Store', {
+    model: 'cmbSms_billmonth',
+    proxy: {
+        type: 'ajax',
+        url : 'cmb.php?tbp=sms_billmonth',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+sms_billmonthdata.load();
+
+
+Ext.define('cmbSms_billyear', {
+    extend: 'Ext.data.Model',
+	fields:['billyear_id','billyear_name']
+	});
+
+var sms_billyeardata = Ext.create('Ext.data.Store', {
+    model: 'cmbSms_billyear',
+    proxy: {
+        type: 'ajax',
+        url : 'cmb.php?tbp=sms_billyear',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+sms_billyeardata.load();
+
+
 Ext.onReady(function() {
 Ext.tip.QuickTipManager.init();
         var formPanel = Ext.widget('form', {
@@ -27451,19 +27950,39 @@ Ext.tip.QuickTipManager.init();
         
 		},{
             xtype: 'textfield',
+            name: 'zone',
+            fieldLabel: 'Zone ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
             name: 'email_address',
             fieldLabel: 'Email Address ',
             allowBlank: false,
             minLength: 1
         
-		},{
-            xtype: 'datefield',
-            name: 'pay_before',
-            fieldLabel: 'Pay Before ',
-            allowBlank: false,
-            minLength: 1
-        
-		}], dockedItems: [{
+		},
+   {
+    xtype: 'combobox',
+	name:'billmonth_id',
+	forceSelection:true,
+    fieldLabel: 'Month',
+    store: sms_billmonthdata,
+    queryMode: 'local',
+    displayField: 'billmonth_name',
+    valueField: 'billmonth_id'
+	},
+   {
+    xtype: 'combobox',
+	name:'billyear_id',
+	forceSelection:true,
+    fieldLabel: 'Year',
+    store: sms_billyeardata,
+    queryMode: 'local',
+    displayField: 'billyear_name',
+    valueField: 'billyear_id'
+	}], dockedItems: [{
             xtype: 'container',
             dock: 'bottom',
             layout: {
@@ -27598,6 +28117,44 @@ obj.innerHTML='';
 
 
 
+Ext.define('cmbSms_billmonth', {
+    extend: 'Ext.data.Model',
+	fields:['billmonth_id','billmonth_name']
+	});
+
+var sms_billmonthdata = Ext.create('Ext.data.Store', {
+    model: 'cmbSms_billmonth',
+    proxy: {
+        type: 'ajax',
+        url : 'cmb.php?tbp=sms_billmonth',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+sms_billmonthdata.load();
+
+
+Ext.define('cmbSms_billyear', {
+    extend: 'Ext.data.Model',
+	fields:['billyear_id','billyear_name']
+	});
+
+var sms_billyeardata = Ext.create('Ext.data.Store', {
+    model: 'cmbSms_billyear',
+    proxy: {
+        type: 'ajax',
+        url : 'cmb.php?tbp=sms_billyear',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+sms_billyeardata.load();
+
+
 Ext.onReady(function() {
 Ext.tip.QuickTipManager.init();
         var formPanel = Ext.widget('form', {
@@ -27686,7 +28243,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'emailschedule_name',
-            fieldLabel: 'Emailschedule Name ',
+            fieldLabel: 'Schedule Ref',
             allowBlank: false,
             minLength: 1
         
@@ -27698,27 +28255,40 @@ Ext.tip.QuickTipManager.init();
             minLength: 1
         
 		},{
-            xtype: 'datefield',
-            name: 'bill_date',
-            fieldLabel: 'Bill Date ',
-            allowBlank: false,
-            minLength: 1
-        
-		},{
-            xtype: 'numberfield',
-            name: 'due_after',
-            fieldLabel: 'Due After ',
+            xtype: 'textfield',
+            name: 'connection_number',
+            fieldLabel: 'Connection Number ',
             allowBlank: false,
             minLength: 1
         
 		},{
             xtype: 'textfield',
-            name: 'file_brouwse',
-            fieldLabel: 'Upload File',
+            name: 'zone',
+            fieldLabel: 'Zone ',
             allowBlank: false,
             minLength: 1
         
-		}], dockedItems: [{
+		},
+   {
+    xtype: 'combobox',
+	name:'billmonth_id',
+	forceSelection:true,
+    fieldLabel: 'Month',
+    store: sms_billmonthdata,
+    queryMode: 'local',
+    displayField: 'billmonth_name',
+    valueField: 'billmonth_id'
+	},
+   {
+    xtype: 'combobox',
+	name:'billyear_id',
+	forceSelection:true,
+    fieldLabel: 'Year',
+    store: sms_billyeardata,
+    queryMode: 'local',
+    displayField: 'billyear_name',
+    valueField: 'billyear_id'
+	}], dockedItems: [{
             xtype: 'container',
             dock: 'bottom',
             layout: {
@@ -28147,7 +28717,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update Group Queue ',
+        title: 'Update  Group SMS Queue ',
 
         defaults: {
             anchor: '100%'
@@ -28203,7 +28773,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'smsgroup_id',
 	forceSelection:true,
-    fieldLabel: 'Smsgroup Id ',
+    fieldLabel: 'Group',
     store: sms_smsgroupdata,
     queryMode: 'local',
     displayField: 'smsgroup_name',
@@ -28598,6 +29168,44 @@ obj.innerHTML='';
 
 
 
+Ext.define('cmbSms_billmonth', {
+    extend: 'Ext.data.Model',
+	fields:['billmonth_id','billmonth_name']
+	});
+
+var sms_billmonthdata = Ext.create('Ext.data.Store', {
+    model: 'cmbSms_billmonth',
+    proxy: {
+        type: 'ajax',
+        url : 'cmb.php?tbp=sms_billmonth',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+sms_billmonthdata.load();
+
+
+Ext.define('cmbSms_billyear', {
+    extend: 'Ext.data.Model',
+	fields:['billyear_id','billyear_name']
+	});
+
+var sms_billyeardata = Ext.create('Ext.data.Store', {
+    model: 'cmbSms_billyear',
+    proxy: {
+        type: 'ajax',
+        url : 'cmb.php?tbp=sms_billyear',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+sms_billyeardata.load();
+
+
 Ext.onReady(function() {
 Ext.tip.QuickTipManager.init();
         var formPanel = Ext.widget('form', {
@@ -28632,7 +29240,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update Invalid Email Addresses ',
+        title: 'Update Invalid Email Addressses ',
 
         defaults: {
             anchor: '100%'
@@ -28699,6 +29307,13 @@ Ext.tip.QuickTipManager.init();
         
 		},{
             xtype: 'textfield',
+            name: 'zone',
+            fieldLabel: 'Zone ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
             name: 'email_address',
             fieldLabel: 'Email Address ',
             allowBlank: false,
@@ -28711,7 +29326,27 @@ Ext.tip.QuickTipManager.init();
             allowBlank: false,
             minLength: 1
         
-		}], dockedItems: [{
+		},
+   {
+    xtype: 'combobox',
+	name:'billmonth_id',
+	forceSelection:true,
+    fieldLabel: 'Month',
+    store: sms_billmonthdata,
+    queryMode: 'local',
+    displayField: 'billmonth_name',
+    valueField: 'billmonth_id'
+	},
+   {
+    xtype: 'combobox',
+	name:'billyear_id',
+	forceSelection:true,
+    fieldLabel: 'Year',
+    store: sms_billyeardata,
+    queryMode: 'local',
+    displayField: 'billyear_name',
+    valueField: 'billyear_id'
+	}], dockedItems: [{
             xtype: 'container',
             dock: 'bottom',
             layout: {
@@ -29643,7 +30278,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'messagesend_name',
-            fieldLabel: 'Messagesend Name ',
+            fieldLabel: 'Message Ref ',
             allowBlank: false,
             minLength: 1
         
@@ -29837,7 +30472,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update  Month ',
+        title: 'Update  sms monthfilter ',
 
         defaults: {
             anchor: '100%'
@@ -29891,7 +30526,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'monthfilter_name',
-            fieldLabel: 'Monthfilter Name ',
+            fieldLabel: 'Month ',
             allowBlank: false,
             minLength: 1
         
@@ -30064,7 +30699,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update  sms msgcenter ',
+        title: 'Update SMS Regions ',
 
         defaults: {
             anchor: '100%'
@@ -30118,7 +30753,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'msgcenter_name',
-            fieldLabel: 'Msgcenter Name ',
+            fieldLabel: 'Region',
             allowBlank: false,
             minLength: 1
         
@@ -30264,6 +30899,25 @@ obj.innerHTML='';
 
 
 
+Ext.define('cmbSms_msgcenter', {
+    extend: 'Ext.data.Model',
+	fields:['msgcenter_id','msgcenter_name']
+	});
+
+var sms_msgcenterdata = Ext.create('Ext.data.Store', {
+    model: 'cmbSms_msgcenter',
+    proxy: {
+        type: 'ajax',
+        url : 'cmb.php?tbp=sms_msgcenter',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+sms_msgcenterdata.load();
+
+
 Ext.onReady(function() {
 Ext.tip.QuickTipManager.init();
         var formPanel = Ext.widget('form', {
@@ -30298,7 +30952,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update  sms msgcenterdefault ',
+        title: 'Update Region ',
 
         defaults: {
             anchor: '100%'
@@ -30349,14 +31003,17 @@ Ext.tip.QuickTipManager.init();
 			 {xtype:'hidden',
              name:'msgcenterdefault_id',
 			 value:''
-			 },{
-            xtype: 'numberfield',
-            name: 'center',
-            fieldLabel: 'Center ',
-            allowBlank: false,
-            minLength: 1
-        
-		}], dockedItems: [{
+			 },
+   {
+    xtype: 'combobox',
+	name:'msgcenter_id',
+	forceSelection:true,
+    fieldLabel: 'Region',
+    store: sms_msgcenterdata,
+    queryMode: 'local',
+    displayField: 'msgcenter_name',
+    valueField: 'msgcenter_id'
+	}], dockedItems: [{
             xtype: 'container',
             dock: 'bottom',
             layout: {
@@ -30525,7 +31182,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update Delivery Reports ',
+        title: 'Update  sms msgdelivery ',
 
         defaults: {
             anchor: '100%'
@@ -30579,33 +31236,33 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'messageid',
-            fieldLabel: 'Messageid ',
+            fieldLabel: 'Message ID',
             allowBlank: false,
             minLength: 1
         
 		},{
             xtype: 'textfield',
             name: 'externalid',
-            fieldLabel: 'Externalid ',
+            fieldLabel: 'External ID',
             allowBlank: false,
             minLength: 1
         
 		},{
             xtype: 'textfield',
             name: 'senderid',
-            fieldLabel: 'Senderid ',
+            fieldLabel: 'Sender ID',
             allowBlank: false,
             minLength: 1
         
 		},{
             xtype: 'textfield',
             name: 'mobileno',
-            fieldLabel: 'Mobileno ',
+            fieldLabel: 'Mobilen No.',
             allowBlank: false,
             minLength: 1
         
 		},{
-            xtype: 'textfield',
+            xtype: 'textareafield',
             name: 'message',
             fieldLabel: 'Message ',
             allowBlank: false,
@@ -30614,21 +31271,21 @@ Ext.tip.QuickTipManager.init();
 		},{
             xtype: 'textfield',
             name: 'submittime',
-            fieldLabel: 'Submittime ',
+            fieldLabel: 'Submit Time ',
             allowBlank: false,
             minLength: 1
         
 		},{
             xtype: 'textfield',
             name: 'senttime',
-            fieldLabel: 'Senttime ',
+            fieldLabel: 'Sent Time ',
             allowBlank: false,
             minLength: 1
         
 		},{
             xtype: 'textfield',
             name: 'deliverytime',
-            fieldLabel: 'Deliverytime ',
+            fieldLabel: 'Delivery Time ',
             allowBlank: false,
             minLength: 1
         
@@ -30642,7 +31299,7 @@ Ext.tip.QuickTipManager.init();
 		},{
             xtype: 'textfield',
             name: 'undeliveredreason',
-            fieldLabel: 'Undeliveredreason ',
+            fieldLabel: 'Reason ',
             allowBlank: false,
             minLength: 1
         
@@ -30822,7 +31479,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update Invalid Contacts ',
+        title: 'Update  Invalid Contacts ',
 
         defaults: {
             anchor: '100%'
@@ -31056,7 +31713,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update SMS Queue ',
+        title: 'Update  SMS Queue ',
 
         defaults: {
             anchor: '100%'
@@ -31118,6 +31775,13 @@ Ext.tip.QuickTipManager.init();
             xtype: 'textareafield',
             name: 'message',
             fieldLabel: 'Message ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
+            name: 'message_type',
+            fieldLabel: 'Message Type ',
             allowBlank: false,
             minLength: 1
         
@@ -31290,7 +31954,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update  Sent Messages ',
+        title: 'Update  SMS Outbox ',
 
         defaults: {
             anchor: '100%'
@@ -31352,6 +32016,13 @@ Ext.tip.QuickTipManager.init();
             xtype: 'textareafield',
             name: 'message',
             fieldLabel: 'Message ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
+            name: 'message_type',
+            fieldLabel: 'Message Type ',
             allowBlank: false,
             minLength: 1
         
@@ -31524,7 +32195,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update SMS Source Location ',
+        title: 'Update  sms msgsource ',
 
         defaults: {
             anchor: '100%'
@@ -31577,15 +32248,15 @@ Ext.tip.QuickTipManager.init();
 			 value:''
 			 },{
             xtype: 'textfield',
-            name: 'message_source',
-            fieldLabel: 'Message Source ',
+            name: 'msgsource_name',
+            fieldLabel: 'Name',
             allowBlank: false,
             minLength: 1
         
 		},{
             xtype: 'textfield',
-            name: 'msgsource_name',
-            fieldLabel: 'Msgsource Name ',
+            name: 'message_source',
+            fieldLabel: 'Message Source ',
             allowBlank: false,
             minLength: 1
         
@@ -31965,6 +32636,44 @@ obj.innerHTML='';
 
 
 
+Ext.define('cmbSms_billmonth', {
+    extend: 'Ext.data.Model',
+	fields:['billmonth_id','billmonth_name']
+	});
+
+var sms_billmonthdata = Ext.create('Ext.data.Store', {
+    model: 'cmbSms_billmonth',
+    proxy: {
+        type: 'ajax',
+        url : 'cmb.php?tbp=sms_billmonth',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+sms_billmonthdata.load();
+
+
+Ext.define('cmbSms_billyear', {
+    extend: 'Ext.data.Model',
+	fields:['billyear_id','billyear_name']
+	});
+
+var sms_billyeardata = Ext.create('Ext.data.Store', {
+    model: 'cmbSms_billyear',
+    proxy: {
+        type: 'ajax',
+        url : 'cmb.php?tbp=sms_billyear',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+sms_billyeardata.load();
+
+
 Ext.onReady(function() {
 Ext.tip.QuickTipManager.init();
         var formPanel = Ext.widget('form', {
@@ -32068,6 +32777,33 @@ Ext.tip.QuickTipManager.init();
             xtype: 'textareafield',
             name: 'message',
             fieldLabel: 'Message ',
+            allowBlank: false,
+            minLength: 1
+        
+		},
+   {
+    xtype: 'combobox',
+	name:'billmonth_id',
+	forceSelection:true,
+    fieldLabel: 'Month',
+    store: sms_billmonthdata,
+    queryMode: 'local',
+    displayField: 'billmonth_name',
+    valueField: 'billmonth_id'
+	},
+   {
+    xtype: 'combobox',
+	name:'billyear_id',
+	forceSelection:true,
+    fieldLabel: 'Year',
+    store: sms_billyeardata,
+    queryMode: 'local',
+    displayField: 'billyear_name',
+    valueField: 'billyear_id'
+	},{
+            xtype: 'textfield',
+            name: 'zone',
+            fieldLabel: 'Zone ',
             allowBlank: false,
             minLength: 1
         
@@ -32206,6 +32942,44 @@ obj.innerHTML='';
 
 
 
+Ext.define('cmbSms_billyear', {
+    extend: 'Ext.data.Model',
+	fields:['billyear_id','billyear_name']
+	});
+
+var sms_billyeardata = Ext.create('Ext.data.Store', {
+    model: 'cmbSms_billyear',
+    proxy: {
+        type: 'ajax',
+        url : 'cmb.php?tbp=sms_billyear',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+sms_billyeardata.load();
+
+
+Ext.define('cmbSms_billmonth', {
+    extend: 'Ext.data.Model',
+	fields:['billmonth_id','billmonth_name']
+	});
+
+var sms_billmonthdata = Ext.create('Ext.data.Store', {
+    model: 'cmbSms_billmonth',
+    proxy: {
+        type: 'ajax',
+        url : 'cmb.php?tbp=sms_billmonth',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+sms_billmonthdata.load();
+
+
 Ext.onReady(function() {
 Ext.tip.QuickTipManager.init();
         var formPanel = Ext.widget('form', {
@@ -32312,10 +33086,37 @@ Ext.tip.QuickTipManager.init();
             allowBlank: false,
             minLength: 1
         
-		},{
+		},
+   {
+    xtype: 'combobox',
+	name:'billyear_id',
+	forceSelection:true,
+    fieldLabel: 'Year',
+    store: sms_billyeardata,
+    queryMode: 'local',
+    displayField: 'billyear_name',
+    valueField: 'billyear_id'
+	},{
             xtype: 'textareafield',
             name: 'reason_failed',
             fieldLabel: 'Reason Failed ',
+            allowBlank: false,
+            minLength: 1
+        
+		},
+   {
+    xtype: 'combobox',
+	name:'billmonth_id',
+	forceSelection:true,
+    fieldLabel: 'Month',
+    store: sms_billmonthdata,
+    queryMode: 'local',
+    displayField: 'billmonth_name',
+    valueField: 'billmonth_id'
+	},{
+            xtype: 'textfield',
+            name: 'zone',
+            fieldLabel: 'Zone ',
             allowBlank: false,
             minLength: 1
         
@@ -33432,6 +34233,283 @@ loadsms_recurrenttaskscheduleinfo(formPanel,rid);
 }//launchForm()
 
 
+function sms_refForm(displayhere,loadtype,rid){
+
+var obj=document.getElementById(displayhere);
+
+obj.innerHTML='';
+
+
+
+Ext.define('cmbSms_msgcenter', {
+    extend: 'Ext.data.Model',
+	fields:['msgcenter_id','msgcenter_name']
+	});
+
+var sms_msgcenterdata = Ext.create('Ext.data.Store', {
+    model: 'cmbSms_msgcenter',
+    proxy: {
+        type: 'ajax',
+        url : 'cmb.php?tbp=sms_msgcenter',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+sms_msgcenterdata.load();
+
+
+Ext.onReady(function() {
+Ext.tip.QuickTipManager.init();
+        var formPanel = Ext.widget('form', {
+        renderTo: displayhere,
+		tbar:[{
+                    text:'Add Something',
+                    tooltip:'Add a new row',
+                    iconCls:'add'
+                }, '-', {
+                    text:'Options',
+                    tooltip:'Blah blah blah blaht',
+                    iconCls:'option'
+                },'-',{
+                    text:'Remove Something',
+                    tooltip:'Remove the selected item',
+                    iconCls:'remove'
+                },'-',{
+                    text:'View',
+                    tooltip:'View Information Grid',
+                    iconCls:'grid',
+					handler:function(buttonObj, eventObj) { 
+									///eventObj.click(eval(tablevalgrpArr[2]));
+									gridViewsms_ref();
+											}
+                }],
+		resizable:true,
+		closable:true,
+        frame: true,
+		url:'bodysave.php',
+        width: 550,
+        bodyPadding: 10,
+        bodyBorder: true,
+		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
+        wallpaperStretch: false,
+        title: 'Update  Regional Statistics ',
+
+        defaults: {
+            anchor: '100%'
+        },
+        fieldDefaults: {
+            labelAlign: 'left',
+            msgTarget: 'none',
+            /*invalidCls: '' 
+			unset the invalidCls so individual fields do not get styled as invalid*/
+        },
+
+        /*
+         * Listen for validity change on the entire form and update the combined error icon
+         */
+        listeners: {
+            fieldvaliditychange: function() {
+                this.updateErrorState();
+            },
+            fielderrorchange: function() {
+                this.updateErrorState();
+            }
+        },
+
+        updateErrorState: function() {
+            var me = this,
+                errorCmp, fields, errors;
+
+            if (me.hasBeenDirty || me.getForm().isDirty()) { //prevents showing global error when form first loads
+                errorCmp = me.down('#formErrorState');
+                fields = me.getForm().getFields();
+                errors = [];
+                fields.each(function(field) {
+                    Ext.Array.forEach(field.getErrors(), function(error) {
+                        errors.push({name: field.getFieldLabel(), error: error});
+                    });
+                });
+                errorCmp.setErrors(errors);
+                me.hasBeenDirty = true;
+            }
+        },
+
+        items: [
+		
+		{xtype:'hidden',
+             name:'t',
+			 value:'sms_ref'
+			 },
+			 {xtype:'hidden',
+             name:'ref_id',
+			 value:''
+			 },
+   {
+    xtype: 'combobox',
+	name:'msgcenter_id',
+	forceSelection:true,
+    fieldLabel: 'Region',
+    store: sms_msgcenterdata,
+    queryMode: 'local',
+    displayField: 'msgcenter_name',
+    valueField: 'msgcenter_id'
+	},{
+            xtype: 'textfield',
+            name: 'message_type',
+            fieldLabel: 'Message Type ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
+            name: 'date_sent',
+            fieldLabel: 'Date',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'numberfield',
+            name: 'remote_ref',
+            fieldLabel: 'Remote Ref ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'numberfield',
+            name: 'message_size',
+            fieldLabel: 'SMS Units ',
+            allowBlank: false,
+            minLength: 1
+        
+		}], dockedItems: [{
+            xtype: 'container',
+            dock: 'bottom',
+            layout: {
+                type: 'hbox',
+                align: 'middle'
+            },
+            padding: '10 10 5',
+
+            items: [{
+                xtype: 'component',
+                id: 'formErrorState',
+                baseCls: 'form-error-state',
+                flex: 1,
+                validText: 'Form is valid',
+                invalidText: 'Form has errors',
+                tipTpl: Ext.create('Ext.XTemplate', '<ul><tpl for=><li><span class="field-name">{name}</span>: <span class="error">{error}</span></li></tpl></ul>'),
+
+                getTip: function() {
+                    var tip = this.tip;
+                    if (!tip) {
+                        tip = this.tip = Ext.widget('tooltip', {
+                            target: this.el,
+                            title: 'Error Details:',
+                            autoHide: false,
+                            anchor: 'top',
+                            mouseOffset: [-11, -2],
+                            closable: true,
+                            constrainPosition: false,
+                            cls: 'errors-tip'
+                        });
+                        tip.show();
+                    }
+                    return tip;
+                },
+
+                setErrors: function(errors) {
+                    var me = this,
+                        baseCls = me.baseCls,
+                        tip = me.getTip();
+
+                    errors = Ext.Array.from(errors);
+
+                    // Update CSS class and tooltip content
+                    if (errors.length) {
+                        me.addCls(baseCls + '-invalid');
+                        me.removeCls(baseCls + '-valid');
+                        me.update(me.invalidText);
+                        tip.setDisabled(false);
+                        tip.update(me.tipTpl.apply(errors));
+                    } else {
+                        me.addCls(baseCls + '-valid');
+                        me.removeCls(baseCls + '-invalid');
+                        me.update(me.validText);
+                        tip.setDisabled(true);
+                        tip.hide();
+                    }
+                }
+            }, 
+			
+			
+	//now submit
+	{
+		xtype: 'button',
+        text: 'Submit Data',
+        handler: function() {
+            var form = this.up('form').getForm();
+            if(form.isValid()){
+                form.submit({
+                    url: 'bodysave.php',
+                    waitMsg: 'saving changes...',
+                    success: function(fp, o) {
+                        Ext.Msg.alert('Success', '' + o.result.savemsg + '"');
+                    }
+                });
+            }
+        }
+    }
+	///end of cols
+		]
+        }]
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+					 
+        title: 'User Registration',
+       // height: 700,
+       //width: 800,
+        layout: 'fit',
+		autoScroll :true,
+		items: formPanel,
+		 tbar:[{
+                    text:'Add Something muse',
+                    tooltip:'Add a new row',
+                    iconCls:'add'
+                }, '-', {
+                    text:'Options',
+                    tooltip:'Blah blah blah blaht',
+                    iconCls:'option'
+                },'-',{
+                    text:'Remove Something',
+                    tooltip:'Remove the selected item',
+                    iconCls:'remove'
+                },'-',{
+                    text:'View',
+                    tooltip:'View Information Grid',
+                    iconCls:'grid',
+					handler:function(buttonObj, eventObj) { 
+									///eventObj.click(eval(tablevalgrpArr[2]));
+									gridViewsms_ref();
+											}
+                }
+				]
+    }).show();
+	*/
+	
+if(loadtype=='updateload'){
+loadsms_refinfo(formPanel,rid);
+}
+
+});
+
+
+
+}//launchForm()
+
+
 function sms_scheduleForm(displayhere,loadtype,rid){
 
 var obj=document.getElementById(displayhere);
@@ -33493,7 +34571,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update Schedule List ',
+        title: 'Update Template SMS Lists ',
 
         defaults: {
             anchor: '100%'
@@ -33547,7 +34625,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'schedule_name',
-            fieldLabel: 'Schedule Name ',
+            fieldLabel: 'Schedule Ref',
             allowBlank: false,
             minLength: 1
         
@@ -33571,7 +34649,7 @@ Ext.tip.QuickTipManager.init();
 	},{
             xtype: 'textfield',
             name: 'file_brouwse',
-            fieldLabel: 'Upload File',
+            fieldLabel: 'File Brouwse ',
             allowBlank: false,
             minLength: 1
         
@@ -33744,7 +34822,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update General SMS Schedule ',
+        title: 'Update General SMS Contacts Upload ',
 
         defaults: {
             anchor: '100%'
@@ -33812,7 +34890,7 @@ Ext.tip.QuickTipManager.init();
 		},{
             xtype: 'textfield',
             name: 'file_brouwse',
-            fieldLabel: 'Upload File',
+            fieldLabel: 'File Brouwse ',
             allowBlank: false,
             minLength: 1
         
@@ -34259,7 +35337,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update  Sms to group ',
+        title: 'Update Group Messages ',
 
         defaults: {
             anchor: '100%'
@@ -34310,19 +35388,12 @@ Ext.tip.QuickTipManager.init();
 			 {xtype:'hidden',
              name:'sendsmstogrp_id',
 			 value:''
-			 },{
-            xtype: 'textfield',
-            name: 'sendsmstogrp_name',
-            fieldLabel: 'Sendsmstogrp Name ',
-            allowBlank: false,
-            minLength: 1
-        
-		},
+			 },
    {
     xtype: 'combobox',
 	name:'smsgroup_id',
 	forceSelection:true,
-    fieldLabel: 'Smsgroup Id ',
+    fieldLabel: 'Group',
     store: sms_smsgroupdata,
     queryMode: 'local',
     displayField: 'smsgroup_name',
@@ -34330,7 +35401,7 @@ Ext.tip.QuickTipManager.init();
 	},{
             xtype: 'textareafield',
             name: 'sms_message',
-            fieldLabel: 'Sms Message ',
+            fieldLabel: 'Message ',
             allowBlank: false,
             minLength: 1
         
@@ -34522,7 +35593,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update Sent Groups ',
+        title: 'Update  Group SMS Outbox ',
 
         defaults: {
             anchor: '100%'
@@ -34578,7 +35649,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'smsgroup_id',
 	forceSelection:true,
-    fieldLabel: 'Smsgroup Id ',
+    fieldLabel: 'Group',
     store: sms_smsgroupdata,
     queryMode: 'local',
     displayField: 'smsgroup_name',
@@ -35007,7 +36078,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update Create group ',
+        title: 'Update Create Group ',
 
         defaults: {
             anchor: '100%'
@@ -35061,7 +36132,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'smsgroup_name',
-            fieldLabel: 'Smsgroup Name ',
+            fieldLabel: 'Group Name',
             allowBlank: false,
             minLength: 1
         
@@ -35260,7 +36331,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update Group member ',
+        title: 'Update Group Membership ',
 
         defaults: {
             anchor: '100%'
@@ -35316,29 +36387,15 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'smsgroup_id',
 	forceSelection:true,
-    fieldLabel: 'Smsgroup Id ',
+    fieldLabel: 'Group ',
     store: sms_smsgroupdata,
     queryMode: 'local',
     displayField: 'smsgroup_name',
     valueField: 'smsgroup_id'
 	},{
             xtype: 'textfield',
-            name: 'syowner',
-            fieldLabel: 'Syowner ',
-            allowBlank: false,
-            minLength: 1
-        
-		},{
-            xtype: 'textfield',
             name: 'member_description',
-            fieldLabel: 'Member Description ',
-            allowBlank: false,
-            minLength: 1
-        
-		},{
-            xtype: 'numberfield',
-            name: 'syownerid',
-            fieldLabel: 'Syownerid ',
+            fieldLabel: ' Description ',
             allowBlank: false,
             minLength: 1
         
@@ -35563,7 +36620,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update Group Template ',
+        title: 'Update  sms smsgrouptemp ',
 
         defaults: {
             anchor: '100%'
@@ -35619,7 +36676,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'smsgroup_id',
 	forceSelection:true,
-    fieldLabel: 'Smsgroup Id ',
+    fieldLabel: 'Group',
     store: sms_smsgroupdata,
     queryMode: 'local',
     displayField: 'smsgroup_name',
@@ -35629,7 +36686,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'smsmsgcust_id',
 	forceSelection:true,
-    fieldLabel: 'Smsmsgcust Id ',
+    fieldLabel: 'Message Type',
     store: sms_smsmsgcustdata,
     queryMode: 'local',
     displayField: 'smsmsgcust_name',
@@ -36325,7 +37382,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update External Data Source ',
+        title: 'Update  sms smsremotesource ',
 
         defaults: {
             anchor: '100%'
@@ -36376,7 +37433,14 @@ Ext.tip.QuickTipManager.init();
 			 {xtype:'hidden',
              name:'smsremotesource_id',
 			 value:''
-			 },
+			 },{
+            xtype: 'textfield',
+            name: 'smsremotesource_name',
+            fieldLabel: 'Smsremotesource Name ',
+            allowBlank: false,
+            minLength: 1
+        
+		},
    {
     xtype: 'combobox',
 	name:'datasourcetemp_id',
@@ -36387,13 +37451,6 @@ Ext.tip.QuickTipManager.init();
     displayField: 'datasourcetemp_name',
     valueField: 'datasourcetemp_id'
 	},{
-            xtype: 'textfield',
-            name: 'smsremotesource_name',
-            fieldLabel: 'Smsremotesource Name ',
-            allowBlank: false,
-            minLength: 1
-        
-		},{
             xtype: 'textareafield',
             name: 'parameters',
             fieldLabel: 'Parameters ',
@@ -37099,7 +38156,7 @@ Ext.tip.QuickTipManager.init();
 			 },{
             xtype: 'textfield',
             name: 'taskperiod_name',
-            fieldLabel: 'Taskperiod Name ',
+            fieldLabel: 'Task Period ',
             allowBlank: false,
             minLength: 1
         
@@ -37781,7 +38838,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update Group Contacts ',
+        title: 'Update Group Contact Uploads ',
 
         defaults: {
             anchor: '100%'
@@ -38025,7 +39082,7 @@ Ext.tip.QuickTipManager.init();
         bodyBorder: true,
 		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
         wallpaperStretch: false,
-        title: 'Update  Year ',
+        title: 'Update  sms yearfilter ',
 
         defaults: {
             anchor: '100%'

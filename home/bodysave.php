@@ -462,7 +462,7 @@ $fld=$primaryFieldARR[1].'_name';
 															$oXML = new SimpleXMLElement($smsRSP);
 															$commtype=$messageId.'_'.$lastsavedSms;
 															processSMSResponse($oXML,$commtype);
-
+															insertSMSMsgByType('sms_msgsent',$message,$phone_number,$commtype,'Single SMS');
                                                             $msgback=successNotification('SMS Sent');
                                                             echo '{success:true, savemsg:'.json_encode($msgback).'}';
                                                     }

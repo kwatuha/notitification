@@ -47,25 +47,12 @@ if (!((isset($_SESSION['MM_Username'])) && (isAuthorized_menu("",$MM_authorizedU
 require_once('../Connections/cf4_HH.php');
 $table=$_POST["id"];
 $commtype=$_POST["commtype"];
-//echo $table;
-
-
-// if($table=='sms_generalsmshandle'){
-//   $scheduleTable='sms_schedulegeneralsms'; 
-//   $schedule_id='schedulegeneralsms_id'; 
-// }
-
-
 
 function clearQueuedSMSScheduleId($scheduleTable,$schedule_id,$actualId){
 $qrystat=" Delete from $scheduleTable  where $schedule_id=$actualId ";
-//echo $qrystat;
 $qryreading=mysql_query($qrystat);
 } 
 
-//clearSmsQueues($table);
-//$table='sms_billhandle';
-//$table='sms_generalsmshandle';
 if($table=='sms_emailhandle'){
      clearSmsQueues($table);
 }else{
@@ -76,21 +63,9 @@ function clearSmsQueues($table){
 $hostname_c4g = "localhost";
 $username_c4g = "Kitale";
 $password_c4g = "Admin2010@#";
-$database_c4g = "ktldb2017";
-/*
-
-$username_c4g = "Kitale";
-$password_c4g = "Admin2010@#";
-$database_c4g = "ktldb2017";
-
-*/
+$database_c4g = "impact_ksm";
 $con=mysqli_connect($hostname_c4g,$username_c4g,$password_c4g,$database_c4g);
 mysqli_query($con,"Delete from $table");
-
-//if(mysqli_affected_rows($con)>0){
- //deleteScheduleIds();
-//}0722841343 simiyu
-
 }
 
 function deleteScheduleIds($table){

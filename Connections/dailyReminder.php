@@ -1,13 +1,13 @@
 <?php
 
-$hostname_c4g = "localhost";
-$username_c4g = "Kitale";
-$password_c4g = "Admin2010@#";
-$database_c4g = "ktldb2017";
- $_SESSION['voideindb']=$database_c4g ;
-$c4g = mysql_pconnect($hostname_c4g, $username_c4g, $password_c4g) or trigger_error(mysql_error(),E_USER_ERROR); 
-mysql_select_db($database_c4g, $c4g);
-
+// $hostname_c4g = "localhost";
+// $username_c4g = "Kitale";
+// $password_c4g = "Admin2010@#";
+// $database_c4g = "ktldb2017";
+//  $_SESSION['voideindb']=$database_c4g ;
+// $c4g = mysql_pconnect($hostname_c4g, $username_c4g, $password_c4g) or trigger_error(mysql_error(),E_USER_ERROR); 
+// mysql_select_db($database_c4g, $c4g);
+require_once('cf4_HH.php');
 function insertMsg($table,$message,$phoneNumber, $sys_track){
     $message=mysql_real_escape_string($message);
     $phoneNumber=mysql_real_escape_string($phoneNumber);
@@ -56,9 +56,10 @@ function getMessage($messageTypeId){
     
     }
 
-function checkDuplicateMessage($message){
-        $sql="select message from sms_msgqueue where message like '$message'";
+function checkDuplicateMessage($findMessage){
+        $sql="select message from sms_msgqueue where message like '$findMessage'";
         $query_Rcd_getbody= $sql;
+        $message ='';
         $Rcd_tbody_results = mysql_query($query_Rcd_getbody) or die(mysql_error());
          while ($rows=mysql_fetch_array($Rcd_tbody_results)){
         $message=$rows['message'];
@@ -84,8 +85,12 @@ function addRecordsToSmsQueue($row){
 
         $phoneNumber=$book['Q2_Phone'];
         $table='sms_msgqueue';
-        
+        $phoneNumber ='0703399915';       
+        $today = '31-10-2016'; 
+        $today = '20-11-2017';
+        $today = '23-11-2016';
         if($today==$regDate){
+
             $messageTypeId=2;
             $message= customizeMessage($messageTypeId,$name,$appointmentDate,$regDate);
 
@@ -93,6 +98,7 @@ function addRecordsToSmsQueue($row){
                     if(!$messageExists){
                         insertMsg($table,$message,$phoneNumber,$sys_track);
                     }
+                    
             
         }
         if($today==$second_rmr || $today==$second_rmr || $today==$third_rmr){
@@ -170,6 +176,7 @@ on t2.MARPs_No=t4.MARPs_No
  $row = $result->fetchAll();
 
 $i = 1;
+
 return $row;
 }
 

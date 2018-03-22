@@ -83,10 +83,12 @@ $campanyDetail=fillPrimaryData('admin_company',1);
 	$qry="SELECT  phone_number,message,sys_track,msgqueue_id FROM  sms_msgqueue order by msgqueue_id asc";
 
 
-    if($qry)
-    $resultsSelect=mysql_query($qry) or die('Could not execute the query::==='+$qry);
-	$cntreg_stmnt=mysql_num_rows($resultsSelect);
-    $credit=getSmsCreditBalance();
+    if($qry){
+		$resultsSelect=mysql_query($qry) or die('Could not execute the query = '+$qry);
+		$cntreg_stmnt=mysql_num_rows($resultsSelect);
+		$credit=getSmsCreditBalance();
+	}
+
 
 	// echo "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr   if($cntreg_stmnt>0  && $credit>$cntreg_stmnt ){";
 		if($cntreg_stmnt>0  && $credit>$cntreg_stmnt ){

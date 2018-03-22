@@ -590,6 +590,7 @@ function str_replace_first($from, $to, $subject)
 }
 
 function getTotalGridRows($sql){
+	// echo $sql;
 $sql=str_replace_first('select', 'select count(*) totalCounter, ', $sql);
 if($_GET['deliveryRPT']){
 $sql=$_SESSION['deliveryRPT_count'];
@@ -602,7 +603,7 @@ $sql=$_SESSION['deliveryRPT_count'];
 			$sql=str_replace('{rptwhere}', ' ',$sql);
 	}
 
-// echo $sql;
+//  echo $sql;
 }
 $Rcd_tbody_results = mysql_query($sql) or die(mysql_error());
 $rows=mysql_fetch_array($Rcd_tbody_results);

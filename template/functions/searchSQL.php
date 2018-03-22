@@ -586,7 +586,7 @@
 						";
 						$_SESSION["sms_msgcenterdefault_SearchSQL"]="
 						
-						select sms_msgcenterdefault.msgcenterdefault_id , sms_msgcenterdefault.center , sms_msgcenterdefault.created_by , sms_msgcenterdefault.date_created , sms_msgcenterdefault.changed_by , sms_msgcenterdefault.date_changed , sms_msgcenterdefault.voided , sms_msgcenterdefault.voided_by , sms_msgcenterdefault.date_voided , sms_msgcenterdefault.uuid , sms_msgcenterdefault.sys_track  from sms_msgcenterdefault
+						select sms_msgcenterdefault.msgcenterdefault_id , sms_msgcenter.msgcenter_id , sms_msgcenter.msgcenter_name , sms_msgcenterdefault.created_by , sms_msgcenterdefault.date_created , sms_msgcenterdefault.changed_by , sms_msgcenterdefault.date_changed , sms_msgcenterdefault.voided , sms_msgcenterdefault.voided_by , sms_msgcenterdefault.date_voided , sms_msgcenterdefault.uuid , sms_msgcenterdefault.sys_track  from sms_msgcenterdefault  inner join sms_msgcenter on sms_msgcenter.msgcenter_id = sms_msgcenterdefault.msgcenter_id
 						
 						";
 						$_SESSION["sms_msgdelivery_SearchSQL"]="
@@ -601,12 +601,12 @@
 						";
 						$_SESSION["sms_msgqueue_SearchSQL"]="
 						
-						select sms_msgqueue.msgqueue_id , sms_msgqueue.phone_number , sms_msgqueue.message , sms_msgqueue.created_by , sms_msgqueue.date_created , sms_msgqueue.changed_by , sms_msgqueue.date_changed , sms_msgqueue.voided , sms_msgqueue.voided_by , sms_msgqueue.date_voided , sms_msgqueue.uuid , sms_msgqueue.sys_track  from sms_msgqueue
+						select sms_msgqueue.msgqueue_id , sms_msgqueue.phone_number , sms_msgqueue.message , sms_msgqueue.created_by , sms_msgqueue.date_created , sms_msgqueue.changed_by , sms_msgqueue.date_changed , sms_msgqueue.voided , sms_msgqueue.voided_by , sms_msgqueue.date_voided , sms_msgqueue.uuid , sms_msgqueue.sys_track , sms_msgqueue.message_type  from sms_msgqueue
 						
 						";
 						$_SESSION["sms_msgsent_SearchSQL"]="
 						
-						select sms_msgsent.msgsent_id , sms_msgsent.phone_number , sms_msgsent.message , sms_msgsent.created_by , sms_msgsent.date_created , sms_msgsent.changed_by , sms_msgsent.date_changed , sms_msgsent.voided , sms_msgsent.voided_by , sms_msgsent.date_voided , sms_msgsent.uuid , sms_msgsent.sys_track  from sms_msgsent
+						select sms_msgsent.msgsent_id , sms_msgsent.phone_number , sms_msgsent.message , sms_msgsent.created_by , sms_msgsent.date_created , sms_msgsent.changed_by , sms_msgsent.date_changed , sms_msgsent.voided , sms_msgsent.voided_by , sms_msgsent.date_voided , sms_msgsent.uuid , sms_msgsent.sys_track , sms_msgsent.message_type  from sms_msgsent
 						
 						";
 						$_SESSION["sms_msgsource_SearchSQL"]="
@@ -646,17 +646,17 @@
 						";
 						$_SESSION["sms_recurrenttaskschedule_SearchSQL"]="
 						
-						select sms_recurrenttaskschedule.recurrenttaskschedule_id , sms_recurrenttaskschedule.recurrenttaskschedule_name , .taskperiod_id , .taskperiod_name , sms_recurrenttaskschedule.config , sms_recurrenttaskschedule.created_by , sms_recurrenttaskschedule.date_created , sms_recurrenttaskschedule.changed_by , sms_recurrenttaskschedule.date_changed , sms_recurrenttaskschedule.voided , sms_recurrenttaskschedule.voided_by , sms_recurrenttaskschedule.date_voided , sms_recurrenttaskschedule.uuid , sms_recurrenttaskschedule.sys_track  from sms_recurrenttaskschedule  inner join  on .taskperiod_id = sms_recurrenttaskschedule.taskperiod_id
+						select sms_recurrenttaskschedule.recurrenttaskschedule_id , sms_recurrenttaskschedule.recurrenttaskschedule_name , sms_taskperiod.taskperiod_id , sms_taskperiod.taskperiod_name , sms_recurrenttaskschedule.config , sms_recurrenttaskschedule.created_by , sms_recurrenttaskschedule.date_created , sms_recurrenttaskschedule.changed_by , sms_recurrenttaskschedule.date_changed , sms_recurrenttaskschedule.voided , sms_recurrenttaskschedule.voided_by , sms_recurrenttaskschedule.date_voided , sms_recurrenttaskschedule.uuid , sms_recurrenttaskschedule.sys_track  from sms_recurrenttaskschedule  inner join sms_taskperiod on sms_taskperiod.taskperiod_id = sms_recurrenttaskschedule.taskperiod_id
 						
 						";
 						$_SESSION["sms_ref_SearchSQL"]="
 						
-						select sms_ref.ref_id , sms_ref.source , sms_ref.number_sent , sms_ref.date_sent , sms_ref.created_by , sms_ref.date_created , sms_ref.changed_by , sms_ref.date_changed , sms_ref.voided , sms_ref.voided_by , sms_ref.date_voided , sms_ref.uuid , sms_ref.sys_track  from sms_ref
+						select sms_ref.ref_id , sms_msgcenter.msgcenter_id , sms_msgcenter.msgcenter_name , sms_ref.message_type , sms_ref.remote_ref , sms_ref.message_size , sms_ref.date_sent , sms_ref.created_by , sms_ref.date_created , sms_ref.changed_by , sms_ref.date_changed , sms_ref.voided , sms_ref.voided_by , sms_ref.date_voided , sms_ref.uuid , sms_ref.sys_track  from sms_ref  inner join sms_msgcenter on sms_msgcenter.msgcenter_id = sms_ref.msgcenter_id
 						
 						";
 						$_SESSION["sms_schedule_SearchSQL"]="
 						
-						select sms_schedule.schedule_id , sms_schedule.schedule_name , sms_smsmsgcust.smsmsgcust_id , sms_smsmsgcust.smsmsgcust_name , sms_schedule.schedule_description , sms_schedule.bill_date , sms_schedule.due_after , sms_schedule.file_brouwse , sms_schedule.created_by , sms_schedule.date_created , sms_schedule.changed_by , sms_schedule.date_changed , sms_schedule.voided , sms_schedule.voided_by , sms_schedule.date_voided , sms_schedule.uuid , sms_schedule.sys_track  from sms_schedule  inner join sms_smsmsgcust on sms_smsmsgcust.smsmsgcust_id = sms_schedule.smsmsgcust_id
+						select sms_schedule.schedule_id , sms_schedule.schedule_name , sms_smsmsgcust.smsmsgcust_id , sms_smsmsgcust.smsmsgcust_name , sms_schedule.schedule_description , sms_schedule.file_brouwse , sms_schedule.created_by , sms_schedule.date_created , sms_schedule.changed_by , sms_schedule.date_changed , sms_schedule.voided , sms_schedule.voided_by , sms_schedule.date_voided , sms_schedule.uuid , sms_schedule.sys_track  from sms_schedule  inner join sms_smsmsgcust on sms_smsmsgcust.smsmsgcust_id = sms_schedule.smsmsgcust_id
 						
 						";
 						$_SESSION["sms_schedulegeneralsms_SearchSQL"]="
@@ -671,7 +671,7 @@
 						";
 						$_SESSION["sms_sendsmstogrp_SearchSQL"]="
 						
-						select sms_sendsmstogrp.sendsmstogrp_id , sms_smsgroup.smsgroup_id , sms_smsgroup.smsgroup_name , sms_sendsmstogrp.sms_message , sms_sendsmstogrp.comment , sms_sendsmstogrp.created_by , sms_sendsmstogrp.date_created , sms_sendsmstogrp.changed_by , sms_sendsmstogrp.date_changed , sms_sendsmstogrp.voided , sms_sendsmstogrp.voided_by , sms_sendsmstogrp.date_voided , sms_sendsmstogrp.uuid , sms_sendsmstogrp.sys_track  from sms_sendsmstogrp  inner join sms_smsgroup on sms_smsgroup.smsgroup_id = sms_sendsmstogrp.smsgroup_id
+						select sms_sendsmstogrp.sendsmstogrp_id , sms_smsgroup.smsgroup_id , sms_smsgroup.smsgroup_name , sms_sendsmstogrp.sms_message , sms_sendsmstogrp.created_by , sms_sendsmstogrp.date_created , sms_sendsmstogrp.changed_by , sms_sendsmstogrp.date_changed , sms_sendsmstogrp.voided , sms_sendsmstogrp.voided_by , sms_sendsmstogrp.date_voided , sms_sendsmstogrp.uuid , sms_sendsmstogrp.sys_track  from sms_sendsmstogrp  inner join sms_smsgroup on sms_smsgroup.smsgroup_id = sms_sendsmstogrp.smsgroup_id
 						
 						";
 						$_SESSION["sms_sentgroupsms_SearchSQL"]="
@@ -691,7 +691,7 @@
 						";
 						$_SESSION["sms_smsgroupmember_SearchSQL"]="
 						
-						select sms_smsgroupmember.smsgroupmember_id , sms_smsgroup.smsgroup_id , sms_smsgroup.smsgroup_name , sms_smsgroupmember.syowner , sms_smsgroupmember.syownerid , sms_smsgroupmember.created_by , sms_smsgroupmember.date_created , sms_smsgroupmember.changed_by , sms_smsgroupmember.date_changed , sms_smsgroupmember.voided , sms_smsgroupmember.voided_by , sms_smsgroupmember.date_voided , sms_smsgroupmember.uuid , sms_smsgroupmember.sys_track  from sms_smsgroupmember  inner join sms_smsgroup on sms_smsgroup.smsgroup_id = sms_smsgroupmember.smsgroup_id
+						select sms_smsgroupmember.smsgroupmember_id , sms_smsgroup.smsgroup_id , sms_smsgroup.smsgroup_name , sms_smsgroupmember.member_description , sms_smsgroupmember.phone_number , sms_smsgroupmember.other_details , sms_smsgroupmember.created_by , sms_smsgroupmember.date_created , sms_smsgroupmember.changed_by , sms_smsgroupmember.date_changed , sms_smsgroupmember.voided , sms_smsgroupmember.voided_by , sms_smsgroupmember.date_voided , sms_smsgroupmember.uuid , sms_smsgroupmember.sys_track  from sms_smsgroupmember  inner join sms_smsgroup on sms_smsgroup.smsgroup_id = sms_smsgroupmember.smsgroup_id
 						
 						";
 						$_SESSION["sms_smsgrouptemp_SearchSQL"]="
@@ -711,7 +711,7 @@
 						";
 						$_SESSION["sms_smsremotesource_SearchSQL"]="
 						
-						select sms_smsremotesource.smsremotesource_id , sms_smsremotesource.smsremotesource_name , .datasourcetemp_id , .datasourcetemp_name , sms_smsremotesource.parameters , sms_smsremotesource.created_by , sms_smsremotesource.date_created , sms_smsremotesource.changed_by , sms_smsremotesource.date_changed , sms_smsremotesource.voided , sms_smsremotesource.voided_by , sms_smsremotesource.date_voided , sms_smsremotesource.uuid , sms_smsremotesource.sys_track  from sms_smsremotesource  inner join  on .datasourcetemp_id = sms_smsremotesource.datasourcetemp_id
+						select sms_smsremotesource.smsremotesource_id , sms_smsremotesource.smsremotesource_name , sms_datasourcetemp.datasourcetemp_id , sms_datasourcetemp.datasourcetemp_name , sms_smsremotesource.parameters , sms_smsremotesource.created_by , sms_smsremotesource.date_created , sms_smsremotesource.changed_by , sms_smsremotesource.date_changed , sms_smsremotesource.voided , sms_smsremotesource.voided_by , sms_smsremotesource.date_voided , sms_smsremotesource.uuid , sms_smsremotesource.sys_track  from sms_smsremotesource  inner join sms_datasourcetemp on sms_datasourcetemp.datasourcetemp_id = sms_smsremotesource.datasourcetemp_id
 						
 						";
 						$_SESSION["sms_systemlock_SearchSQL"]="
@@ -731,7 +731,7 @@
 						";
 						$_SESSION["sms_taskschedule_SearchSQL"]="
 						
-						select sms_taskschedule.taskschedule_id , sms_taskschedule.taskschedule_name , sms_taskschedule.task_run_at , .taskstatus_id , .taskstatus_name , sms_taskschedule.created_by , sms_taskschedule.date_created , sms_taskschedule.changed_by , sms_taskschedule.date_changed , sms_taskschedule.voided , sms_taskschedule.voided_by , sms_taskschedule.date_voided , sms_taskschedule.uuid , sms_taskschedule.sys_track  from sms_taskschedule  inner join  on .taskstatus_id = sms_taskschedule.taskstatus_id
+						select sms_taskschedule.taskschedule_id , sms_taskschedule.taskschedule_name , sms_taskschedule.task_run_at , sms_taskstatus.taskstatus_id , sms_taskstatus.taskstatus_name , sms_taskschedule.created_by , sms_taskschedule.date_created , sms_taskschedule.changed_by , sms_taskschedule.date_changed , sms_taskschedule.voided , sms_taskschedule.voided_by , sms_taskschedule.date_voided , sms_taskschedule.uuid , sms_taskschedule.sys_track  from sms_taskschedule  inner join sms_taskstatus on sms_taskstatus.taskstatus_id = sms_taskschedule.taskstatus_id
 						
 						";
 						$_SESSION["sms_taskstatus_SearchSQL"]="

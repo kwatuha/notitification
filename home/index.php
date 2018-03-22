@@ -605,24 +605,24 @@ var contentEl = new Ext.Panel({
         //                 // createDeliveryReport('Kwatuha Alfayo','IN20012','admin_person',51,2);}
         //          },'-',
 
-                 {
-                    text:'Group View xx',
-                    tooltip:'Delivery Report',
-                    iconCls:'myemail',
+                //  {
+                //     text:'Group View xx',
+                //     tooltip:'Delivery Report',
+                //     iconCls:'myemail',
 
-					handler:function(){
-                  gridViewFormGroup();
-                  }
-                 },
-                 {
-                    text:'Remote Messaging',
-                    tooltip:'Remote Messaging',
-                    iconCls:'myemail',
+				// 	handler:function(){
+                //   gridViewFormGroup();
+                //   }
+                //  },
+                //  {
+                //     text:'Remote Messaging',
+                //     tooltip:'Remote Messaging',
+                //     iconCls:'myemail',
 
-					handler:function(){
-                  customizedRemoteDSForm();
-                  }
-                 },
+				// 	handler:function(){
+                //   customizedRemoteDSForm();
+                //   }
+                //  },
          {
                     text:'Check Balance',
                     tooltip:'Credit Balance',

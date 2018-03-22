@@ -193,7 +193,7 @@ Ext.tip.QuickTipManager.init();
 	id:'pdpersonttypecategory_id',
 	forceSelection:true,
 	fieldLabel: 'Category',
-	value:7,
+	value:3,
     store: admin_personttypecategorydata,
 	queryMode: 'remote',
     displayField: 'personttypecategory_name',
