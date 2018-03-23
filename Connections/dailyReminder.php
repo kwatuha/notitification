@@ -1,12 +1,4 @@
 <?php
-
-// $hostname_c4g = "localhost";
-// $username_c4g = "Kitale";
-// $password_c4g = "Admin2010@#";
-// $database_c4g = "ktldb2017";
-//  $_SESSION['voideindb']=$database_c4g ;
-// $c4g = mysql_pconnect($hostname_c4g, $username_c4g, $password_c4g) or trigger_error(mysql_error(),E_USER_ERROR); 
-// mysql_select_db($database_c4g, $c4g);
 require_once('cf4_HH.php');
 function insertMsg($table,$message,$phoneNumber, $sys_track){
     $message=mysql_real_escape_string($message);
@@ -14,7 +6,6 @@ function insertMsg($table,$message,$phoneNumber, $sys_track){
     $created_by= 14;
     $date_created=date('Y-m-d');
     $uuid=genUuid();
-    // $sys_track='1223';
     $voided="0";
     $insertSQl= "Insert into $table (phone_number,message,date_created,created_by,voided,sys_track,uuid) values
                         ('$phoneNumber','$message','$date_created','$created_by','$voided','$sys_track','$uuid')";

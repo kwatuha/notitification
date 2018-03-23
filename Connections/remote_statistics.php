@@ -1,8 +1,7 @@
 <?php
-require_once('../Connections/cf4_HH.php');
+require_once('cf4_HH.php');
 $lastId=getLastId();
 if(!$lastId) $lastId=0;
-echo 'sssssssssssssssssssssssssssssssssssssssssssssssss===='.$lastId;
 getSMSRefRemoteData($lastId);
 function getSMSRefRemoteData($refId){
     ini_set("allow_url_fopen", 1);
