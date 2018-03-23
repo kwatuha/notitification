@@ -614,11 +614,6 @@
 						select sms_msgsource.msgsource_id , sms_msgsource.msgsource_name , sms_msgsource.message_source , sms_msgsource.created_by , sms_msgsource.date_created , sms_msgsource.changed_by , sms_msgsource.date_changed , sms_msgsource.voided , sms_msgsource.voided_by , sms_msgsource.date_voided , sms_msgsource.uuid , sms_msgsource.sys_track  from sms_msgsource
 						
 						";
-						$_SESSION["sms_processed2014_SearchSQL"]="
-						
-						select sms_processed2014.processedSMS_id , sms_processed2014.phone_number , sms_processed2014.connection_number , sms_processed2014.message , sms_processed2014.created_by , sms_processed2014.date_created , sms_processed2014.changed_by , sms_processed2014.date_changed , sms_processed2014.voided , sms_processed2014.voided_by , sms_processed2014.date_voided , sms_processed2014.uuid , sms_processed2014.sys_track  from sms_processed2014
-						
-						";
 						$_SESSION["sms_processedemail_SearchSQL"]="
 						
 						select sms_processedemail.processedemail_id , sms_processedemail.email_address , sms_processedemail.connection_number , sms_billmonth.billmonth_id , sms_billmonth.billmonth_name , sms_billyear.billyear_id , sms_billyear.billyear_name , sms_processedemail.zone , sms_processedemail.created_by , sms_processedemail.date_created , sms_processedemail.changed_by , sms_processedemail.date_changed , sms_processedemail.voided , sms_processedemail.voided_by , sms_processedemail.date_voided , sms_processedemail.uuid , sms_processedemail.sys_track  from sms_processedemail  inner join sms_billmonth on sms_billmonth.billmonth_id = sms_processedemail.billmonth_id  inner join sms_billyear on sms_billyear.billyear_id = sms_processedemail.billyear_id

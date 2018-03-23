@@ -1,10 +1,6 @@
 <?php
 require_once('../Connections/cf4_HH.php');
-
-
-
 $GLOBALS['msg_center'] = getMsgCenter(); 
-// echo getLastUpdate();
 getMessageStatus();
  function sendData($data){
 
@@ -23,7 +19,7 @@ getMessageStatus();
 function getMsgCenter(){
     $sql=" select max(msgcenter_id) as last_id from sms_msgcenterdefault ";
     $last_id = 0;
-    $Rcd_tbody_results = mysql_query($sql) or die(mysql_error());
+    $Rcd_tbody_results = mysql_query($sql) or die($sql);
      while ($rows=mysql_fetch_array($Rcd_tbody_results)){
     $last_id=$rows['last_id'];
     }
@@ -42,10 +38,11 @@ function getMsgCenter(){
 
  function getMessageStatus(){
       $msgsentId =  getLastUpdate();
+      if(!$msgsentId)  $msgsentId =0;
       $sql=" select msgsent_id,CEILING((CHAR_LENGTH(message)+11)/160) as message_size, date_created as date_sent,message_type 
-      FROM  sms_msgsent where msgsent_id > $msgsentId ";
+      FROM  sms_msgsent where msgsent_id > $msgsentId limit 5";
 
-    $Rcd_tbody_results = mysql_query($sql) or die(mysql_error());
+    $Rcd_tbody_results = mysql_query($sql) or die($sql);
     while ($rows=mysql_fetch_array($Rcd_tbody_results)){
     $messageType =$rows['message_type'];
     $messageSize =$rows['message_size']; 
@@ -59,7 +56,7 @@ function getMsgCenter(){
     $centerId= $GLOBALS['msg_center'];
     $sql=" select max(sys_track) as last_id from sms_ref where msgcenter_id= $centerId ";
     $last_id = 0;
-    $Rcd_tbody_results = mysql_query($sql) or die(mysql_error());
+    $Rcd_tbody_results = mysql_query($sql) or die($sql);
      while ($rows=mysql_fetch_array($Rcd_tbody_results)){
     $last_id=$rows['last_id'];
     }

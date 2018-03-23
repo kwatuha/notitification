@@ -109,6 +109,7 @@ $sectionAdditionalData='';
 				elseif 
 				($tablename=='sms_msgqueue' 
 				 || $tablename=='sms_msgsent' 
+				 || $tablename=='sms_msginvalid' 
 				 || $tablename=='sms_sentgroupsms' 
 				 || $tablename=='sms_msgdelivery' 
 				 || $tablename=='sms_messagesend' 

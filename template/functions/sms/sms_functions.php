@@ -280,7 +280,6 @@ function colDefinition($dataRow){
 }
 
 function insertMsg($table,$message,$phoneNumber,$sysTrack){
-    echo $message.'eeeeeeeeeeeeee ttttttttttttttttt===='.$phoneNumber;
     $message=mysql_real_escape_string($message);
     $phoneNumber=mysql_real_escape_string($phoneNumber);
     $sysTrack=mysql_real_escape_string($sysTrack);
@@ -291,8 +290,6 @@ function insertMsg($table,$message,$phoneNumber,$sysTrack){
 
     $insertSQl= "Insert into $table (phone_number,message,date_created,created_by,voided,sys_track,uuid) values
                         ('$phoneNumber','$message','$date_created','$created_by','$voided','$sysTrack','$uuid')";
-
-                        echo $insertSQl;
 	$Result1 = mysql_query($insertSQl) or die($insertSQl);
 
 }
@@ -887,13 +884,14 @@ if($countrowshdls==1){
         $date_created=date('Y-m-d');
         $commtype="";
 
-	    if($phoneNumber){
+	    if($phone_number){
               if($phoneNumber){
-                echo $msgct.'eeeeeeeeeeeeee===='.$phoneNumber;
+            
         //    insertMsg('sms_msgqueue',$msgct,$phoneNumber,$messageId.'_'.$scheduleId);
            insertSMSMsgByType('sms_msgqueue',$msgct,$phoneNumber,$messageId.'_'.$scheduleId,'General SMS');
         } else{
-           insertMsg('sms_msginvalid',$msgct,$phone_number,$messageId.'_'.$scheduleId);
+        //    insertMsg('sms_msginvalid',$msgct,$phone_number,$messageId.'_'.$scheduleId);
+        insertSMSMsgByType('sms_msginvalid',$msgct,$phone_number,$messageId.'_'.$scheduleId,'');
         }
 
 	}
