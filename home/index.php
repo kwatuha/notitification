@@ -150,6 +150,7 @@ $itadminroles="'1'";
   $itadmin="
                 {
                     text:'Manage Users',
+                    xtype:'hidden',
                     tooltip:'Manage User Details',
                     iconCls:'myrefresh',
 					handler:function(){
@@ -239,7 +240,8 @@ $patientreview.="{
                 },'-',
 				{
                     text:'Roles',
-					hodden:true,
+                    xtype:'hidden',
+					hidden:true,
                     tooltip:'Define Roles',
                     iconCls:'myrefresh',
 					handler:function(){
@@ -251,7 +253,7 @@ $patientreview.="{
 				'-',{
                     text:'Roles',
 					//hidden:true,
-
+                    xtype:'hidden',
                     tooltip:'Define Roles',
                     iconCls:'myrefresh',
 					handler:function(){
