@@ -62,7 +62,7 @@ if($table=='sms_emailhandle'){
 function clearSmsQueues($table){
 $hostname_c4g = "localhost";
 $username_c4g = "Kitale";
-$password_c4g = "Admin2010@#";
+$password_c4g = "2010@#";
 $database_c4g = "impact_ksm";
 $con=mysqli_connect($hostname_c4g,$username_c4g,$password_c4g,$database_c4g);
 mysqli_query($con,"Delete from $table");

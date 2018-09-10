@@ -150,7 +150,7 @@ $itadminroles="'1'";
   $itadmin="
                 {
                     text:'Manage Users',
-                    xtype:'hidden',
+                    
                     tooltip:'Manage User Details',
                     iconCls:'myrefresh',
 					handler:function(){

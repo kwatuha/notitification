@@ -123,6 +123,17 @@ $sectionAdditionalData='';
 				$sections.="{ tbl:'".$_SESSION[$tablename]."||".$_SESSION['tablegroup'.$tablename]."||"
 				
 				.'createFormGrid("Save","NOID","'.$tablename.'","g")'."'}".$comma;
+				 if	($tablename=='sms_msgsent'){
+					 // Add menu
+					// $sections.="{ tbl:'tttttt"."||Sms"."||"
+					// 	."gridViewsms_msgraw()"."'}".$comma;    
+					// }
+
+					$sections.="{ tbl:'Raw Data"."||Sms"."||"
+				    .'createFormGrid("Save","NOID","'.'sms_msgraw'.'","g")'."'}".$comma;  					
+					$sections.="{ tbl:'SMS Log"."||Sms"."||"
+				    .'createFormGrid("Save","NOID","'.'sms_msglog'.'","g")'."'}".$comma;  
+				  }
 				}
 				
 				elseif
@@ -223,7 +234,15 @@ $sectionAdditionalData='';
 				}
 				elseif	($tablename=='sms_msgdelivery'){
 				$sections.="{ tbl:'".$_SESSION[$tablename]."||".$_SESSION['tablegroup'.$tablename]."||"
-				."createSMSDelReport()"."'}".$comma;   
+				."createSMSDelReport()"."'}".$comma; 
+				$sections.="{ tbl:'".$_SESSION[$tablename]."||".$_SESSION['tablegroup'.$tablename]."||"
+					."createSMSDelReport()"."'}".$comma;    
+				}
+				elseif	($tablename=='sms_msgqueue'){
+				$sections.="{ tbl:'".$_SESSION[$tablename]."||".$_SESSION['tablegroup'.$tablename]."||"
+				."createSMSDelReport()"."'}".$comma; 
+				$sections.="{ tbl:'".$_SESSION[$tablename]."||SMS"."||"
+					."createSMSDelReport()"."'}".$comma;    
 				}
 				else{
 				

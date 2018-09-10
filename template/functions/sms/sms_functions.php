@@ -378,7 +378,7 @@ return trim($balance);
 }
 function getSmsCreditBalance(){
      libxml_use_internal_errors(true);
-     $URL = "http://messaging.advantasms.com/bulksms/smscredit.jsp?user=ImpactRDO&password=i12345";
+     $URL = "ududududududu/bulksms/smscredit.jsp?user=ImpactRDO&password=i12345";
 
             $ch = curl_init($URL);
             curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
@@ -426,7 +426,7 @@ function getSmsContent(){
     return file_get_contents($smsFile);
 }
 function SendSms( $smsListContent){
-          $URL = "http://messaging.advantasms.com/bulksms/sendsms.jsp?";
+          $URL = "ududududududu/bulksms/sendsms.jsp?";
 	    $xml_data =str_replace('smsPhoneNumber',$phone,$xml_data );
 	    $xml_data =str_replace('smsMessage',$msg,$xml_data );
             $ch = curl_init($URL);
