@@ -31671,6 +31671,282 @@ loadsms_msginvalidinfo(formPanel,rid);
 }//launchForm()
 
 
+function sms_msglogForm(displayhere,loadtype,rid){
+
+var obj=document.getElementById(displayhere);
+
+obj.innerHTML='';
+
+
+
+Ext.onReady(function() {
+Ext.tip.QuickTipManager.init();
+        var formPanel = Ext.widget('form', {
+        renderTo: displayhere,
+		tbar:[{
+                    text:'Add Something',
+                    tooltip:'Add a new row',
+                    iconCls:'add'
+                }, '-', {
+                    text:'Options',
+                    tooltip:'Blah blah blah blaht',
+                    iconCls:'option'
+                },'-',{
+                    text:'Remove Something',
+                    tooltip:'Remove the selected item',
+                    iconCls:'remove'
+                },'-',{
+                    text:'View',
+                    tooltip:'View Information Grid',
+                    iconCls:'grid',
+					handler:function(buttonObj, eventObj) { 
+									///eventObj.click(eval(tablevalgrpArr[2]));
+									gridViewsms_msglog();
+											}
+                }],
+		resizable:true,
+		closable:true,
+        frame: true,
+		url:'bodysave.php',
+        width: 550,
+        bodyPadding: 10,
+        bodyBorder: true,
+		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
+        wallpaperStretch: false,
+        title: 'Update  sms msglog ',
+
+        defaults: {
+            anchor: '100%'
+        },
+        fieldDefaults: {
+            labelAlign: 'left',
+            msgTarget: 'none',
+            /*invalidCls: '' 
+			unset the invalidCls so individual fields do not get styled as invalid*/
+        },
+
+        /*
+         * Listen for validity change on the entire form and update the combined error icon
+         */
+        listeners: {
+            fieldvaliditychange: function() {
+                this.updateErrorState();
+            },
+            fielderrorchange: function() {
+                this.updateErrorState();
+            }
+        },
+
+        updateErrorState: function() {
+            var me = this,
+                errorCmp, fields, errors;
+
+            if (me.hasBeenDirty || me.getForm().isDirty()) { //prevents showing global error when form first loads
+                errorCmp = me.down('#formErrorState');
+                fields = me.getForm().getFields();
+                errors = [];
+                fields.each(function(field) {
+                    Ext.Array.forEach(field.getErrors(), function(error) {
+                        errors.push({name: field.getFieldLabel(), error: error});
+                    });
+                });
+                errorCmp.setErrors(errors);
+                me.hasBeenDirty = true;
+            }
+        },
+
+        items: [
+		
+		{xtype:'hidden',
+             name:'t',
+			 value:'sms_msglog'
+			 },
+			 {xtype:'hidden',
+             name:'msglog_id',
+			 value:''
+			 },{
+            xtype: 'textfield',
+            name: 'msglog_ref',
+            fieldLabel: 'Msglog Ref ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
+            name: 'recepient',
+            fieldLabel: 'Recepient ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
+            name: 'recepient_details',
+            fieldLabel: 'Recepient Details ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textareafield',
+            name: 'message',
+            fieldLabel: 'Message ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
+            name: 'message_type',
+            fieldLabel: 'Message Type ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
+            name: 'status',
+            fieldLabel: 'Status ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'datefield',
+            name: 'ref_app_date',
+            fieldLabel: 'Ref App Date ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
+            name: 'resend',
+            fieldLabel: 'Resend ',
+            allowBlank: false,
+            minLength: 1
+        
+		}], dockedItems: [{
+            xtype: 'container',
+            dock: 'bottom',
+            layout: {
+                type: 'hbox',
+                align: 'middle'
+            },
+            padding: '10 10 5',
+
+            items: [{
+                xtype: 'component',
+                id: 'formErrorState',
+                baseCls: 'form-error-state',
+                flex: 1,
+                validText: 'Form is valid',
+                invalidText: 'Form has errors',
+                tipTpl: Ext.create('Ext.XTemplate', '<ul><tpl for=><li><span class="field-name">{name}</span>: <span class="error">{error}</span></li></tpl></ul>'),
+
+                getTip: function() {
+                    var tip = this.tip;
+                    if (!tip) {
+                        tip = this.tip = Ext.widget('tooltip', {
+                            target: this.el,
+                            title: 'Error Details:',
+                            autoHide: false,
+                            anchor: 'top',
+                            mouseOffset: [-11, -2],
+                            closable: true,
+                            constrainPosition: false,
+                            cls: 'errors-tip'
+                        });
+                        tip.show();
+                    }
+                    return tip;
+                },
+
+                setErrors: function(errors) {
+                    var me = this,
+                        baseCls = me.baseCls,
+                        tip = me.getTip();
+
+                    errors = Ext.Array.from(errors);
+
+                    // Update CSS class and tooltip content
+                    if (errors.length) {
+                        me.addCls(baseCls + '-invalid');
+                        me.removeCls(baseCls + '-valid');
+                        me.update(me.invalidText);
+                        tip.setDisabled(false);
+                        tip.update(me.tipTpl.apply(errors));
+                    } else {
+                        me.addCls(baseCls + '-valid');
+                        me.removeCls(baseCls + '-invalid');
+                        me.update(me.validText);
+                        tip.setDisabled(true);
+                        tip.hide();
+                    }
+                }
+            }, 
+			
+			
+	//now submit
+	{
+		xtype: 'button',
+        text: 'Submit Data',
+        handler: function() {
+            var form = this.up('form').getForm();
+            if(form.isValid()){
+                form.submit({
+                    url: 'bodysave.php',
+                    waitMsg: 'saving changes...',
+                    success: function(fp, o) {
+                        Ext.Msg.alert('Success', '' + o.result.savemsg + '"');
+                    }
+                });
+            }
+        }
+    }
+	///end of cols
+		]
+        }]
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+					 
+        title: 'User Registration',
+       // height: 700,
+       //width: 800,
+        layout: 'fit',
+		autoScroll :true,
+		items: formPanel,
+		 tbar:[{
+                    text:'Add Something muse',
+                    tooltip:'Add a new row',
+                    iconCls:'add'
+                }, '-', {
+                    text:'Options',
+                    tooltip:'Blah blah blah blaht',
+                    iconCls:'option'
+                },'-',{
+                    text:'Remove Something',
+                    tooltip:'Remove the selected item',
+                    iconCls:'remove'
+                },'-',{
+                    text:'View',
+                    tooltip:'View Information Grid',
+                    iconCls:'grid',
+					handler:function(buttonObj, eventObj) { 
+									///eventObj.click(eval(tablevalgrpArr[2]));
+									gridViewsms_msglog();
+											}
+                }
+				]
+    }).show();
+	*/
+	
+if(loadtype=='updateload'){
+loadsms_msgloginfo(formPanel,rid);
+}
+
+});
+
+
+
+}//launchForm()
+
+
 function sms_msgqueueForm(displayhere,loadtype,rid){
 
 var obj=document.getElementById(displayhere);
@@ -31903,6 +32179,275 @@ Ext.tip.QuickTipManager.init();
 	
 if(loadtype=='updateload'){
 loadsms_msgqueueinfo(formPanel,rid);
+}
+
+});
+
+
+
+}//launchForm()
+
+
+function sms_msgrawForm(displayhere,loadtype,rid){
+
+var obj=document.getElementById(displayhere);
+
+obj.innerHTML='';
+
+
+
+Ext.onReady(function() {
+Ext.tip.QuickTipManager.init();
+        var formPanel = Ext.widget('form', {
+        renderTo: displayhere,
+		tbar:[{
+                    text:'Add Something',
+                    tooltip:'Add a new row',
+                    iconCls:'add'
+                }, '-', {
+                    text:'Options',
+                    tooltip:'Blah blah blah blaht',
+                    iconCls:'option'
+                },'-',{
+                    text:'Remove Something',
+                    tooltip:'Remove the selected item',
+                    iconCls:'remove'
+                },'-',{
+                    text:'View',
+                    tooltip:'View Information Grid',
+                    iconCls:'grid',
+					handler:function(buttonObj, eventObj) { 
+									///eventObj.click(eval(tablevalgrpArr[2]));
+									gridViewsms_msgraw();
+											}
+                }],
+		resizable:true,
+		closable:true,
+        frame: true,
+		url:'bodysave.php',
+        width: 550,
+        bodyPadding: 10,
+        bodyBorder: true,
+		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
+        wallpaperStretch: false,
+        title: 'Update  sms msgraw ',
+
+        defaults: {
+            anchor: '100%'
+        },
+        fieldDefaults: {
+            labelAlign: 'left',
+            msgTarget: 'none',
+            /*invalidCls: '' 
+			unset the invalidCls so individual fields do not get styled as invalid*/
+        },
+
+        /*
+         * Listen for validity change on the entire form and update the combined error icon
+         */
+        listeners: {
+            fieldvaliditychange: function() {
+                this.updateErrorState();
+            },
+            fielderrorchange: function() {
+                this.updateErrorState();
+            }
+        },
+
+        updateErrorState: function() {
+            var me = this,
+                errorCmp, fields, errors;
+
+            if (me.hasBeenDirty || me.getForm().isDirty()) { //prevents showing global error when form first loads
+                errorCmp = me.down('#formErrorState');
+                fields = me.getForm().getFields();
+                errors = [];
+                fields.each(function(field) {
+                    Ext.Array.forEach(field.getErrors(), function(error) {
+                        errors.push({name: field.getFieldLabel(), error: error});
+                    });
+                });
+                errorCmp.setErrors(errors);
+                me.hasBeenDirty = true;
+            }
+        },
+
+        items: [
+		
+		{xtype:'hidden',
+             name:'t',
+			 value:'sms_msgraw'
+			 },
+			 {xtype:'hidden',
+             name:'msgraw_id',
+			 value:''
+			 },{
+            xtype: 'textfield',
+            name: 'MARPs_No',
+            fieldLabel: 'MARPs No ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
+            name: 'Q1_ClientName',
+            fieldLabel: 'Q1 ClientName ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
+            name: 'Q2_Phone',
+            fieldLabel: 'Q2 Phone ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'datefield',
+            name: 'QA3_RegDate',
+            fieldLabel: 'QA3 RegDate ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'datefield',
+            name: 'Appointment_Date',
+            fieldLabel: 'Appointment Date ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
+            name: 'GetSMS',
+            fieldLabel: 'GetSMS ',
+            allowBlank: false,
+            minLength: 1
+        
+		},{
+            xtype: 'textfield',
+            name: 'Language',
+            fieldLabel: 'Language ',
+            allowBlank: false,
+            minLength: 1
+        
+		}], dockedItems: [{
+            xtype: 'container',
+            dock: 'bottom',
+            layout: {
+                type: 'hbox',
+                align: 'middle'
+            },
+            padding: '10 10 5',
+
+            items: [{
+                xtype: 'component',
+                id: 'formErrorState',
+                baseCls: 'form-error-state',
+                flex: 1,
+                validText: 'Form is valid',
+                invalidText: 'Form has errors',
+                tipTpl: Ext.create('Ext.XTemplate', '<ul><tpl for=><li><span class="field-name">{name}</span>: <span class="error">{error}</span></li></tpl></ul>'),
+
+                getTip: function() {
+                    var tip = this.tip;
+                    if (!tip) {
+                        tip = this.tip = Ext.widget('tooltip', {
+                            target: this.el,
+                            title: 'Error Details:',
+                            autoHide: false,
+                            anchor: 'top',
+                            mouseOffset: [-11, -2],
+                            closable: true,
+                            constrainPosition: false,
+                            cls: 'errors-tip'
+                        });
+                        tip.show();
+                    }
+                    return tip;
+                },
+
+                setErrors: function(errors) {
+                    var me = this,
+                        baseCls = me.baseCls,
+                        tip = me.getTip();
+
+                    errors = Ext.Array.from(errors);
+
+                    // Update CSS class and tooltip content
+                    if (errors.length) {
+                        me.addCls(baseCls + '-invalid');
+                        me.removeCls(baseCls + '-valid');
+                        me.update(me.invalidText);
+                        tip.setDisabled(false);
+                        tip.update(me.tipTpl.apply(errors));
+                    } else {
+                        me.addCls(baseCls + '-valid');
+                        me.removeCls(baseCls + '-invalid');
+                        me.update(me.validText);
+                        tip.setDisabled(true);
+                        tip.hide();
+                    }
+                }
+            }, 
+			
+			
+	//now submit
+	{
+		xtype: 'button',
+        text: 'Submit Data',
+        handler: function() {
+            var form = this.up('form').getForm();
+            if(form.isValid()){
+                form.submit({
+                    url: 'bodysave.php',
+                    waitMsg: 'saving changes...',
+                    success: function(fp, o) {
+                        Ext.Msg.alert('Success', '' + o.result.savemsg + '"');
+                    }
+                });
+            }
+        }
+    }
+	///end of cols
+		]
+        }]
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+					 
+        title: 'User Registration',
+       // height: 700,
+       //width: 800,
+        layout: 'fit',
+		autoScroll :true,
+		items: formPanel,
+		 tbar:[{
+                    text:'Add Something muse',
+                    tooltip:'Add a new row',
+                    iconCls:'add'
+                }, '-', {
+                    text:'Options',
+                    tooltip:'Blah blah blah blaht',
+                    iconCls:'option'
+                },'-',{
+                    text:'Remove Something',
+                    tooltip:'Remove the selected item',
+                    iconCls:'remove'
+                },'-',{
+                    text:'View',
+                    tooltip:'View Information Grid',
+                    iconCls:'grid',
+					handler:function(buttonObj, eventObj) { 
+									///eventObj.click(eval(tablevalgrpArr[2]));
+									gridViewsms_msgraw();
+											}
+                }
+				]
+    }).show();
+	*/
+	
+if(loadtype=='updateload'){
+loadsms_msgrawinfo(formPanel,rid);
 }
 
 });
@@ -32378,247 +32923,6 @@ Ext.tip.QuickTipManager.init();
 	
 if(loadtype=='updateload'){
 loadsms_msgsourceinfo(formPanel,rid);
-}
-
-});
-
-
-
-}//launchForm()
-
-
-function sms_processed2014Form(displayhere,loadtype,rid){
-
-var obj=document.getElementById(displayhere);
-
-obj.innerHTML='';
-
-
-
-Ext.onReady(function() {
-Ext.tip.QuickTipManager.init();
-        var formPanel = Ext.widget('form', {
-        renderTo: displayhere,
-		tbar:[{
-                    text:'Add Something',
-                    tooltip:'Add a new row',
-                    iconCls:'add'
-                }, '-', {
-                    text:'Options',
-                    tooltip:'Blah blah blah blaht',
-                    iconCls:'option'
-                },'-',{
-                    text:'Remove Something',
-                    tooltip:'Remove the selected item',
-                    iconCls:'remove'
-                },'-',{
-                    text:'View',
-                    tooltip:'View Information Grid',
-                    iconCls:'grid',
-					handler:function(buttonObj, eventObj) { 
-									///eventObj.click(eval(tablevalgrpArr[2]));
-									gridViewsms_processed2014();
-											}
-                }],
-		resizable:true,
-		closable:true,
-        frame: true,
-		url:'bodysave.php',
-        width: 550,
-        bodyPadding: 10,
-        bodyBorder: true,
-		wallpaper: '../sview/desktop/wallpapers/desk.jpg',
-        wallpaperStretch: false,
-        title: 'Update  sms processed2014 ',
-
-        defaults: {
-            anchor: '100%'
-        },
-        fieldDefaults: {
-            labelAlign: 'left',
-            msgTarget: 'none',
-            /*invalidCls: '' 
-			unset the invalidCls so individual fields do not get styled as invalid*/
-        },
-
-        /*
-         * Listen for validity change on the entire form and update the combined error icon
-         */
-        listeners: {
-            fieldvaliditychange: function() {
-                this.updateErrorState();
-            },
-            fielderrorchange: function() {
-                this.updateErrorState();
-            }
-        },
-
-        updateErrorState: function() {
-            var me = this,
-                errorCmp, fields, errors;
-
-            if (me.hasBeenDirty || me.getForm().isDirty()) { //prevents showing global error when form first loads
-                errorCmp = me.down('#formErrorState');
-                fields = me.getForm().getFields();
-                errors = [];
-                fields.each(function(field) {
-                    Ext.Array.forEach(field.getErrors(), function(error) {
-                        errors.push({name: field.getFieldLabel(), error: error});
-                    });
-                });
-                errorCmp.setErrors(errors);
-                me.hasBeenDirty = true;
-            }
-        },
-
-        items: [
-		
-		{xtype:'hidden',
-             name:'t',
-			 value:'sms_processed2014'
-			 },
-			 {xtype:'hidden',
-             name:'processed2014_id',
-			 value:''
-			 },{
-            xtype: 'textfield',
-            name: 'phone_number',
-            fieldLabel: 'Phone Number ',
-            allowBlank: false,
-            minLength: 1
-        
-		},{
-            xtype: 'textfield',
-            name: 'connection_number',
-            fieldLabel: 'Connection Number ',
-            allowBlank: false,
-            minLength: 1
-        
-		},{
-            xtype: 'textareafield',
-            name: 'message',
-            fieldLabel: 'Message ',
-            allowBlank: false,
-            minLength: 1
-        
-		}], dockedItems: [{
-            xtype: 'container',
-            dock: 'bottom',
-            layout: {
-                type: 'hbox',
-                align: 'middle'
-            },
-            padding: '10 10 5',
-
-            items: [{
-                xtype: 'component',
-                id: 'formErrorState',
-                baseCls: 'form-error-state',
-                flex: 1,
-                validText: 'Form is valid',
-                invalidText: 'Form has errors',
-                tipTpl: Ext.create('Ext.XTemplate', '<ul><tpl for=><li><span class="field-name">{name}</span>: <span class="error">{error}</span></li></tpl></ul>'),
-
-                getTip: function() {
-                    var tip = this.tip;
-                    if (!tip) {
-                        tip = this.tip = Ext.widget('tooltip', {
-                            target: this.el,
-                            title: 'Error Details:',
-                            autoHide: false,
-                            anchor: 'top',
-                            mouseOffset: [-11, -2],
-                            closable: true,
-                            constrainPosition: false,
-                            cls: 'errors-tip'
-                        });
-                        tip.show();
-                    }
-                    return tip;
-                },
-
-                setErrors: function(errors) {
-                    var me = this,
-                        baseCls = me.baseCls,
-                        tip = me.getTip();
-
-                    errors = Ext.Array.from(errors);
-
-                    // Update CSS class and tooltip content
-                    if (errors.length) {
-                        me.addCls(baseCls + '-invalid');
-                        me.removeCls(baseCls + '-valid');
-                        me.update(me.invalidText);
-                        tip.setDisabled(false);
-                        tip.update(me.tipTpl.apply(errors));
-                    } else {
-                        me.addCls(baseCls + '-valid');
-                        me.removeCls(baseCls + '-invalid');
-                        me.update(me.validText);
-                        tip.setDisabled(true);
-                        tip.hide();
-                    }
-                }
-            }, 
-			
-			
-	//now submit
-	{
-		xtype: 'button',
-        text: 'Submit Data',
-        handler: function() {
-            var form = this.up('form').getForm();
-            if(form.isValid()){
-                form.submit({
-                    url: 'bodysave.php',
-                    waitMsg: 'saving changes...',
-                    success: function(fp, o) {
-                        Ext.Msg.alert('Success', '' + o.result.savemsg + '"');
-                    }
-                });
-            }
-        }
-    }
-	///end of cols
-		]
-        }]
-    });
-	
-	/*var win = Ext.create('Ext.Window', {
-					 
-        title: 'User Registration',
-       // height: 700,
-       //width: 800,
-        layout: 'fit',
-		autoScroll :true,
-		items: formPanel,
-		 tbar:[{
-                    text:'Add Something muse',
-                    tooltip:'Add a new row',
-                    iconCls:'add'
-                }, '-', {
-                    text:'Options',
-                    tooltip:'Blah blah blah blaht',
-                    iconCls:'option'
-                },'-',{
-                    text:'Remove Something',
-                    tooltip:'Remove the selected item',
-                    iconCls:'remove'
-                },'-',{
-                    text:'View',
-                    tooltip:'View Information Grid',
-                    iconCls:'grid',
-					handler:function(buttonObj, eventObj) { 
-									///eventObj.click(eval(tablevalgrpArr[2]));
-									gridViewsms_processed2014();
-											}
-                }
-				]
-    }).show();
-	*/
-	
-if(loadtype=='updateload'){
-loadsms_processed2014info(formPanel,rid);
 }
 
 });
@@ -38894,7 +39198,7 @@ Ext.tip.QuickTipManager.init();
     xtype: 'combobox',
 	name:'smsgroup_id',
 	forceSelection:true,
-    fieldLabel: 'Smsgroup Id ',
+    fieldLabel: 'Group',
     store: sms_smsgroupdata,
     queryMode: 'local',
     displayField: 'smsgroup_name',

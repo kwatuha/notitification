@@ -1,4 +1,25 @@
 <?php
+$GLOBALS['msg_center'] = getMsgCenter(); 
+$GLOBALS['msg_center_name'] = getMsgCenterName(); 
+function getMsgCenterName(){
+    $sql=" select msgcenter_name from  sms_msgcenter where msgcenter_id=".$GLOBALS['msg_center'];
+    $Rcd_tbody_results = mysql_query($sql) or die($sql);
+     while ($rows=mysql_fetch_array($Rcd_tbody_results)){
+    $msgcenter_name=$rows['msgcenter_name'];
+    }
+    
+    return trim($msgcenter_name);
+ }
+function getMsgCenter(){
+    $sql=" select max(msgcenter_id) as last_id from sms_msgcenterdefault ";
+    $last_id = 0;
+    $Rcd_tbody_results = mysql_query($sql) or die($sql);
+     while ($rows=mysql_fetch_array($Rcd_tbody_results)){
+    $last_id=$rows['last_id'];
+    }
+    
+    return trim($last_id);
+ }
 function sendToGroup(){
 
     $sql="select recepient,phone_number,message,sms_smsgroup.smsgroup_id ,groupqueue_id,smsgroup_name from  sms_groupqueue 
@@ -12,10 +33,12 @@ function sendToGroup(){
     $recepient=$rows['recepient'];
     $message=$rows['message'];
     $smsgroup_id =$rows['smsgroup_id'];
+    $message_center_id =$GLOBALS['msg_center'];
+    
     $smsgroup_name =$rows['smsgroup_name'];
 
     insertSentGroup($recepient,$phone_number,$message,$smsgroup_id);
-    $messageListTag.= createSmsTag($phone_number,$message,$smsgroup_id);
+    $messageListTag.= createSmsTag($phone_number,$message,$message_center_id);
 
     //remove from queue
     $groupqueue_id=$rows['groupqueue_id'];
@@ -64,8 +87,6 @@ function sendToGroup(){
 function getSMSScheduleName($schedule){
     $sql=" select schedule_name as name from sms_schedule where schedule_name like '$schedule' ";
     $name='Unknown Schedule';
-
-    echo   $sql;
     $Rcd_tbody_results = mysql_query($sql) or die(mysql_error());
      while ($rows=mysql_fetch_array($Rcd_tbody_results)){
     $name=$rows['name'];
@@ -407,16 +428,15 @@ function createSmsContent($smsContentList){
     $smsList='';
 
 //Now create sms list
+// echo 'ddddddddddddddddddddd'.$GLOBALS['msg_center'];
 file_put_contents($smsFile,$smsPart1.$smsContentList.$smsPart2);
 
 }
 
 
 function createSmsTag($phoneNumber,$smsMessage,$messageId){
-if(!$messageId){
-$messageId=0;
-}
-    if($phoneNumber && $smsMessage)
+
+    if($phoneNumber && $smsMessage && $messageId)
     return '<sms><user>ImpactRDO</user><password>i12345</password><message>'.$smsMessage.'</message><mobiles>'.$phoneNumber.'</mobiles><senderid></senderid><cdmasenderid></cdmasenderid><group>-1</group><clientsmsid>'.$messageId.'</clientsmsid><accountusagetypeid>1</accountusagetypeid></sms>';
 
 }

@@ -448,11 +448,12 @@ $fld=$primaryFieldARR[1].'_name';
                                         $Result1 = mysql_query($insertSQL) or die(mysql_error());
                                         $lastsavedSms=mysql_insert_id();
                                         $credit=getSmsCreditBalance();
-										$messageId=createMsgTrack(1);//"30050000";//.$lastsavedSms;
+										//$messageId=createMsgTrack(1);//"30050000";//.$lastsavedSms;
 										// createMsgTrack($source)
 
                                              if($credit>1&&$lastsavedSms>0){
-                                                    $messageListTag= createSmsTag($phone_number,$message,$messageId);
+																							      $messageCenterId = $GLOBALS['msg_center'];
+                                                    $messageListTag= createSmsTag($phone_number,$message,$messageCenterId);
                                                     createSmsContent($messageListTag);
                                                     $smsData=getSmsContent();
                                                     //echo 'ssssssssssssssssssss'.$smsData;

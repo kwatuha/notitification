@@ -118,8 +118,9 @@ $campanyDetail=fillPrimaryData('admin_company',1);
 				$commtype=trim($rws['sys_track']);
         $commtypeArray=explode('_',$commtype);
                 // echo 'yyyyyyyyyyyyyyyyyyyyyyyyyyyy'.$msgqueue_id;
-                $messageId="200".$msgqueue_id;
-                $messageListTag.= createSmsTag($phone_number,$message,$messageId);
+								$messageCenterId=$GLOBALS['msg_center'];
+								//"200".$msgqueue_id;
+                $messageListTag.= createSmsTag($phone_number,$message,$messageCenterId);
 			    $created_by= $_SESSION['my_useridloggened'];
                 $date_created=date('Y-m-d');
 
@@ -207,8 +208,8 @@ $firstdigit=substr($reciepient,0,1);
 $numberLen=strlen($reciepient);
 $credit=getSmsCreditBalance();
 if($credit>1){
-	$messageId="300".$_GET['smsid'];
-    $messageListTag= createSmsTag($reciepient,$message,$messageId);
+	  $messageCenterId=$GLOBALS['msg_center'];//"300".$_GET['smsid'];
+    $messageListTag= createSmsTag($reciepient,$message,$messageCenterId);
     createSmsContent($messageListTag);
     $smsData=getSmsContent();
 

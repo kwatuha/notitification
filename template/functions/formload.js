@@ -3358,6 +3358,34 @@ Ext.ModelMgr.getModel('lmodelsms_msginvalid').load(rid, {
 
 
 
+}function loadsms_msgloginfo(activeform,rid){
+Ext.define('lmodelsms_msglog', {
+    extend: 'Ext.data.Model',
+	fields:['msglog_id','msglog_ref','message','recepient','recepient_details','message_type','status','ref_app_date','resend','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
+	proxy: {
+        type: 'ajax',
+		api:{
+		      read : 'buidgrid.php?t=sms_msglog&acn=rd',
+		      update : 'bodysave.php?t=sms_msglog&q=rid&act=Update'
+		},
+        
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+//Load data
+Ext.ModelMgr.getModel('lmodelsms_msglog').load(rid, { 
+    success: function(user) {
+        activeform.loadRecord(user);
+
+    }
+});
+
+
+
+
 }function loadsms_msgqueueinfo(activeform,rid){
 Ext.define('lmodelsms_msgqueue', {
     extend: 'Ext.data.Model',
@@ -3377,6 +3405,34 @@ Ext.define('lmodelsms_msgqueue', {
 
 //Load data
 Ext.ModelMgr.getModel('lmodelsms_msgqueue').load(rid, { 
+    success: function(user) {
+        activeform.loadRecord(user);
+
+    }
+});
+
+
+
+
+}function loadsms_msgrawinfo(activeform,rid){
+Ext.define('lmodelsms_msgraw', {
+    extend: 'Ext.data.Model',
+	fields:['msgraw_id','MARPs_No','Q1_ClientName','Q2_Phone','QA3_RegDate','Appointment_Date','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track','GetSMS','Language'],
+	proxy: {
+        type: 'ajax',
+		api:{
+		      read : 'buidgrid.php?t=sms_msgraw&acn=rd',
+		      update : 'bodysave.php?t=sms_msgraw&q=rid&act=Update'
+		},
+        
+        reader: {
+            type: 'json'
+        }
+    }
+});
+
+//Load data
+Ext.ModelMgr.getModel('lmodelsms_msgraw').load(rid, { 
     success: function(user) {
         activeform.loadRecord(user);
 
@@ -3433,34 +3489,6 @@ Ext.define('lmodelsms_msgsource', {
 
 //Load data
 Ext.ModelMgr.getModel('lmodelsms_msgsource').load(rid, { 
-    success: function(user) {
-        activeform.loadRecord(user);
-
-    }
-});
-
-
-
-
-}function loadsms_processed2014info(activeform,rid){
-Ext.define('lmodelsms_processed2014', {
-    extend: 'Ext.data.Model',
-	fields:['processedsms_id','phone_number','connection_number','message','created_by','date_created','changed_by','date_changed','voided','voided_by','date_voided','uuid','sys_track'],
-	proxy: {
-        type: 'ajax',
-		api:{
-		      read : 'buidgrid.php?t=sms_processed2014&acn=rd',
-		      update : 'bodysave.php?t=sms_processed2014&q=rid&act=Update'
-		},
-        
-        reader: {
-            type: 'json'
-        }
-    }
-});
-
-//Load data
-Ext.ModelMgr.getModel('lmodelsms_processed2014').load(rid, { 
     success: function(user) {
         activeform.loadRecord(user);
 

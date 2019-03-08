@@ -150,6 +150,7 @@ $itadminroles="'1'";
   $itadmin="
                 {
                     text:'Manage Users',
+                    xtype:'hidden',
                     tooltip:'Manage User Details',
                     iconCls:'myrefresh',
 					handler:function(){
@@ -239,7 +240,8 @@ $patientreview.="{
                 },'-',
 				{
                     text:'Roles',
-					hodden:true,
+                    xtype:'hidden',
+					hidden:true,
                     tooltip:'Define Roles',
                     iconCls:'myrefresh',
 					handler:function(){
@@ -251,7 +253,7 @@ $patientreview.="{
 				'-',{
                     text:'Roles',
 					//hidden:true,
-
+                    xtype:'hidden',
                     tooltip:'Define Roles',
                     iconCls:'myrefresh',
 					handler:function(){
@@ -292,6 +294,7 @@ $patientreview.="{
     <script type="text/javascript" src="../sview/bootstrap.js"></script>
 	<!-- sm s -->
 	<script type="text/javascript" src="../template/functions/sms/sms_js.js"></script>
+	<script type="text/javascript" src="../template/functions/sms/deliveryReport.js"></script>
 
 	<!-- sms -->
 	<script type="text/javascript" src="../template/functions/landlord.js"></script>
@@ -5703,7 +5706,8 @@ photodiv.innerHtml='<div id="cngphotodiv"></div>'
 </script>
 <!--<input type="hidden" class="girl-user" onClick="createCheRolePrivileges('Com',4);" value="Roles"/><input type="button" onClick="SendBatchSMSs()" value="Batch SMS"/>
 <input type="button" onClick="OpenFieldcard()" value="Field Card" />-->
-<div id="welcome">Welcome  <?php echo $cusername; ?></div>
+
+<div id="welcome">Welcome  <?php echo $cusername.' ['. $GLOBALS['msg_center_name'].'] '; ?></div>
 <div id="notifyme" class="showFlashMSG" ></div>
 <!--<input type="HIDDEN" onClick="createFormTabs('Save',23,'admin_person',2)" value="manage employee"/>
 <input type="hidden" onClick="rvdib('sdfsd','EMP/00000078/2012','admin_person',90,2);" value="Registn Insurance"/>

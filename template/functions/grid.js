@@ -35168,7 +35168,7 @@ var closebtn= Ext.get('close-btn');
 		bbar:{height: 20},
 		columns:[
 		new Ext.grid.RowNumberer(),{
-		text     : ' Processedemail Id ' , 
+		text     : ' # ' , 
 		 width : 80 , 
 		 sortable : true , 
 		 dataIndex : 'processedemail_id'
@@ -39690,7 +39690,7 @@ var closebtn= Ext.get('close-btn');
 		 dataIndex : 'uploadtogroup_id'
 		 },
 		 {
-		text     : ' Smsgroup Id ' , 
+		text     : ' Group ' , 
 		 flex : 1 , 
 		 sortable : true , 
 		 dataIndex : 'smsgroup_name'
@@ -39890,3 +39890,317 @@ sms_yearfilterForm('detailinfo','updateload',rec.get('yearfilter_id'));
     }).show();*/
 	
 }//end of gridViewsms_yearfilter function
+
+
+// sms msglog
+
+function gridViewsms_msglog(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_msglog = Ext.get('gridViewsms_msglog');	
+
+	Ext.define('Sms_msglog', {
+    extend: 'Ext.data.Model',
+	fields:['msglog_id','msglog_ref','recepient','recepient_details','message','message_type','status','ref_app_date','resend']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_msglog',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_msglog',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' Msglog Id ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'msglog_id'
+		 },
+		 {
+		text     : ' Msglog Ref ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'msglog_ref'
+		 },
+		 {
+		text     : ' Recepient ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'recepient'
+		 },
+		 {
+		text     : ' Recepient Details ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'recepient_details'
+		 },
+		 {
+		text     : ' Message ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'message'
+		 },
+		 {
+		text     : ' Message Type ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'message_type'
+		 },
+		 {
+		text     : ' Status ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'status'
+		 },
+		 {
+		text     : ' Ref App Date ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'ref_app_date'
+		 },
+		 {
+		text     : ' Resend ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'resend'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_msglogForm('detailinfo','updateload',rec.get('msglog_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' Sms Msglog',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_msglog function
+
+
+// sms msgraw
+
+function gridViewsms_msgraw(){
+var viewdiv=document.getElementById('detailinfo');
+viewdiv.innerHTML='';
+Ext.QuickTips.init();
+var closebtn= Ext.get('close-btn');
+	var  viewgrbtnsms_msgraw = Ext.get('gridViewsms_msgraw');	
+
+	Ext.define('Sms_msgraw', {
+    extend: 'Ext.data.Model',
+	fields:['msgraw_id','MARPs_No','Q1_ClientName','Q2_Phone','QA3_RegDate','Appointment_Date','GetSMS','Language']
+	});
+	var store = Ext.create('Ext.data.Store', {
+    model: 'Sms_msgraw',
+    proxy: {
+        type: 'ajax',
+        url : 'buidgrid.php?t=sms_msgraw',
+        reader: {
+            type: 'json'
+        }
+    }
+});
+  store.load();
+    var grid = Ext.create('Ext.grid.Panel', {
+						  
+        store: store,
+        stateful: true,
+        //collapsible: true,
+        multiSelect: true,
+		iconCls: 'icon-grid',
+        stateId: 'stateGrid',
+		animCollapse:false,
+        constrainHeader:true,
+        layout: 'fit',
+		columnLines: true,
+		//headerPosition :'left',
+		bbar:{height: 20},
+		columns:[
+		new Ext.grid.RowNumberer(),{
+		text     : ' Msgraw Id ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'msgraw_id'
+		 },
+		 {
+		text     : ' MARPs No ' , 
+		 flex : 1 , 
+		 sortable : true , 
+		 dataIndex : 'MARPs_No'
+		 },
+		 {
+		text     : ' Q1 ClientName ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'Q1_ClientName'
+		 },
+		 {
+		text     : ' Q2 Phone ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'Q2_Phone'
+		 },
+		 {
+		text     : ' QA3 RegDate ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'QA3_RegDate'
+		 },
+		 {
+		text     : ' Appointment Date ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'Appointment_Date'
+		 },
+		 {
+		text     : '  ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'GetSMS'
+		 },
+		 {
+		text     : '  ' , 
+		 width : 80 , 
+		 sortable : true , 
+		 dataIndex : 'Language'
+		 },
+		 {
+                menuDisabled: true,
+                sortable: false,
+                xtype: 'actioncolumn',
+                width: 50,
+                items: [{
+                    icon   : '../shared/icons/fam/delete.gif',
+                    tooltip: 'Sell stock',
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+                        alert('Sell ' + rec.get('alert_name'));
+                    }
+                }, {
+                    getClass: function(v, meta, rec) { 
+                        if (rec.get('alert_name') < 0) {
+                            this.items[1].tooltip = 'Hold stock';
+                            return 'alert-col';
+                        } else {
+                            this.items[1].tooltip = 'Buy stock';
+                            return 'buy-col';
+                        }
+                    },
+                    handler: function(grid, rowIndex, colIndex) {
+                        var rec = store.getAt(rowIndex);
+
+sms_msgrawForm('detailinfo','updateload',rec.get('msgraw_id'));
+                    }
+                }]
+            }
+        ]
+		
+		,
+		maxHeight: 600,
+        width: 600,
+		resizable:true,
+        title: ' Sms Msgraw',
+        renderTo: 'detailinfo',
+        viewConfig: {
+            stripeRows: true,
+            enableTextSelection: true
+		},
+		tbar:[{
+                    text:'Add Record',
+                    tooltip:'Add a new row',
+                    iconCls:'add',
+					handler:function(){
+						 
+					}
+                }, '-', {
+                    text:'Options',                  
+                    iconCls:'option'
+                }]
+		
+    });
+	
+	/*var win = Ext.create('Ext.Window', {
+		extend: 'Ext.ux.desktop.Module',				  
+        title: 'Grid Filters Example',
+		collapsable:true,
+		autoScroll :true,
+        layout: 'fit',
+		items: grid
+    }).show();*/
+	
+}//end of gridViewsms_msgraw function

@@ -46,61 +46,66 @@ if (!((isset($_SESSION['MM_Username'])) && (isAuthorized_menuDb("",$MM_authorize
 }
 getMSAccData($zone,$connection_number,$period,$year);
 function getMSAccData($zone,$connection_number,$period,$year) {
-$dbName = "D:\impactRDO\db\IRDOv1_SIAYA_KP_be_Test.mdb";
+// $dbName = "D:\impactRDO\db\IRDOv1_SIAYA_KP_be_Test.mdb";
+$dbName = "D:\Project\SMS\Bondo\IRDOv1_BONDO_KP_be.mdb";
 if (!file_exists($dbName)) {
     die("Could not find database file.");
 }
 $db = new PDO("odbc:DRIVER={Microsoft Access Driver (*.mdb)}; DBQ=$dbName; Uid=root; Pwd='';");
 
-$sql = "select t2.MARPs_No,t2.Q1_ClientName, t2.Q2_Phone,t2.QA3_RegDate,t4.Appointment_Date
+$sql = "
+select t2.MARPs_No,t2.Q1_ClientName, t2.Q2_Phone,t2.QA3_RegDate,t4.Appointment_Date
 ,DateAdd('d', -7, t4.Appointment_Date) as first_rmr
 ,DateAdd('d', -3, t4.Appointment_Date) as second_rmr
 ,DateAdd('d', -1, t4.Appointment_Date) as third_rmr
+,GetSMS
+,Language
 
  from
-(select  t1.MARPs_No,t1.Q1_ClientName,t1.Q2_Phone, MAX(t1.QA3_RegDate) as QA3_RegDate
+(select  t1.MARPs_No,t1.Q1_ClientName,t1.Q2_Phone, MAX(t1.QA3_RegDate) as QA3_RegDate,t1.GetSMS,t1.Language
 from 
 (SELECT Distinct tblKPFSWScreeningA.UniversalNo, tblKPFSWScreeningA.Q1_ClientName,tblKPFSWScreeningA.MARPs_No, 30 as Q4_Age, tblKPFSWFollowUp.Q4_KPType, tblKPFSWFollowUp.Q2_Phone, tblKPFSWFollowUp.QA3_RegDate, 
-tblKPFSWFollowUp.Q26g_Appointment_Date as Appointment_Date
+tblKPFSWFollowUp.Q26g_Appointment_Date as Appointment_Date,tblKPFSWFollowUp.GetSMS,tblKPFSWFollowUp.Language
 FROM tblKPFSWScreeningA INNER JOIN tblKPFSWFollowUp ON tblKPFSWScreeningA.MARPs_No = tblKPFSWFollowUp.MARPs_No
 where tblKPFSWFollowUp.QA3_RegDate<tblKPFSWFollowUp.Q26g_Appointment_Date 
 
 union
 SELECT Distinct tblKPMSMScreeningA.UniversalNo, tblKPMSMScreeningA.Q1_ClientName,tblKPMSMScreeningA.MARPs_No, 30 as Q4_Age, tblKPMSMFollowUp.Q4_KPType, tblKPMSMFollowUp.Q2_Phone, tblKPMSMFollowUp.QA3_RegDate,
-tblKPMSMFollowUp.Q26g_Appointment_Date as Appointment_Date
+tblKPMSMFollowUp.Q26g_Appointment_Date as Appointment_Date ,tblKPMSMFollowUp.GetSMS,tblKPMSMFollowUp.Language
 FROM tblKPMSMScreeningA INNER JOIN tblKPMSMFollowUp ON tblKPMSMScreeningA.MARPs_No = tblKPMSMFollowUp.MARPs_No
 where tblKPMSMFollowUp.QA3_RegDate<tblKPMSMFollowUp.Q26g_Appointment_Date 
 
 union
 SELECT Distinct tblKPIWDScreening.UniversalNo,tblKPIWDScreening.Q1_ClientName, tblKPIWDScreening.MARPs_No, 30 as Q4_Age, tblKPIWDFollowUp.Q4_KPType, tblKPIWDFollowUp.Q2_Phone, tblKPIWDFollowUp.QA3_RegDate, 
-tblKPIWDFollowUp.Q26g_Appointment_Date as Appointment_Date
+tblKPIWDFollowUp.Q26g_Appointment_Date as Appointment_Date ,tblKPIWDFollowUp.GetSMS,tblKPIWDFollowUp.Language
 FROM tblKPIWDScreening INNER JOIN tblKPIWDFollowUp ON tblKPIWDScreening.MARPs_No = tblKPIWDFollowUp.MARPs_No
 where tblKPIWDFollowUp.QA3_RegDate<tblKPIWDFollowUp.Q26g_Appointment_Date 
 ) as t1
-group by  t1.MARPs_No,t1.Q1_ClientName,t1.Q2_Phone) as t2
+group by  t1.MARPs_No,t1.Q1_ClientName,t1.Q2_Phone,t1.GetSMS,t1.Language) as t2
 
 inner join 
 (select  t3.MARPs_No,t3.Q2_Phone, MAX(t3.Appointment_Date) as Appointment_Date
 from 
 (SELECT Distinct tblKPFSWScreeningA.UniversalNo, tblKPFSWScreeningA.MARPs_No, 30 as Q4_Age, tblKPFSWFollowUp.Q4_KPType, tblKPFSWFollowUp.Q2_Phone, tblKPFSWFollowUp.QA3_RegDate, 
-tblKPFSWFollowUp.Q26g_Appointment_Date as Appointment_Date
+tblKPFSWFollowUp.Q26g_Appointment_Date as Appointment_Date ,tblKPFSWFollowUp.GetSMS,tblKPFSWFollowUp.Language
 FROM tblKPFSWScreeningA INNER JOIN tblKPFSWFollowUp ON tblKPFSWScreeningA.MARPs_No = tblKPFSWFollowUp.MARPs_No
 where tblKPFSWFollowUp.QA3_RegDate<tblKPFSWFollowUp.Q26g_Appointment_Date 
 
 union
 SELECT Distinct tblKPMSMScreeningA.UniversalNo, tblKPMSMScreeningA.MARPs_No, 30 as Q4_Age, tblKPMSMFollowUp.Q4_KPType, tblKPMSMFollowUp.Q2_Phone, tblKPMSMFollowUp.QA3_RegDate,
-tblKPMSMFollowUp.Q26g_Appointment_Date as Appointment_Date
+tblKPMSMFollowUp.Q26g_Appointment_Date as Appointment_Date, tblKPMSMFollowUp.GetSMS,tblKPMSMFollowUp.Language
 FROM tblKPMSMScreeningA INNER JOIN tblKPMSMFollowUp ON tblKPMSMScreeningA.MARPs_No = tblKPMSMFollowUp.MARPs_No
 where tblKPMSMFollowUp.QA3_RegDate<tblKPMSMFollowUp.Q26g_Appointment_Date 
 
 union
 SELECT Distinct tblKPIWDScreening.UniversalNo, tblKPIWDScreening.MARPs_No, 30 as Q4_Age, tblKPIWDFollowUp.Q4_KPType, tblKPIWDFollowUp.Q2_Phone, tblKPIWDFollowUp.QA3_RegDate, 
-tblKPIWDFollowUp.Q26g_Appointment_Date as Appointment_Date
+tblKPIWDFollowUp.Q26g_Appointment_Date as Appointment_Date , tblKPIWDFollowUp.GetSMS,tblKPIWDFollowUp.Language
 FROM tblKPIWDScreening INNER JOIN tblKPIWDFollowUp ON tblKPIWDScreening.MARPs_No = tblKPIWDFollowUp.MARPs_No
 where tblKPIWDFollowUp.QA3_RegDate<tblKPIWDFollowUp.Q26g_Appointment_Date 
 ) as t3
 group by  t3.MARPs_No,t3.Q2_Phone) as t4
 on t2.MARPs_No=t4.MARPs_No
+
 
 
 "; 

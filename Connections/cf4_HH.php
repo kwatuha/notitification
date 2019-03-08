@@ -3,7 +3,7 @@
 # Type="MYSQL"
 # HTTP="true"
 $hostname_cf4_HH = "localhost";
-$username_cf4_HH = "Kitale";
+$username_cf4_HH = "sadmin";
 $password_cf4_HH = "Admin2010@#";
 $database_cf4_HH = "impact_ksm";
 $_SESSION['voideindb']=$database_cf4_HH;

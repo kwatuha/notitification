@@ -47,6 +47,8 @@ if (!((isset($_SESSION['MM_Username'])) && (isAuthorized_menu_fmks("",$MM_author
 }
 
 require_once('../Connections/cf4_HH.php');
+require_once('../Connections/remote_statistics.php');
+require_once('../Connections/deliveryReport.php');
 
 include('../template/functions/menuLinks.php');
 if($_GET['t']!=''){
@@ -548,8 +550,17 @@ $searchNotifications=$_SESSION['deliveryRPT'];
 }
 
 if($_GET['refgroupmember']){
+	$reports=getRegionalStats();
+if($reports) processRegionalStats($reports);
 	$searchNotifications=$_SESSION['smsrefSearchSQL'];
 }
+
+if($tablename=='sms_msgdelivery'){
+	
+	$reports=getDeliveryReport($url);
+	if($reports) processDeliveryRpts($reports);
+}
+
 $limit=$_GET['limit']?$_GET['limit']:'';
 $start=$_GET['start']?$_GET['start']:'';
 $searchSQLNoLimits=$searchNotifications;
@@ -560,7 +571,7 @@ if($limit){
 
 
 
-// echo $searchNotifications;
+//  echo $searchNotifications;
 
 $alertQueryResults=mysql_query( $searchNotifications) or die ($searchNotifications);
 $cntAlert=mysql_num_rows($alertQueryResults);

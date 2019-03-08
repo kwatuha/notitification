@@ -2066,11 +2066,28 @@ where message_source like '3001'
 
 $_SESSION["smsrefSearchSQL"]="
 						
-select  sms_msgcenter.msgcenter_name , sms_ref.message_type , sms_ref.date_sent,sum(sms_ref.message_size)  as sent_sms  from sms_ref  inner join sms_msgcenter on sms_msgcenter.msgcenter_id = sms_ref.msgcenter_id
+select  sms_msgcenter.msgcenter_name , sms_ref.message_type , sms_ref.date_sent,count(remote_ref)  as sent_sms  from sms_ref  inner join sms_msgcenter on sms_msgcenter.msgcenter_id = sms_ref.msgcenter_id
 group by  sms_msgcenter.msgcenter_name , sms_ref.message_type , sms_ref.date_sent
 						";
 $_SESSION['countSMSRefStats']="select count(*) totalCounter from (select sms_msgcenter.msgcenter_name ,
  sms_ref.message_type , sms_ref.date_sent,sum(sms_ref.message_size) as sent_sms from sms_ref 
  inner join sms_msgcenter on sms_msgcenter.msgcenter_id = sms_ref.msgcenter_id 
  group by sms_msgcenter.msgcenter_name , sms_ref.message_type , sms_ref.date_sent ) t";
+
+ $_SESSION["sms_msgqueue_SearchSQL"]="						
+ select sms_msgqueue.msgqueue_id , sms_msgqueue.phone_number , sms_msgqueue.message , sms_msgqueue.created_by ,
+  sms_msgqueue.date_created , sms_msgqueue.changed_by , sms_msgqueue.date_changed , sms_msgqueue.voided , sms_msgqueue.voided_by ,
+   sms_msgqueue.date_voided , sms_msgqueue.uuid , sms_msgqueue.sys_track , 
+   sms_msgqueue.sys_track as message_type  from sms_msgqueue
+ 
+ ";
+
+ $_SESSION["sms_msgsent_SearchSQL"]="
+						
+						select sms_msgsent.msgsent_id , sms_msgsent.phone_number , sms_msgsent.message , sms_msgsent.created_by 
+						, sms_msgsent.date_created , sms_msgsent.changed_by , sms_msgsent.date_changed , sms_msgsent.voided ,
+						 sms_msgsent.voided_by , sms_msgsent.date_voided , sms_msgsent.uuid , sms_msgsent.sys_track ,
+						 sms_msgsent.sys_track as message_type  from sms_msgsent
+						
+						";
 ?>

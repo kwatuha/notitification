@@ -599,16 +599,18 @@
 						select sms_msginvalid.msginvalid_id , sms_msginvalid.phone_number , sms_msginvalid.message , sms_msginvalid.created_by , sms_msginvalid.date_created , sms_msginvalid.changed_by , sms_msginvalid.date_changed , sms_msginvalid.voided , sms_msginvalid.voided_by , sms_msginvalid.date_voided , sms_msginvalid.uuid , sms_msginvalid.sys_track  from sms_msginvalid
 						
 						";
-						$_SESSION["sms_msgqueue_SearchSQL"]="
+						$_SESSION["sms_msglog_SearchSQL"]="
 						
-						select sms_msgqueue.msgqueue_id , sms_msgqueue.phone_number , sms_msgqueue.message , sms_msgqueue.created_by , sms_msgqueue.date_created , sms_msgqueue.changed_by , sms_msgqueue.date_changed , sms_msgqueue.voided , sms_msgqueue.voided_by , sms_msgqueue.date_voided , sms_msgqueue.uuid , sms_msgqueue.sys_track , sms_msgqueue.message_type  from sms_msgqueue
-						
-						";
-						$_SESSION["sms_msgsent_SearchSQL"]="
-						
-						select sms_msgsent.msgsent_id , sms_msgsent.phone_number , sms_msgsent.message , sms_msgsent.created_by , sms_msgsent.date_created , sms_msgsent.changed_by , sms_msgsent.date_changed , sms_msgsent.voided , sms_msgsent.voided_by , sms_msgsent.date_voided , sms_msgsent.uuid , sms_msgsent.sys_track , sms_msgsent.message_type  from sms_msgsent
+						select sms_msglog.msglog_id , sms_msglog.msglog_ref , sms_msglog.recepient , sms_msglog.recepient_details , sms_msglog.message , sms_msglog.message_type , sms_msglog.status , sms_msglog.ref_app_date , sms_msglog.resend , sms_msglog.created_by , sms_msglog.date_created , sms_msglog.changed_by , sms_msglog.date_changed , sms_msglog.voided , sms_msglog.voided_by , sms_msglog.date_voided , sms_msglog.uuid , sms_msglog.sys_track  from sms_msglog
 						
 						";
+					
+						$_SESSION["sms_msgraw_SearchSQL"]="
+						
+						select sms_msgraw.msgraw_id , sms_msgraw.MARPs_No , sms_msgraw.Q1_ClientName , sms_msgraw.Q2_Phone , sms_msgraw.QA3_RegDate , sms_msgraw.Appointment_Date , sms_msgraw.GetSMS , sms_msgraw.Language , sms_msgraw.created_by , sms_msgraw.date_created , sms_msgraw.changed_by , sms_msgraw.date_changed , sms_msgraw.voided , sms_msgraw.voided_by , sms_msgraw.date_voided , sms_msgraw.uuid , sms_msgraw.sys_track  from sms_msgraw
+						
+						";
+						
 						$_SESSION["sms_msgsource_SearchSQL"]="
 						
 						select sms_msgsource.msgsource_id , sms_msgsource.msgsource_name , sms_msgsource.message_source , sms_msgsource.created_by , sms_msgsource.date_created , sms_msgsource.changed_by , sms_msgsource.date_changed , sms_msgsource.voided , sms_msgsource.voided_by , sms_msgsource.date_voided , sms_msgsource.uuid , sms_msgsource.sys_track  from sms_msgsource
