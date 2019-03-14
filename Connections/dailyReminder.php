@@ -7,8 +7,8 @@ function insertMsg($table,$message,$phoneNumber, $sys_track){
     $date_created=date('Y-m-d');
     $uuid=genUuid();
     $voided="0";
-    $insertSQl= "Insert into $table (phone_number,message,date_created,created_by,voided,sys_track,uuid) values
-                        ('$phoneNumber','$message','$date_created','$created_by','$voided','$sys_track','$uuid')";
+    $insertSQl= "Insert into $table (phone_number,message,date_created,created_by,voided,sys_track,uuid,message_type) values
+                        ('$phoneNumber','$message','$date_created','$created_by','$voided','$sys_track','$uuid','$sys_track')";
 
 	$Result1 = mysql_query($insertSQl) or die($insertSQl);
 
@@ -16,6 +16,9 @@ function insertMsg($table,$message,$phoneNumber, $sys_track){
 
 
 $row=getMSAccData();
+if($row){
+    deleteAllRawData();
+}
 
 insertRawData($row);
 $latest=selectLatestData();
@@ -50,7 +53,10 @@ function getTemplateByLanguage($Language,$type){
         } 
         return trim($message);
 }
-
+function deleteAllRawData(){
+    $sql="Delete from sms_msgraw";
+    mysql_query($sql) or die($sql);
+}
 function insertRawData($rows){
 
     foreach ($rows as $row) {
@@ -76,8 +82,8 @@ function findRow($MARPs_No,$Q2_Phone,$Q1_ClientName,$Appointment_Date,$Language,
       
     SELECT EXISTS(select MARPs_No from sms_msgraw where 
     ucase(MARPs_No) like '$MARPs_No' and
-    ucase(Q2_Phone) like '$Q2_Phone' and
-    ucase(Q1_ClientName) like '$Q1_ClientName' and
+    ucase(Q2_Phone) like '".mysql_real_escape_string($Q2_Phone)."' and
+    ucase(Q1_ClientName) like '".mysql_real_escape_string($Q1_ClientName)."' and
     Appointment_Date = '$Appointment_Date' and
     ucase(Language) like '$Language' and
     ucase(GetSMS) like '$GetSMS' and
@@ -85,8 +91,8 @@ function findRow($MARPs_No,$Q2_Phone,$Q1_ClientName,$Appointment_Date,$Language,
     )   
     
     "; 
-    
-    $Rcd_tbody_results = mysql_query($sql) or die(mysql_error());
+
+    $Rcd_tbody_results = mysql_query($sql) or die($sql);
     return mysql_fetch_array($Rcd_tbody_results);
 }
 function customizeMessage($messageTypeId,$name,$appointmentDate,$regDate){
@@ -113,8 +119,11 @@ function getMessage($messageTypeId){
     
     }
 
-function checkDuplicateMessage($findMessage,$phone,$table){
+function checkDuplicateMessage($findMessage,$phone,$table,$reminderType){
         $sql="select message from  $table  where message like '$findMessage' and phone_number like  '$phone' ";
+        if($reminderType)
+        $sql="select message from  $table  where message like '$findMessage' and phone_number like  '$phone' and message_type like '$reminderType'";
+        //reminder
         $message ='';
         $Rcd_tbody_results = mysql_query($sql) or die(mysql_error());
          while ($rows=mysql_fetch_array($Rcd_tbody_results)){
@@ -167,7 +176,7 @@ function addRecordsToSmsQueue($book){
 
         $phoneNumber=$book['Q2_Phone'];
         $table='sms_msgqueue';
-        $phoneNumber ='0703399915';        
+        //$phoneNumber ='0703399915';        
         // $regDate = '2018-05-10';
 		// $today='2018-05-10';
         // $first_rmr='2018-05-10';
@@ -179,8 +188,8 @@ function addRecordsToSmsQueue($book){
                 $message= customizeMessage($messageTypeId,$name,$appointmentDate,$regDate, $Language);
     
                        
-                        $messageExists=checkDuplicateMessage(trim($message),$phoneNumber,'sms_msgqueue');
-                        $isSent=checkDuplicateMessage(trim($message),$phoneNumber,'sms_msgsent');
+                        $messageExists=checkDuplicateMessage(trim($message),$phoneNumber,'sms_msgqueue',null);
+                        $isSent=checkDuplicateMessage(trim($message),$phoneNumber,'sms_msgsent','Appreciation');
                         if(!$messageExists && !$isSent &&  strlen( trim($message))>2 ){
                             insertMsg($table,$message,$phoneNumber,'Appreciation');
                         }
@@ -188,13 +197,17 @@ function addRecordsToSmsQueue($book){
                 
             }
             if($today == $first_rmr || $today == $second_rmr || $today == $third_rmr){
+                if($today == $first_rmr){$reminderType='first_reminder';} 
+                if($today == $second_rmr){$reminderType='second_reminder';} 
+                if($today == $third_rmr){$reminderType='third_reminder';} 
+                    
                 $messageTypeId=getTemplateByLanguage($Language,'Reminder');
                 $message= customizeMessage($messageTypeId,$name,$appointmentDate,$regDate, $Language);                
-                $messageExists=checkDuplicateMessage(trim($message),$phoneNumber,'sms_msgqueue');
-                $isSent=checkDuplicateMessage(trim($message),$phoneNumber,'sms_msgsent');
+                $messageExists=checkDuplicateMessage(trim($message),$phoneNumber,'sms_msgqueue',null);
+                $isSent=checkDuplicateMessage(trim($message),$phoneNumber,'sms_msgsent',$reminderType);
                 
                         if(!$messageExists && !$isSent &&  strlen( trim($message))>2){
-                            insertMsg($table,$message,$phoneNumber,'Reminder');
+                            insertMsg($table,$message,$phoneNumber,$reminderType);
                         }
             }
 
@@ -204,8 +217,7 @@ function addRecordsToSmsQueue($book){
     }
 }
 function getMSAccData() {
-$dbName = "E:\Project\SMS\UGUNJA\IRDOv1_UGUNJA_KP_be.mdb";
-
+$dbName = $GLOBALS['emrpath'];
 if (!file_exists($dbName)) {
     die("Could not find database file.");
 }
