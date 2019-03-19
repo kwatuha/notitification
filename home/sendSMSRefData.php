@@ -4,7 +4,7 @@ $GLOBALS['msg_center'] = getMsgCenter();
 getMessageStatus();
  function sendData($data){
 
-    $url = 'http://intellibizafrica.co.ke/impact/index.php?user=ImpactRDO';
+    $url = 'http://intellibizafrica.co.ke/impact/index.php?user=intellibiz';
     $ch=curl_init($url);
     $data_string = urlencode(json_encode($data));
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");

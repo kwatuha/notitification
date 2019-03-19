@@ -1,7 +1,7 @@
 <?php
 require_once('cf4_HH.php');
 
-$url="http://messaging.advantasms.com/bulksms/getDLR.jsp?userid=impactrdo&password=i12345&drquantity=20&fromdate=26-12-2017%2000:00:00&redownload=yes&responcetype=xml&externalid=30050000";
+$url="http://messaging.advantasms.com/bulksms/getDLR.jsp?userid=intellibiz&password=intellibiz&drquantity=20&fromdate=26-12-2017%2000:00:00&redownload=yes&responcetype=xml&externalid=30050000";
 
 
 
@@ -26,7 +26,7 @@ function processDeliveryRpts($reports){
 }
 function getDeliveryReport(){
     $GLOBALS['msg_center'] = getMsgCenter();
-$url="http://messaging.advantasms.com/bulksms/getDLR.jsp?userid=impactrdo&password=i12345&redownload=yes&responcetype=xml&externalid=".$GLOBALS['msg_center'];
+$url="http://messaging.advantasms.com/bulksms/getDLR.jsp?userid=intellibiz&password=intellibiz&redownload=yes&responcetype=xml&externalid=".$GLOBALS['msg_center'];
 
      libxml_use_internal_errors(true);
      $URL = $url;

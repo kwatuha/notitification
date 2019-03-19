@@ -46,7 +46,7 @@ if (!((isset($_SESSION['MM_Username'])) && (isAuthorized_menuDb("",$MM_authorize
 }
 getMSAccData($zone,$connection_number,$period,$year);
 function getMSAccData($zone,$connection_number,$period,$year) {
-// $dbName = "D:\impactRDO\db\IRDOv1_SIAYA_KP_be_Test.mdb";
+// $dbName = "D:\intellibiz\db\IRDOv1_SIAYA_KP_be_Test.mdb";
 $dbName = "D:\Project\SMS\Bondo\IRDOv1_BONDO_KP_be.mdb";
 if (!file_exists($dbName)) {
     die("Could not find database file.");

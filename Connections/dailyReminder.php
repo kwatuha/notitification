@@ -199,7 +199,7 @@ function addRecordsToSmsQueue($book){
             if($today == $first_rmr || $today == $second_rmr || $today == $third_rmr){
                 if($today == $first_rmr){$reminderType='first_reminder';} 
                 if($today == $second_rmr){$reminderType='second_reminder';} 
-                if($today == $third_rmr){$reminderType='third_reminder';} 
+                if($today == $third_rmr){$reminderType='third_reminder_1';} 
                     
                 $messageTypeId=getTemplateByLanguage($Language,'Reminder');
                 $message= customizeMessage($messageTypeId,$name,$appointmentDate,$regDate, $Language);                

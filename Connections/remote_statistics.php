@@ -1,6 +1,6 @@
 <?php
 function getRegionalStats(){
-    $url="http://messaging.advantasms.com/bulksms/getDLR.jsp?userid=impactrdo&password=i12345&redownload=yes&responcetype=xml";
+    $url="http://messaging.advantasms.com/bulksms/getDLR.jsp?userid=intellibiz&password=intellibiz&redownload=yes&responcetype=xml";
     libxml_use_internal_errors(true);
     $URL = $url;
 

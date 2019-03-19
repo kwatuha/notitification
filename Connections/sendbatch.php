@@ -229,7 +229,7 @@ $sql="INSERT INTO sms_msgdelivery(messageid,mobileno,externalid,sys_track,create
 
 function getSmsCreditBalance(){
 	libxml_use_internal_errors(true);
-	$URL = "http://messaging.advantasms.com/bulksms/smscredit.jsp?user=ImpactRDO&password=i12345";
+	$URL = "http://messaging.advantasms.com/bulksms/smscredit.jsp?user=intellibiz&password=intellibiz";
 
 		   $ch = curl_init($URL);
 		   curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
@@ -277,7 +277,7 @@ function createSmsTag($phoneNumber,$smsMessage,$messageId){
 
 		if($phoneNumber && $smsMessage && $messageId){
 
-			return '<sms><user>ImpactRDO</user><password>i12345</password><message>'.$smsMessage.'</message><mobiles>'.$phoneNumber.'</mobiles><senderid></senderid><cdmasenderid></cdmasenderid><group>-1</group><clientsmsid>'.$messageId.'</clientsmsid><accountusagetypeid>1</accountusagetypeid></sms>';
+			return '<sms><user>intellibiz</user><password>intellibiz</password><message>'.$smsMessage.'</message><mobiles>'.$phoneNumber.'</mobiles><senderid></senderid><cdmasenderid></cdmasenderid><group>-1</group><clientsmsid>'.$messageId.'</clientsmsid><accountusagetypeid>1</accountusagetypeid></sms>';
 
 		} else {
 			return null;

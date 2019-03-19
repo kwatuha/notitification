@@ -4,7 +4,7 @@ test();
 
 function test(){
     ini_set("allow_url_fopen", 1);
-    $url = 'http://intellibizafrica.co.ke/impact/status.php?user=ImpactRDO';
+    $url = 'http://intellibizafrica.co.ke/impact/status.php?user=intellibiz';
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

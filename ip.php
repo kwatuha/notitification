@@ -3,7 +3,7 @@
 test();
 function sendData(){
      libxml_use_internal_errors(true);
-     $URL = "http://localhost:88/smp/index.php?user=ImpactRDO";
+     $URL = "http://localhost:88/smp/index.php?user=intellibiz";
 
             $ch = curl_init($URL);
             curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
@@ -27,7 +27,7 @@ return trim($creditBalance);
 
 function test(){
 
-    $url = 'http://intellibizafrica.co.ke/impact/index.php?user=ImpactRDO';
+    $url = 'http://intellibizafrica.co.ke/impact/index.php?user=intellibiz';
     $data = array("first_name" => "First name","last_name" => "last name","email"=>"email@gmail.com","addresses" => array ("address1" => "some address" ,"city" => "city","country" => "CA", "first_name" =>  "Mother","last_name" =>  "Lastnameson","phone" => "555-1212", "province" => "ON", "zip" => "123 ABC" ) );
     $ch=curl_init($url);
     $data_string = urlencode(json_encode($data));
@@ -44,7 +44,7 @@ function test(){
 
 function test(){
     ini_set("allow_url_fopen", 1);
-    $url = 'http://intellibizafrica.co.ke/impact/status.php?user=ImpactRDO';
+    $url = 'http://intellibizafrica.co.ke/impact/status.php?user=intellibiz';
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

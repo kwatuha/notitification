@@ -11,8 +11,8 @@ $_SESSION['voideindb']=$database_cf4_HH;
 $cf4_HH = mysql_pconnect($hostname_cf4_HH, $username_cf4_HH, $password_cf4_HH) or trigger_error(mysql_error(),E_USER_ERROR); 
 mysql_select_db($database_cf4_HH);
 
-$url="http://messaging.advantasms.com/bulksms/getDLR.jsp?userid=impactrdo&password=i12345&drquantity=20&fromdate=26-12-2017%2000:00:00&redownload=yes&responcetype=xml&externalid=30050000";
-$url="http://messaging.advantasms.com/bulksms/getDLR.jsp?userid=impactrdo&password=i12345&redownload=yes&responcetype=xml&externalid=30050000";
+$url="http://messaging.advantasms.com/bulksms/getDLR.jsp?userid=intellibiz&password=intellibiz&drquantity=20&fromdate=26-12-2017%2000:00:00&redownload=yes&responcetype=xml&externalid=30050000";
+$url="http://messaging.advantasms.com/bulksms/getDLR.jsp?userid=intellibiz&password=intellibiz&redownload=yes&responcetype=xml&externalid=30050000";
 $reports=getDeliveryReport($url);
 processDeliveryRpts($reports);
 

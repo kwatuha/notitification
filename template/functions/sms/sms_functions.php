@@ -399,7 +399,7 @@ return trim($balance);
 }
 function getSmsCreditBalance(){
      libxml_use_internal_errors(true);
-     $URL = "http://messaging.advantasms.com/bulksms/smscredit.jsp?user=ImpactRDO&password=i12345";
+     $URL = "http://messaging.advantasms.com/bulksms/smscredit.jsp?user=intellibiz&password=i12345";
 
             $ch = curl_init($URL);
             curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
@@ -437,7 +437,7 @@ file_put_contents($smsFile,$smsPart1.$smsContentList.$smsPart2);
 function createSmsTag($phoneNumber,$smsMessage,$messageId){
 
     if($phoneNumber && $smsMessage && $messageId)
-    return '<sms><user>ImpactRDO</user><password>i12345</password><message>'.$smsMessage.'</message><mobiles>'.$phoneNumber.'</mobiles><senderid></senderid><cdmasenderid></cdmasenderid><group>-1</group><clientsmsid>'.$messageId.'</clientsmsid><accountusagetypeid>1</accountusagetypeid></sms>';
+    return '<sms><user>intellibiz</user><password>i12345</password><message>'.$smsMessage.'</message><mobiles>'.$phoneNumber.'</mobiles><senderid>INFOTEXT</senderid><cdmasenderid></cdmasenderid><group>-1</group><clientsmsid>'.$messageId.'</clientsmsid><accountusagetypeid>1</accountusagetypeid></sms>';
 
 }
 
